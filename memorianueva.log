@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.5.12)  20 MAR 2025 18:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.5.12)  20 MAR 2025 19:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1094,8 +1094,8 @@ LaTeX Info: Redefining \. on input line 132.
 LaTeX Info: Redefining \% on input line 132.
 
 [3])
-LaTeX Info: Redefining \. on input line 116.
-LaTeX Info: Redefining \% on input line 116.
+LaTeX Info: Redefining \. on input line 121.
+LaTeX Info: Redefining \% on input line 121.
  [4]
 \openout2 = `Chapters/Chapter2.aux'.
 
@@ -1108,7 +1108,7 @@ Cap\'{\i }tulo 2.
 
 
 ]
-<./Figures/cuadradoAzul.png, id=272, 180.675pt x 180.675pt>
+<./Figures/cuadradoAzul.png, id=274, 180.675pt x 180.675pt>
 File: ./Figures/cuadradoAzul.png Graphic file (type png)
 <use ./Figures/cuadradoAzul.png>
 Package pdftex.def Info: ./Figures/cuadradoAzul.png  used on input line 58.
@@ -1117,7 +1117,7 @@ File: ./Figures/cuadradoAzul.png Graphic file (type png)
 <use ./Figures/cuadradoAzul.png>
 Package pdftex.def Info: ./Figures/cuadradoAzul.png  used on input line 65.
 (pdftex.def)             Requested size: 81.303pt x 81.303pt.
-<./Figures/word.jpeg, id=275, 259.97125pt x 194.7275pt>
+<./Figures/word.jpeg, id=277, 259.97125pt x 194.7275pt>
 File: ./Figures/word.jpeg Graphic file (type jpg)
 <use ./Figures/word.jpeg>
 Package pdftex.def Info: ./Figures/word.jpeg  used on input line 74.
@@ -1131,7 +1131,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Info: Redefining \. on input line 81.
 LaTeX Info: Redefining \% on input line 81.
  [6 <./Figures/cuadradoAzul.png>]
-<./Figures/questionMark.png, id=287, 225.84375pt x 225.84375pt>
+<./Figures/questionMark.png, id=289, 225.84375pt x 225.84375pt>
 File: ./Figures/questionMark.png Graphic file (type png)
 <use ./Figures/questionMark.png>
 Package pdftex.def Info: ./Figures/questionMark.png  used on input line 87.
@@ -1154,8 +1154,8 @@ LaTeX Info: Redefining \% on input line 144.
 LaTeX Info: Redefining \. on input line 195.
 LaTeX Info: Redefining \% on input line 195.
  [8])
-LaTeX Info: Redefining \. on input line 117.
-LaTeX Info: Redefining \% on input line 117.
+LaTeX Info: Redefining \. on input line 122.
+LaTeX Info: Redefining \% on input line 122.
  [9]
 \openout2 = `Chapters/Chapter3.aux'.
 
@@ -1177,8 +1177,8 @@ nput line 62.
 
 1: section
 [11])
-LaTeX Info: Redefining \. on input line 118.
-LaTeX Info: Redefining \% on input line 118.
+LaTeX Info: Redefining \. on input line 123.
+LaTeX Info: Redefining \% on input line 123.
  [12]
 \openout2 = `Chapters/Chapter4.aux'.
 
@@ -1236,10 +1236,10 @@ Package logreq Info: Writing requests to 'memorianueva.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 31507 strings out of 474222
- 672544 string characters out of 5748733
+ 31515 strings out of 474222
+ 672824 string characters out of 5748733
  2018975 words of memory out of 5000000
- 53230 multiletter control sequences out of 15000+600000
+ 53237 multiletter control sequences out of 15000+600000
  622790 words of font info for 113 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
  96i,20n,94p,1969b,1991s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1261,10 +1261,10 @@ exmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/ur
 w/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/u
 plr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on memorianueva.pdf (31 pages, 260651 bytes).
+Output written on memorianueva.pdf (31 pages, 262350 bytes).
 PDF statistics:
- 488 PDF objects out of 1000 (max. 8388607)
- 409 compressed objects within 5 object streams
- 143 named destinations out of 1000 (max. 500000)
+ 492 PDF objects out of 1000 (max. 8388607)
+ 413 compressed objects within 5 object streams
+ 144 named destinations out of 1000 (max. 500000)
  189 words of extra memory for PDF output out of 10000 (max. 10000000)
 

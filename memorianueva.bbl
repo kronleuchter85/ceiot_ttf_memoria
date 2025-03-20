@@ -17,6 +17,28 @@
 \endgroup
 
 \datalist[entry]{none/global//global/global}
+  \entry{cese_gonzalo_memoria}{online}{}
+    \name{author}{1}{}{%
+      {{hash=CEIG}{%
+         family={Carreño},
+         familyi={C\bibinitperiod},
+         given={Esp. Ing.\bibnamedelima Gonzalo},
+         giveni={E\bibinitperiod\bibinitdelim I\bibinitperiod\bibinitdelim
+  G\bibinitperiod},
+      }}%
+    }
+    \keyw{latex,knuth}
+    \strng{namehash}{CEIG1}
+    \strng{fullhash}{CEIG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{UBA/CESE - Robot de exploración ambiental}
+    \verb{url}
+    \verb https://github.com/kronleuchter85/cese_proyecto_especializacion/blob/
+    \verb main/docs/TTFB_Memoria_Gonzalo_Carreno.pdf
+    \endverb
+  \endentry
+
   \entry{IEEE:citation}{book}{}
     \name{author}{1}{}{%
       {{hash=I}{%
