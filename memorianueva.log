@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.5.12)  20 MAR 2025 20:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.5.12)  21 MAR 2025 18:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1008,13 +1008,6 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 ] [2
 
-]
---------------------
- Agradecimientos
---------------------
-1: section
-[3] [4
-
 ] (./memorianueva.toc
 LaTeX Info: Redefining \sptext on input line 1.
 LaTeX Info: Redefining \. on input line 1.
@@ -1025,7 +1018,7 @@ LaTeX Info: Redefining \% on input line 1.
 
 
 1: section
-[5] [6
+[3] [4
 
 ] (./memorianueva.lof
 LaTeX Info: Redefining \sptext on input line 1.
@@ -1037,7 +1030,7 @@ LaTeX Info: Redefining \% on input line 1.
 
 
 1: section
-[7] [8
+[5] [6
 
 ] (./memorianueva.lot
 LaTeX Info: Redefining \sptext on input line 1.
@@ -1049,14 +1042,7 @@ LaTeX Info: Redefining \% on input line 1.
 
 
 1: section
-[9] [10
-
-]
---------------------
- Dedicatory
---------------------
-1: section
-[11] [12
+[7] [8
 
 ]
 1: section
@@ -1064,46 +1050,60 @@ LaTeX Info: Redefining \% on input line 1.
 
 (./Chapters/Chapter1.tex
 Cap\'{\i }tulo 1.
+
+Overfull \hbox (3.84854pt too wide) in paragraph at lines 42--43
+[]\T1/ppl/m/n/10.95 Spot [[][]11[][]], de-sa-rro-lla-do por Bos-ton Dy-na-mics,
+ un ro-bot ex-plo-ra-dor cua-drupe-
+ []
+
 1: section
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.54 	\item L
-             a implementación de la interfaz gráfica para poder visualizar...
-[1
+l.43 	
+       [1
 
 
 ]
-LaTeX Info: Redefining \. on input line 95.
-LaTeX Info: Redefining \% on input line 95.
+LaTeX Info: Redefining \. on input line 79.
+LaTeX Info: Redefining \% on input line 79.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.95 				\item R
-                esetear valores y estado.			 [2]
-LaTeX Info: Redefining \. on input line 141.
-LaTeX Info: Redefining \% on input line 141.
- [3])
+l.79 	\item L
+             a definición de métricas agregadas de valor y posterior arqui...
+[2]
+LaTeX Info: Redefining \. on input line 120.
+LaTeX Info: Redefining \% on input line 120.
+ [3]
+LaTeX Info: Redefining \. on input line 166.
+LaTeX Info: Redefining \% on input line 166.
+ [4])
 LaTeX Info: Redefining \. on input line 121.
 LaTeX Info: Redefining \% on input line 121.
- [4]
+ [5]
 \openout2 = `Chapters/Chapter2.aux'.
 
-
-(./Chapters/Chapter2.tex
-Cap\'{\i }tulo 2.
-1: section
-[5
+ (./Chapters/Chapter2.tex [6
 
 
 
 
 ]
-<./Figures/cuadradoAzul.png, id=273, 180.675pt x 180.675pt>
+Cap\'{\i }tulo 2.
+1: section
+[7]
+
+LaTeX Warning: Citation 'IEEE:citation' on page 8 undefined on input line 50.
+
+
+LaTeX Warning: Citation 'CIAA' on page 8 undefined on input line 50.
+
+<./Figures/cuadradoAzul.png, id=293, 180.675pt x 180.675pt>
 File: ./Figures/cuadradoAzul.png Graphic file (type png)
 <use ./Figures/cuadradoAzul.png>
 Package pdftex.def Info: ./Figures/cuadradoAzul.png  used on input line 58.
@@ -1112,7 +1112,7 @@ File: ./Figures/cuadradoAzul.png Graphic file (type png)
 <use ./Figures/cuadradoAzul.png>
 Package pdftex.def Info: ./Figures/cuadradoAzul.png  used on input line 65.
 (pdftex.def)             Requested size: 81.303pt x 81.303pt.
-<./Figures/word.jpeg, id=276, 259.97125pt x 194.7275pt>
+<./Figures/word.jpeg, id=296, 259.97125pt x 194.7275pt>
 File: ./Figures/word.jpeg Graphic file (type jpg)
 <use ./Figures/word.jpeg>
 Package pdftex.def Info: ./Figures/word.jpeg  used on input line 74.
@@ -1125,8 +1125,8 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <9> on input line 79.
 LaTeX Info: Redefining \. on input line 81.
 LaTeX Info: Redefining \% on input line 81.
- [6 <./Figures/cuadradoAzul.png>]
-<./Figures/questionMark.png, id=288, 225.84375pt x 225.84375pt>
+[8 <./Figures/cuadradoAzul.png>]
+<./Figures/questionMark.png, id=305, 225.84375pt x 225.84375pt>
 File: ./Figures/questionMark.png Graphic file (type png)
 <use ./Figures/questionMark.png>
 Package pdftex.def Info: ./Figures/questionMark.png  used on input line 87.
@@ -1149,18 +1149,18 @@ LaTeX Font Info:    Trying to load font information for T1+pcr on input line 12
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
-LaTeX Info: Redefining \. on input line 144.
-LaTeX Info: Redefining \% on input line 144.
- [7 <./Figures/word.jpeg> <./Figures/questionMark.png>]
-LaTeX Info: Redefining \. on input line 195.
-LaTeX Info: Redefining \% on input line 195.
- [8])
+LaTeX Info: Redefining \. on input line 128.
+LaTeX Info: Redefining \% on input line 128.
+ [9 <./Figures/word.jpeg> <./Figures/questionMark.png>]
+LaTeX Info: Redefining \. on input line 191.
+LaTeX Info: Redefining \% on input line 191.
+ [10])
 LaTeX Info: Redefining \. on input line 122.
 LaTeX Info: Redefining \% on input line 122.
- [9]
+ [11]
 \openout2 = `Chapters/Chapter3.aux'.
 
- (./Chapters/Chapter3.tex [10
+ (./Chapters/Chapter3.tex [12
 
 
 
@@ -1177,17 +1177,17 @@ Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 62.
 
 1: section
-[11])
+[13])
 LaTeX Info: Redefining \. on input line 123.
 LaTeX Info: Redefining \% on input line 123.
- [12]
+ [14]
 \openout2 = `Chapters/Chapter4.aux'.
 
  (./Chapters/Chapter4.tex
 Cap\'{\i }tulo 4.
 )
 1: section
-[13
+[15
 
 
 
@@ -1195,7 +1195,7 @@ Cap\'{\i }tulo 4.
 ]
 \openout2 = `Chapters/Chapter5.aux'.
 
- (./Chapters/Chapter5.tex [14
+ (./Chapters/Chapter5.tex [16
 
 
 
@@ -1204,13 +1204,42 @@ Cap\'{\i }tulo 4.
 Cap\'{\i }tulo 5.
 )
 1: section
-[15] [16
+[17] [18
 
 
 
 ]
+Overfull \hbox (1.52678pt too wide) in paragraph at lines 143--143
+[]\T1/ppl/m/n/10.95 FreeRTOS. \T1/ppl/m/it/10.95 FreeR-TOS | Real-time ope-ra-t
+ing sys-tem for mi-cro-con-tro-llers and small
+ []
+
+
+Overfull \hbox (21.05476pt too wide) in paragraph at lines 143--143
+[]\T1/ppl/m/n/10.95 OASIS. \T1/ppl/m/it/10.95 MQTT Pro-to-col Spe-ci-fi-ca-tion
+\T1/ppl/m/n/10.95 . \T1/ppl/m/sc/10.95 url\T1/ppl/m/n/10.95 : [][]$https : / / 
+mqtt . org / mqtt -[] speci^^\cation/$[][]. 
+ []
+
+
+Overfull \hbox (6.68208pt too wide) in paragraph at lines 143--143
+[]\T1/ppl/m/n/10.95 Boston Dy-na-mics. \T1/ppl/m/it/10.95 Spot\T1/ppl/m/n/10.95
+ . \T1/ppl/m/sc/10.95 url\T1/ppl/m/n/10.95 : [][]$https : / / www . bostondynam
+ics . com / products /
+ []
+
+
+Overfull \hbox (2.37694pt too wide) in paragraph at lines 143--143
+[]\T1/ppl/m/n/10.95 Latam Mi-ning. \T1/ppl/m/it/10.95 Ro-bots y mi-ne-r�a: Go-b
+ierno ar-gen-tino quie-re im-ple-men-tar-los\T1/ppl/m/n/10.95 . \T1/ppl/m/sc/10
+.95 url\T1/ppl/m/n/10.95 :
+ []
+
 1: section
-[17] (./memorianueva.aux (./portada.aux)
+[19]
+LaTeX Info: Redefining \. on input line 145.
+LaTeX Info: Redefining \% on input line 145.
+ [20] (./memorianueva.aux (./portada.aux)
 LaTeX Info: Redefining \sptext on input line 16.
 LaTeX Info: Redefining \. on input line 16.
 LaTeX Info: Redefining \% on input line 16.
@@ -1226,7 +1255,7 @@ L3 programming layer <2020/03/25>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `memorianueva.out' has not changed.
-(rerunfilecheck)             Checksum: 6DC95E3EBAA999F52EA54C9B962B745A;3371.
+(rerunfilecheck)             Checksum: F8316D301D6D814979F8A186F7EA5677;3371.
 
 Package biblatex Warning: Please (re)run BibTeX on the file(s):
 (biblatex)                memorianueva
@@ -1237,11 +1266,11 @@ Package logreq Info: Writing requests to 'memorianueva.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 31515 strings out of 474222
- 672824 string characters out of 5748733
- 2018975 words of memory out of 5000000
- 53237 multiletter control sequences out of 15000+600000
- 622790 words of font info for 113 fonts, out of 8000000 for 9000
+ 31571 strings out of 474222
+ 675552 string characters out of 5748733
+ 2017975 words of memory out of 5000000
+ 53284 multiletter control sequences out of 15000+600000
+ 620305 words of font info for 110 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
  96i,20n,94p,1969b,1991s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
@@ -1259,13 +1288,13 @@ er/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pf
 b></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/share/texlive/t
 exmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/ur
+nts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/ur
 w/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/u
-plr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on memorianueva.pdf (31 pages, 261427 bytes).
+plri8a.pfb>
+Output written on memorianueva.pdf (30 pages, 263888 bytes).
 PDF statistics:
- 492 PDF objects out of 1000 (max. 8388607)
- 413 compressed objects within 5 object streams
- 144 named destinations out of 1000 (max. 500000)
+ 542 PDF objects out of 1000 (max. 8388607)
+ 466 compressed objects within 5 object streams
+ 155 named destinations out of 1000 (max. 500000)
  189 words of extra memory for PDF output out of 10000 (max. 10000000)
 

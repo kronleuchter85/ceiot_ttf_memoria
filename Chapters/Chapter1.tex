@@ -24,7 +24,33 @@ Esta sección presenta la motivación, alcance, objetivos y requerimientos del p
 %----------------------------------------------------------------------------------------
 \section{Estado del arte}
 
-blablabla
+
+Los robots exploradores son dispositivos robotizados capaces de moverse de forma autónoma, y/o controlados a distancia, que han sido creados con el fin de reconocer y explorar un lugar o entorno donde una persona no pueda o deba acceder ya sea por motivos de capacidad, practicidad o seguridad. Por este motivo, en función de las necesidades de desplazamiento, existen diferentes sistemas de motricidad, como son por ejemplo, los bípedos, cuadrúpedos, con ruedas, tracción oruga, acuáticos/sumergibles, aéreos, etc. En cuanto a la forma de control, los hay manejados por control remoto cableado o inalámbrico, habiendo equipos más sofisticados, que gracias a aplicaciones de Inteligencia Artificial, están preparados para desplazarse y tomar decisiones de forma autónoma. Algunos de los tipos de robots exploradores más conocidos son los espaciales, de minas, de rescate en catástrofes, de tuberías, submarinos, y de suelos.
+
+Los robots exploradores suelen desempeñar el papel de dispositivo físico o sistema embebido, en casos de uso mas grandes como por ejemplo en soluciones IoT. En estos, existe uno o varios sistemas \textit{back-end} distribuidos a los cuales se integra el dispositivo robótico para comunicar, enviar y/o recibir datos.
+
+Tanto en el ámbito académico como en la industria existen varios trabajos, proyectos, e implementaciones comerciales de robots exploradores, como por ejemplo: 
+
+\begin{itemize}
+	\item El desplegado en Lotus Mountain \cite{iot_usecase_seg_china} en Jilin, China para la seguridad en estaciones de esquí, implementado por perros robóticos equipados con sensores y tecnología de imágenes 3D que patrullan las pistas identificando peligros como desprendimientos y bloqueos en las rutas, mejorando así la seguridad de los esquiadores.
+
+	\item El implementado por el Ayuntamiento de Bilbao \cite{iot_usecase_bilbao} para la inspección y mantenimiento de redes de saneamiento, que por medio de drones y robots, busca mejorar la eficiencia operativa y la seguridad de los trabajadores al reducir la necesidad de intervenciones humanas en entornos subterráneos y potencialmente peligrosos.
+
+	\item El proyecto Tecnobosque \cite{iot_usecase_cuenca} en Cuenca, España, que utiliza drones equipados con sensores e inteligencia artificial para crear cortafuegos preventivos y reducir significativamente las hectáreas de bosques en casos de incendios. 
+
+
+	\item Spot \cite{spot}, desarrollado por Boston Dynamics, un robot explorador cuadrupedo de propósito general capaz de explorar, almacenar y enviar información en tiempo real.
+	  
+	\item BIKE \cite{bike_inspection}, desarrollado por Waygate Technologies, un robot con ruedas magnéticas, muy utilizado en la industria de petróleo y gas entre otras, capaz de desplazarse por el interior de tuberías para poder realizar inspecciones y comunicar hallazgos.
+
+	\item El prototipo robótico de exploración minera publicado en varios artículos \cite{latam-mining-robot-minero-unsj}, \cite{diario-de-cuyo-prototipo-robotico}, e impulsado por el Instituto de Automática de la Facultad de Ingeniería de la Universidad Nacional de San Juan en el marco de un convenio con la Comisión Nacional de Energía Atómica y el Gobierno argentino \cite{comunicacion-unsj-prototipo-convenio}.
+
+	\item El robot de exploración terrestre denominado Geobot \cite{geobot} desarrollado por los ingenieros Nelson Dario García Hurtado y Melvin Andrés González Pino, de la universidad de Pamplona, capaz de realizar reconocimiento de zonas y manipulación de muestras de manera autónoma o asistida.
+
+	\item El robot minero MIN-SIS 1.0 SDG-STR \cite{min-sis} desarrollado por los ingenieros Hernán L. Helguero Velásquez y Rubén Medinaceli Tórrez de la Universidad Técnica de Oruro, capaz de detectar gases, almacenar datos locales y enviar video e imágenes al puesto de mando.
+
+
+\end{itemize}
 
 
 %----------------------------------------------------------------------------------------
@@ -46,11 +72,11 @@ A continuación se detallan las funcionalidades incluidas en el alcance del trab
 
 
 \begin{itemize}
-	\item La publicación del endpoint MQTT para la recepción de los datos enviados por el robot.
-	\item La adaptación del sistema embebido del robot de exploración ambiental para la conexión segura con el backend vía MQTT.
-	\item La arquitectura e implementación de los sistemas backend y el modelo de datos necesario para el almacenamiento de las mediciones enviadas por el robot.
-	\item La arquitectura, implementación y despliegue de la dApp y \textit{smart contracts} necesarios para el almacenamiento de las mediciones en una red Blockchain (a definir).
-	\item La definición de métricas agregadas de valor y posterior arquitectura e implementación de los sistemas analíticos para procesar de forma \textit{batch} y/o \textit{real-time} (dependiendo de las métricas a definir) utilizando herramientas de procesamiento paralelo basadas en big data.
+	\item La publicación del endpoint MQTT \cite{mqtt_spec} para la recepción de los datos enviados por el robot.
+	\item La adaptación del sistema embebido del robot de exploración ambiental para la conexión segura con el \textit{back-end} vía MQTT.
+	\item La arquitectura e implementación de los sistemas \textit{back-end} y el modelo de datos necesario para el almacenamiento de las mediciones enviadas por el robot.
+	\item La arquitectura, implementación y despliegue de la dApp y \textit{smart contracts} necesarios para el almacenamiento de las mediciones en una red Blockchain.
+	\item La definición de métricas agregadas de valor y posterior arquitectura e implementación de los sistemas analíticos para procesar de forma \textit{batch} y/o \textit{real-time} utilizando herramientas de procesamiento paralelo basadas en big data.
 	\item La implementación de la interfaz gráfica para poder visualizar los datos enviados y analíticas calculadas.
 
 \end{itemize}
@@ -68,7 +94,7 @@ A continuación, se listan los requerimientos del producto:
 	\item Requerimientos funcionales		
 	\begin{enumerate}	
 		
-		\item El robot de exploración ambiental debe poder enviar a la plataforma datos de mediciones de parámetros ambientales, incluyendo los datos de fecha, hora, localización geográfica (que puede ser implementada como un mock inicialmente) y la categorización si es o no un valor crítico.
+		\item El robot de exploración ambiental debe poder enviar a la plataforma datos de mediciones de parámetros ambientales, incluyendo los datos de fecha, hora, localización geográfica (que puede ser implementada como un valor \textit{mock}) y la categorización si es o no un valor crítico.
 		\item El robot de exploración ambiental debe incorporar lógica para categorizar los valores medidos de cada parámetro ambiental como valores críticos si:
 		\begin{enumerate}				
 			\item Representan un máximo o mínimo global sensado hasta el momento.				

@@ -32,55 +32,352 @@
     \strng{fullhash}{CEIG1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{title}{UBA/CESE - Robot de exploración ambiental}
+    \field{title}{LSE-FIUBA - Trabajo Final CESE- Robot de exploración
+  ambiental}
     \verb{url}
-    \verb https://github.com/kronleuchter85/cese_proyecto_especializacion/blob/
-    \verb main/docs/TTFB_Memoria_Gonzalo_Carreno.pdf
+    \verb https://lse-posgrados-files.fi.uba.ar/tesis/LSE-FIUBA-Trabajo-Final-C
+    \verb ESE-Gonzalo-Carreno-2024.pdf
     \endverb
   \endentry
 
-  \entry{IEEE:citation}{book}{}
+  \entry{nube_publica}{online}{}
     \name{author}{1}{}{%
-      {{hash=I}{%
-         family={IEEE},
-         familyi={I\bibinitperiod},
+      {{hash=SAW}{%
+         family={Services},
+         familyi={S\bibinitperiod},
+         given={Amazon\bibnamedelima Web},
+         giveni={A\bibinitperiod\bibinitdelim W\bibinitperiod},
       }}%
     }
-    \list{publisher}{1}{%
-      {IEEE Publications}%
-    }
-    \strng{namehash}{I1}
-    \strng{fullhash}{I1}
+    \keyw{latex,knuth}
+    \strng{namehash}{SAW1}
+    \strng{fullhash}{SAW1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{edition}{1}
-    \field{title}{IEEE Citation Reference}
+    \field{title}{¿Qué es una nube pública?}
     \verb{url}
-    \verb http://www.ieee.org/documents/ieeecitationref.pdf
+    \verb https://aws.amazon.com/es/what-is/public-cloud/
     \endverb
-    \field{year}{2016}
-    \field{urlday}{26}
-    \field{urlmonth}{09}
-    \field{urlyear}{2016}
   \endentry
 
-  \entry{CIAA}{misc}{}
+  \entry{blockchain}{online}{}
     \name{author}{1}{}{%
-      {{hash=P}{%
-         family={{Proyecto CIAA}},
-         familyi={P\bibinitperiod},
+      {{hash=W}{%
+         family={Wikipedia},
+         familyi={W\bibinitperiod},
       }}%
     }
-    \strng{namehash}{P1}
-    \strng{fullhash}{P1}
+    \keyw{latex,knuth}
+    \strng{namehash}{W1}
+    \strng{fullhash}{W1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{note}{Visitado el 2016-06-25}
-    \field{title}{Computadora Industrial Abierta Argentina}
+    \field{title}{Blockchain}
     \verb{url}
-    \verb http://proyecto-ciaa.com.ar/devwiki/doku.php?id=start
+    \verb https://en.wikipedia.org/wiki/Blockchain
     \endverb
-    \field{year}{2014}
+  \endentry
+
+  \entry{ESP32}{online}{}
+    \name{author}{1}{}{%
+      {{hash=E}{%
+         family={Espressif},
+         familyi={E\bibinitperiod},
+      }}%
+    }
+    \keyw{latex,knuth}
+    \strng{namehash}{E1}
+    \strng{fullhash}{E1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{ESP32}
+    \verb{url}
+    \verb https://www.espressif.com/en/products/socs/esp32
+    \endverb
+  \endentry
+
+  \entry{FreeRTOS}{online}{}
+    \name{author}{1}{}{%
+      {{hash=F}{%
+         family={FreeRTOS},
+         familyi={F\bibinitperiod},
+      }}%
+    }
+    \keyw{latex,knuth}
+    \strng{namehash}{F1}
+    \strng{fullhash}{F1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{FreeRTOS | Real-time operating system for microcontrollers
+  and small microprocessors}
+    \verb{url}
+    \verb https://www.freertos.org/
+    \endverb
+  \endentry
+
+  \entry{ESPIDF_home}{online}{}
+    \name{author}{1}{}{%
+      {{hash=E}{%
+         family={Espressif},
+         familyi={E\bibinitperiod},
+      }}%
+    }
+    \keyw{latex,knuth}
+    \strng{namehash}{E1}
+    \strng{fullhash}{E1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{ESP-IDF Programming Guide | Get Started}
+    \verb{url}
+    \verb https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-start
+    \verb ed/
+    \endverb
+  \endentry
+
+  \entry{mqtt_spec}{online}{}
+    \name{author}{1}{}{%
+      {{hash=O}{%
+         family={OASIS},
+         familyi={O\bibinitperiod},
+      }}%
+    }
+    \keyw{latex,knuth}
+    \strng{namehash}{O1}
+    \strng{fullhash}{O1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{MQTT Protocol Specification}
+    \verb{url}
+    \verb https://mqtt.org/mqtt-specification/
+    \endverb
+  \endentry
+
+  \entry{iot_usecase_seg_china}{online}{}
+    \name{author}{1}{}{%
+      {{hash=FAM}{%
+         family={Fontrodona},
+         familyi={F\bibinitperiod},
+         given={As.com |\bibnamedelima Marc},
+         giveni={A\bibinitperiod\bibinitdelim \bibinitperiod\bibinitdelim
+  M\bibinitperiod},
+      }}%
+    }
+    \keyw{latex,knuth}
+    \strng{namehash}{FAM1}
+    \strng{fullhash}{FAM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Una estación de esquí china despliega una patrulla de
+  perros robot}
+    \verb{url}
+    \verb https://as.com/deportes_accion/snow/una-estacion-de-esqui-china-despl
+    \verb iega-una-patrulla-de-perros-robot-n
+    \endverb
+  \endentry
+
+  \entry{iot_usecase_bilbao}{online}{}
+    \name{author}{1}{}{%
+      {{hash=BCR}{%
+         family={Bilbao},
+         familyi={B\bibinitperiod},
+         given={Cadenaser.com |\bibnamedelima Radio},
+         giveni={C\bibinitperiod\bibinitdelim \bibinitperiod\bibinitdelim
+  R\bibinitperiod},
+      }}%
+    }
+    \keyw{latex,knuth}
+    \strng{namehash}{BCR1}
+    \strng{fullhash}{BCR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Bilbao inspecciona sus redes de saneamiento con drones y
+  robots para mejorar la eficiencia y la seguridad}
+    \verb{url}
+    \verb https://cadenaser.com/euskadi/2024/12/18/bilbao-inspecciona-sus-redes
+    \verb -de-saneamiento-con-drones-y-robots-para-mejorar-la-eficiencia-y-la-s
+    \verb eguridad-radio-bilbao/
+    \endverb
+  \endentry
+
+  \entry{iot_usecase_cuenca}{online}{}
+    \name{author}{1}{}{%
+      {{hash=CLD}{%
+         family={Cabezas},
+         familyi={C\bibinitperiod},
+         given={Los40.com |\bibnamedelima Dani},
+         giveni={L\bibinitperiod\bibinitdelim \bibinitperiod\bibinitdelim
+  D\bibinitperiod},
+      }}%
+    }
+    \keyw{latex,knuth}
+    \strng{namehash}{CLD1}
+    \strng{fullhash}{CLD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Así se gestiona un “tecnobosque”}
+    \verb{url}
+    \verb https://los40.com/2024/12/10/asi-se-gestiona-un-tecnobosque/
+    \endverb
+  \endentry
+
+  \entry{spot}{online}{}
+    \name{author}{1}{}{%
+      {{hash=DB}{%
+         family={Dynamics},
+         familyi={D\bibinitperiod},
+         given={Boston},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \keyw{latex,knuth}
+    \strng{namehash}{DB1}
+    \strng{fullhash}{DB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Spot}
+    \verb{url}
+    \verb https://www.bostondynamics.com/products/spot
+    \endverb
+  \endentry
+
+  \entry{bike_inspection}{online}{}
+    \name{author}{1}{}{%
+      {{hash=TW}{%
+         family={Technologies},
+         familyi={T\bibinitperiod},
+         given={Waygate},
+         giveni={W\bibinitperiod},
+      }}%
+    }
+    \keyw{latex,knuth}
+    \strng{namehash}{TW1}
+    \strng{fullhash}{TW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{BIKE - An advanced crawler robot for remote visual
+  inspection}
+    \verb{url}
+    \verb https://www.bakerhughes.com/waygate-technologies/robotic-inspection/b
+    \verb ike
+    \endverb
+  \endentry
+
+  \entry{latam-mining-robot-minero-unsj}{online}{}
+    \name{author}{1}{}{%
+      {{hash=ML}{%
+         family={Mining},
+         familyi={M\bibinitperiod},
+         given={Latam},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \keyw{latex,knuth}
+    \strng{namehash}{ML1}
+    \strng{fullhash}{ML1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Robots y minería: Gobierno argentino quiere implementarlos}
+    \verb{url}
+    \verb https://www.latam-mining.com/robots-y-mineria-gobierno-argentino-quie
+    \verb re-implementarlos/
+    \endverb
+  \endentry
+
+  \entry{diario-de-cuyo-prototipo-robotico}{online}{}
+    \name{author}{1}{}{%
+      {{hash=dCD}{%
+         prefix={de},
+         prefixi={d\bibinitperiod},
+         family={Cuyo},
+         familyi={C\bibinitperiod},
+         given={Diario},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \keyw{latex,knuth}
+    \strng{namehash}{CDd1}
+    \strng{fullhash}{CDd1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Gobierno pone la mira en el desarrollo de robots para la
+  actividad minera}
+    \verb{url}
+    \verb https://www.diariodecuyo.com.ar/politica/Gobierno-pone-la-mira-en-el-
+    \verb desarrollo-de-robots-para-la-actividad-minera-20200202-0052.html
+    \endverb
+  \endentry
+
+  \entry{comunicacion-unsj-prototipo-convenio}{online}{}
+    \name{author}{1}{}{%
+      {{hash=dSJUN}{%
+         prefix={de},
+         prefixi={d\bibinitperiod},
+         family={San\bibnamedelima Juan},
+         familyi={S\bibinitperiod\bibinitdelim J\bibinitperiod},
+         given={Universidad\bibnamedelima Nacional},
+         giveni={U\bibinitperiod\bibinitdelim N\bibinitperiod},
+      }}%
+    }
+    \keyw{latex,knuth}
+    \strng{namehash}{SJUNd1}
+    \strng{fullhash}{SJUNd1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Robots en la minería}
+    \verb{url}
+    \verb http://www.unsj.edu.ar/home/noticias_detalles/4810/1
+    \endverb
+  \endentry
+
+  \entry{geobot}{online}{}
+    \name{author}{1}{}{%
+      {{hash=eIMAGPINDGH}{%
+         prefix={e},
+         prefixi={e},
+         family={Ing. Melvin Andrés González\bibnamedelima Pino},
+         familyi={I\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim
+  A\bibinitperiod\bibinitdelim G\bibinitperiod\bibinitdelim P\bibinitperiod},
+         given={Ing. Nelson Dario García\bibnamedelima Hurtado},
+         giveni={I\bibinitperiod\bibinitdelim N\bibinitperiod\bibinitdelim
+  D\bibinitperiod\bibinitdelim G\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+    }
+    \keyw{latex,knuth}
+    \strng{namehash}{IMAGPINDGHe1}
+    \strng{fullhash}{IMAGPINDGHe1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Robot de exploración terrestre Geobot}
+    \verb{url}
+    \verb https://www.unipamplona.edu.co/unipamplona/portalIG/home_40/recursos/
+    \verb 01_general/revista_1/09102011/v01_09.pdf
+    \endverb
+  \endentry
+
+  \entry{min-sis}{online}{}
+    \name{author}{1}{}{%
+      {{hash=eIRMTIHLHV}{%
+         prefix={e},
+         prefixi={e},
+         family={Ing. Rubén Medinaceli\bibnamedelima Tórrez},
+         familyi={I\bibinitperiod\bibinitdelim R\bibinitperiod\bibinitdelim
+  M\bibinitperiod\bibinitdelim T\bibinitperiod},
+         given={Ing. Hernán L. Helguero\bibnamedelima Velásquez1},
+         giveni={I\bibinitperiod\bibinitdelim H\bibinitperiod\bibinitdelim
+  L\bibinitperiod\bibinitdelim H\bibinitperiod\bibinitdelim V\bibinitperiod},
+      }}%
+    }
+    \keyw{latex,knuth}
+    \strng{namehash}{IRMTIHLHVe1}
+    \strng{fullhash}{IRMTIHLHVe1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Robot Minero: Sistema Detector de Gases utilizando Sensores
+  en Tiempo Real MIN – SIS 1.0 SDG-STR}
+    \verb{url}
+    \verb http://www.scielo.org.bo/scielo.php?script=sci_arttext&pid=S2519-5352
+    \verb 2020000100003
+    \endverb
   \endentry
 \enddatalist
 \endinput
