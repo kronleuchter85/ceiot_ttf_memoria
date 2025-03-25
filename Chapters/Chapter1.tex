@@ -24,12 +24,14 @@ Esta sección presenta la motivación, alcance, objetivos y requerimientos del p
 %----------------------------------------------------------------------------------------
 \section{Estado del arte}
 
+Las soluciones IoT (\textit{Internet of Things} o Internet de las Cosas) se basan en la conexión de dispositivos físicos con sistemas software para recopilar, transmitir y analizar datos en \textit{streaming} y de forma \textit{batch}, mejorando la automatización, observabilidad y toma de decisiones en diversos casos de uso. 
 
-Los robots exploradores son dispositivos robotizados capaces de moverse de forma autónoma, y/o controlados a distancia, que han sido creados con el fin de reconocer y explorar un lugar o entorno donde una persona no pueda o deba acceder ya sea por motivos de capacidad, practicidad o seguridad. Por este motivo, en función de las necesidades de desplazamiento, existen diferentes sistemas de motricidad, como son por ejemplo, los bípedos, cuadrúpedos, con ruedas, tracción oruga, acuáticos/sumergibles, aéreos, etc. En cuanto a la forma de control, los hay manejados por control remoto cableado o inalámbrico, habiendo equipos más sofisticados, que gracias a aplicaciones de Inteligencia Artificial, están preparados para desplazarse y tomar decisiones de forma autónoma. Algunos de los tipos de robots exploradores más conocidos son los espaciales, de minas, de rescate en catástrofes, de tuberías, submarinos, y de suelos.
+Su arquitectura estándar en general incluye dispositivos y sensores para capturar datos, conectividad por red (Wi-Fi, 5G, LoRa) para transmitirlos, una plataforma \textit{back-end} formada por sistemas distribuidos en la nube para el almacenamiento, procesamiento y análisis de datos, y una interfaz de usuario para la visualización de resultados, pudiendo, en ocasiones, contar con sistemas de publicación y distribuición de eventos en \textit{streaming}.
 
-Los robots exploradores suelen desempeñar el papel de dispositivo físico o sistema embebido, en casos de uso mas grandes como por ejemplo en soluciones IoT. En estos, existe uno o varios sistemas \textit{back-end} distribuidos a los cuales se integra el dispositivo robótico para comunicar, enviar y/o recibir datos.
+Existen casos de uso de IoT en los cuales, debido a las condiciones del entorno y por motivos de capacidad, practicidad o seguridad para un humano, se utilizan robots exploradores como dispositivos físicos para la recopilación de datos. Los robots exploradores son dispositivos robotizados capaces de moverse de forma autónoma y/o controlados a distancia que utilizan sensores avanzados, inteligencia artificial y comunicación en tiempo real para navegar y monitorear condiciones ambientales en entornos peligrosos, como minas, plataformas petrolíferas, espacios confinados o áreas afectadas por desastres, entre otros. En agricultura, pueden inspeccionar cultivos; en medio ambiente, pueden monitorear la calidad del aire, del agua; en el espacio y océanos, son capaces de explorar lugares inaccesibles para el ser humano. 
 
-Tanto en el ámbito académico como en la industria existen varios trabajos, proyectos, e implementaciones comerciales de robots exploradores, como por ejemplo: 
+
+Tanto en el ámbito académico como en la industria existen varios trabajos, proyectos, e implementaciones comerciales de soluciones IoT utilizando robots para mejorar la seguridad, la eficiencia y la toma de decisiones basada en datos, como por ejemplo: 
 
 \begin{itemize}
 	\item El desplegado en Lotus Mountain \cite{iot_usecase_seg_china} en Jilin, China para la seguridad en estaciones de esquí, implementado por perros robóticos equipados con sensores y tecnología de imágenes 3D que patrullan las pistas identificando peligros como desprendimientos y bloqueos en las rutas, mejorando así la seguridad de los esquiadores.
@@ -53,6 +55,15 @@ Tanto en el ámbito académico como en la industria existen varios trabajos, pro
 \end{itemize}
 
 
+En situaciones en las que es necesario explorar y monitorear un área ambientalmente sensible, como una reserva natural o un sitio afectado por un desastre ecológico y el objetivo es recopilar datos críticos, tales como niveles de contaminación, temperatura, humedad, y calidad del aire, es de gran importancia almacenar estas mediciones de una manera en la que se pueda asegurar la integridad y transparencia de los datos, como por ejemplo, en una cadena de bloques (blockchain).
+
+Una arquitectura blockchain se basa en el agrupamiento de transacciones que luego de ser procesadas, son almacenadas en bloques encadenados de forma distribuida e inmutable, entre los nodos de una red. Esta estructura de datos se conoce como una cadena de bloques y sus datos almacenados forma un \textit{distributed ledger} (o asiento contable distribuido). De esta manera, como los datos forman registros que no se pueden modificar una vez creados, se puede asegurar la inmutabilidad, y como el almacenamiento y procesamiento de la red se encuentran distribuidos, se puede garantizar su transparencia.
+
+La mayoría de las redes blockchain constan de ciertas tecnologías para la implementación de código ejecutable en la misma red, que aunque su nombre puede cambiar dependiendo de la red, usualmente se los conoce como \textit{Smart Contracts}. La ejecución de estos componentes es realizada por los nodos de la red en el proceso que se conoce como minería, y como tal es una actividad que requiere el pago de un \textit{fee} (comisión) conocido como \textit{gas} medido en diferentes unidades dependiendo de la red y normalmente pagable desde una cuenta nominada en el token de la red asociada a la aplicación o propietario de los \textit{smart contracts}.
+La  forma de interactuar con los \textit{smart contracts} en un caso de uso interactivo desde afuera de la red, se realiza a través de otro componente conocido como dApps \textit{(de-centralized applications)} que haciendo uso de ciertas bibliotecas de Web3 invocan a estos para almacenar y obtener datos en y desde el \textit{ledger}.
+
+
+
 %----------------------------------------------------------------------------------------
 
 \section{Motivación del trabajo}
@@ -72,7 +83,7 @@ A continuación se detallan las funcionalidades incluidas en el alcance del trab
 
 
 \begin{itemize}
-	\item La publicación del endpoint MQTT para la recepción de los datos enviados por el robot.
+	\item La publicación del endpoint MQTT \citep{mqtt_spec} para la recepción de los datos enviados por el robot.
 	\item La adaptación del sistema embebido del robot de exploración ambiental para la conexión segura con el \textit{back-end} vía MQTT.
 	\item La arquitectura e implementación de los sistemas \textit{back-end} y el modelo de datos necesario para el almacenamiento de las mediciones enviadas por el robot.
 	\item La arquitectura, implementación y despliegue de la dApp y \textit{smart contracts} necesarios para el almacenamiento de las mediciones en una red Blockchain.

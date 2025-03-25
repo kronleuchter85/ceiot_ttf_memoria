@@ -25,50 +25,56 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: memorianueva-blx.bib
 Database file #2: references.bib
-Warning--I didn't find a database entry for "IEEE:citation"
-Warning--I didn't find a database entry for "CIAA"
+Warning--I didn't find a database entry for "ESP32_wroom_32d_datasheet"
+Warning--I didn't find a database entry for "SoftwareTool_Ceedling"
+Warning--I didn't find a database entry for "SoftwareTool_CMock"
+Warning--I didn't find a database entry for "SoftwareTool_Unity"
+Warning--I didn't find a database entry for "SoftwareTool_CeedlingGCov"
+Warning--I didn't find a database entry for "SoftwareTool_Github"
+Warning--I didn't find a database entry for "SoftwareTool_CloudBuild"
+Warning--I didn't find a database entry for "SoftwareTool_ArtifactRegistry"
 Biblatex version: 3.19
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 18 entries,
+You've used 24 entries,
             6399 wiz_defined-function locations,
-            1282 strings with 11902 characters,
-and the built_in function-call counts, 93857 in all, are:
-= -- 7198
-> -- 1288
-< -- 282
-+ -- 1578
-- -- 443
-* -- 6721
-:= -- 9618
+            1314 strings with 12603 characters,
+and the built_in function-call counts, 116326 in all, are:
+= -- 8598
+> -- 1725
+< -- 378
++ -- 1971
+- -- 583
+* -- 8077
+:= -- 11640
 add.period$ -- 0
-call.type$ -- 18
-change.case$ -- 102
+call.type$ -- 24
+change.case$ -- 138
 chr.to.int$ -- 42
-cite$ -- 34
-duplicate$ -- 7948
-empty$ -- 9626
-format.name$ -- 753
-if$ -- 20054
+cite$ -- 46
+duplicate$ -- 10392
+empty$ -- 11987
+format.name$ -- 1019
+if$ -- 24914
 int.to.chr$ -- 0
-int.to.str$ -- 36
+int.to.str$ -- 50
 missing$ -- 0
-newline$ -- 368
-num.names$ -- 652
-pop$ -- 5770
+newline$ -- 480
+num.names$ -- 886
+pop$ -- 7762
 preamble$ -- 1
-purify$ -- 153
+purify$ -- 207
 quote$ -- 0
-skip$ -- 2568
+skip$ -- 3451
 stack$ -- 0
-substring$ -- 14871
-swap$ -- 1544
-text.length$ -- 320
+substring$ -- 17058
+swap$ -- 2060
+text.length$ -- 422
 text.prefix$ -- 2
 top$ -- 1
-type$ -- 600
+type$ -- 804
 warning$ -- 0
-while$ -- 915
+while$ -- 1151
 width$ -- 0
-write$ -- 351
-(There were 2 warnings)
+write$ -- 457
+(There were 8 warnings)

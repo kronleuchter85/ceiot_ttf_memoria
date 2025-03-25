@@ -17,141 +17,6 @@
 \endgroup
 
 \datalist[entry]{none/global//global/global}
-  \entry{cese_gonzalo_memoria}{online}{}
-    \name{author}{1}{}{%
-      {{hash=CEIG}{%
-         family={Carreño},
-         familyi={C\bibinitperiod},
-         given={Esp. Ing.\bibnamedelima Gonzalo},
-         giveni={E\bibinitperiod\bibinitdelim I\bibinitperiod\bibinitdelim
-  G\bibinitperiod},
-      }}%
-    }
-    \keyw{latex,knuth}
-    \strng{namehash}{CEIG1}
-    \strng{fullhash}{CEIG1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{title}{LSE-FIUBA - Trabajo Final CESE- Robot de exploración
-  ambiental}
-    \verb{url}
-    \verb https://lse-posgrados-files.fi.uba.ar/tesis/LSE-FIUBA-Trabajo-Final-C
-    \verb ESE-Gonzalo-Carreno-2024.pdf
-    \endverb
-  \endentry
-
-  \entry{nube_publica}{online}{}
-    \name{author}{1}{}{%
-      {{hash=SAW}{%
-         family={Services},
-         familyi={S\bibinitperiod},
-         given={Amazon\bibnamedelima Web},
-         giveni={A\bibinitperiod\bibinitdelim W\bibinitperiod},
-      }}%
-    }
-    \keyw{latex,knuth}
-    \strng{namehash}{SAW1}
-    \strng{fullhash}{SAW1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{title}{¿Qué es una nube pública?}
-    \verb{url}
-    \verb https://aws.amazon.com/es/what-is/public-cloud/
-    \endverb
-  \endentry
-
-  \entry{blockchain}{online}{}
-    \name{author}{1}{}{%
-      {{hash=W}{%
-         family={Wikipedia},
-         familyi={W\bibinitperiod},
-      }}%
-    }
-    \keyw{latex,knuth}
-    \strng{namehash}{W1}
-    \strng{fullhash}{W1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{title}{Blockchain}
-    \verb{url}
-    \verb https://en.wikipedia.org/wiki/Blockchain
-    \endverb
-  \endentry
-
-  \entry{ESP32}{online}{}
-    \name{author}{1}{}{%
-      {{hash=E}{%
-         family={Espressif},
-         familyi={E\bibinitperiod},
-      }}%
-    }
-    \keyw{latex,knuth}
-    \strng{namehash}{E1}
-    \strng{fullhash}{E1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{title}{ESP32}
-    \verb{url}
-    \verb https://www.espressif.com/en/products/socs/esp32
-    \endverb
-  \endentry
-
-  \entry{FreeRTOS}{online}{}
-    \name{author}{1}{}{%
-      {{hash=F}{%
-         family={FreeRTOS},
-         familyi={F\bibinitperiod},
-      }}%
-    }
-    \keyw{latex,knuth}
-    \strng{namehash}{F1}
-    \strng{fullhash}{F1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{title}{FreeRTOS | Real-time operating system for microcontrollers
-  and small microprocessors}
-    \verb{url}
-    \verb https://www.freertos.org/
-    \endverb
-  \endentry
-
-  \entry{ESPIDF_home}{online}{}
-    \name{author}{1}{}{%
-      {{hash=E}{%
-         family={Espressif},
-         familyi={E\bibinitperiod},
-      }}%
-    }
-    \keyw{latex,knuth}
-    \strng{namehash}{E1}
-    \strng{fullhash}{E1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{title}{ESP-IDF Programming Guide | Get Started}
-    \verb{url}
-    \verb https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-start
-    \verb ed/
-    \endverb
-  \endentry
-
-  \entry{mqtt_spec}{online}{}
-    \name{author}{1}{}{%
-      {{hash=O}{%
-         family={OASIS},
-         familyi={O\bibinitperiod},
-      }}%
-    }
-    \keyw{latex,knuth}
-    \strng{namehash}{O1}
-    \strng{fullhash}{O1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{title}{MQTT Protocol Specification}
-    \verb{url}
-    \verb https://mqtt.org/mqtt-specification/
-    \endverb
-  \endentry
-
   \entry{iot_usecase_seg_china}{online}{}
     \name{author}{1}{}{%
       {{hash=FAM}{%
@@ -377,6 +242,254 @@
     \verb{url}
     \verb http://www.scielo.org.bo/scielo.php?script=sci_arttext&pid=S2519-5352
     \verb 2020000100003
+    \endverb
+  \endentry
+
+  \entry{mqtt_spec}{online}{}
+    \name{author}{1}{}{%
+      {{hash=O}{%
+         family={OASIS},
+         familyi={O\bibinitperiod},
+      }}%
+    }
+    \keyw{latex,knuth}
+    \strng{namehash}{O1}
+    \strng{fullhash}{O1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{MQTT Protocol Specification}
+    \verb{url}
+    \verb https://mqtt.org/mqtt-specification/
+    \endverb
+  \endentry
+
+  \entry{ESP32}{online}{}
+    \name{author}{1}{}{%
+      {{hash=E}{%
+         family={Espressif},
+         familyi={E\bibinitperiod},
+      }}%
+    }
+    \keyw{latex,knuth}
+    \strng{namehash}{E1}
+    \strng{fullhash}{E1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{ESP32}
+    \verb{url}
+    \verb https://www.espressif.com/en/products/socs/esp32
+    \endverb
+  \endentry
+
+  \entry{cmake_website}{online}{}
+    \name{author}{1}{}{%
+      {{hash=C}{%
+         family={CMake},
+         familyi={C\bibinitperiod},
+      }}%
+    }
+    \keyw{latex,knuth}
+    \strng{namehash}{C1}
+    \strng{fullhash}{C1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{CMake}
+    \verb{url}
+    \verb https://cmake.org/
+    \endverb
+  \endentry
+
+  \entry{ninja_website}{online}{}
+    \name{author}{1}{}{%
+      {{hash=C}{%
+         family={CMake},
+         familyi={C\bibinitperiod},
+      }}%
+    }
+    \keyw{latex,knuth}
+    \strng{namehash}{C1}
+    \strng{fullhash}{C1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Ninja}
+    \verb{url}
+    \verb https://cmake.org/cmake/help/latest/generator/Ninja.html
+    \endverb
+  \endentry
+
+  \entry{ESPIDF_home}{online}{}
+    \name{author}{1}{}{%
+      {{hash=E}{%
+         family={Espressif},
+         familyi={E\bibinitperiod},
+      }}%
+    }
+    \keyw{latex,knuth}
+    \strng{namehash}{E1}
+    \strng{fullhash}{E1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{ESP-IDF Programming Guide | Get Started}
+    \verb{url}
+    \verb https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-start
+    \verb ed/
+    \endverb
+  \endentry
+
+  \entry{esp_idf_lib_website}{online}{}
+    \name{author}{1}{}{%
+      {{hash=bRVUR}{%
+         prefix={by},
+         prefixi={b\bibinitperiod},
+         family={Ruslan V.\bibnamedelima Uss},
+         familyi={R\bibinitperiod\bibinitdelim V\bibinitperiod\bibinitdelim
+  U\bibinitperiod},
+         given={Readthedocs},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \keyw{latex,knuth}
+    \strng{namehash}{RVURb1}
+    \strng{fullhash}{RVURb1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{ESP-IDF Components library}
+    \verb{url}
+    \verb https://esp-idf-lib.readthedocs.io/en/latest/
+    \endverb
+  \endentry
+
+  \entry{FreeRTOS}{online}{}
+    \name{author}{1}{}{%
+      {{hash=F}{%
+         family={FreeRTOS},
+         familyi={F\bibinitperiod},
+      }}%
+    }
+    \keyw{latex,knuth}
+    \strng{namehash}{F1}
+    \strng{fullhash}{F1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{FreeRTOS | Real-time operating system for microcontrollers
+  and small microprocessors}
+    \verb{url}
+    \verb https://www.freertos.org/
+    \endverb
+  \endentry
+
+  \entry{docker_website}{online}{}
+    \name{author}{1}{}{%
+      {{hash=D}{%
+         family={Docker},
+         familyi={D\bibinitperiod},
+      }}%
+    }
+    \keyw{latex,knuth}
+    \strng{namehash}{D1}
+    \strng{fullhash}{D1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Docker}
+    \verb{url}
+    \verb https://docker.com/
+    \endverb
+  \endentry
+
+  \entry{vscode_website}{online}{}
+    \name{author}{1}{}{%
+      {{hash=V}{%
+         family={Visualstudio},
+         familyi={V\bibinitperiod},
+      }}%
+    }
+    \keyw{latex,knuth}
+    \strng{namehash}{V1}
+    \strng{fullhash}{V1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Visualstudio Code}
+    \verb{url}
+    \verb https://code.visualstudio.com/
+    \endverb
+  \endentry
+
+  \entry{ubuntu_website}{online}{}
+    \name{author}{1}{}{%
+      {{hash=U}{%
+         family={Ubuntu},
+         familyi={U\bibinitperiod},
+      }}%
+    }
+    \keyw{latex,knuth}
+    \strng{namehash}{U1}
+    \strng{fullhash}{U1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Ubuntu}
+    \verb{url}
+    \verb https://ubuntu.com/
+    \endverb
+  \endentry
+
+  \entry{cese_gonzalo_memoria}{online}{}
+    \name{author}{1}{}{%
+      {{hash=CEIG}{%
+         family={Carreño},
+         familyi={C\bibinitperiod},
+         given={Esp. Ing.\bibnamedelima Gonzalo},
+         giveni={E\bibinitperiod\bibinitdelim I\bibinitperiod\bibinitdelim
+  G\bibinitperiod},
+      }}%
+    }
+    \keyw{latex,knuth}
+    \strng{namehash}{CEIG1}
+    \strng{fullhash}{CEIG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{LSE-FIUBA - Trabajo Final CESE- Robot de exploración
+  ambiental}
+    \verb{url}
+    \verb https://lse-posgrados-files.fi.uba.ar/tesis/LSE-FIUBA-Trabajo-Final-C
+    \verb ESE-Gonzalo-Carreno-2024.pdf
+    \endverb
+  \endentry
+
+  \entry{nube_publica}{online}{}
+    \name{author}{1}{}{%
+      {{hash=SAW}{%
+         family={Services},
+         familyi={S\bibinitperiod},
+         given={Amazon\bibnamedelima Web},
+         giveni={A\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+    }
+    \keyw{latex,knuth}
+    \strng{namehash}{SAW1}
+    \strng{fullhash}{SAW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{¿Qué es una nube pública?}
+    \verb{url}
+    \verb https://aws.amazon.com/es/what-is/public-cloud/
+    \endverb
+  \endentry
+
+  \entry{blockchain}{online}{}
+    \name{author}{1}{}{%
+      {{hash=W}{%
+         family={Wikipedia},
+         familyi={W\bibinitperiod},
+      }}%
+    }
+    \keyw{latex,knuth}
+    \strng{namehash}{W1}
+    \strng{fullhash}{W1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Blockchain}
+    \verb{url}
+    \verb https://en.wikipedia.org/wiki/Blockchain
     \endverb
   \endentry
 \enddatalist
