@@ -36,9 +36,8 @@ Además de las herramientas mencionadas se utilizó el conjunto de bibliotecas y
 
 
 \subsection{Sistema operativo FreeRTOS}
- FreeRTOS \citep{FreeRTOS} 
 
-
+FreeRTOS (Free Real-Time Operating System) \citep{FreeRTOS} es un sistema operativo en tiempo real (RTOS) de código abierto diseñado para microcontroladores y sistemas embebidos. Es ligero, eficiente y está optimizado para ejecutar tareas con bajas latencias, siendo ideal para dispositivos con recursos limitados. FreeRTOS permite la gestión de tareas concurrentes, sincronización de eventos y comunicación entre tareas, todo en un entorno de ejecución determinista.
 
 \subsection{Testing unitario}
 Con el fin de maximizar la calidad durante el proceso de desarrollo del producto se implementaron test unitarios para todos los servicios del robot y del joystick. El conjunto de herramientas utilizadas para tal fin fueron:
@@ -52,84 +51,104 @@ Con el fin de maximizar la calidad durante el proceso de desarrollo del producto
 En los capítulos siguientes se describe la configuración de dichas herramientas y se presentan los resultados tras su ejecución.
 
 
-\section{Tecnologías operacionales y analíticas utilizadas}
+\section{Tecnologías backend utilizadas}
 
 
 \subsection{Amazon Web Services}
 
-blablabla
-
+Amazon Web Services (AWS) es una de las principales plataformas de servicios en la nube pública proporcionada por Amazon, que ofrece una amplia gama de productos y herramientas para computación, almacenamiento, bases de datos, redes, inteligencia artificial, seguridad y herramientas de desarrollo.
 
 
 \subsection{AWS App Runner}
 
-blablabla
+AWS App Runner es un servicio completamente administrado de AWS que permite implementar y ejecutar aplicaciones web y servicios de forma rápida, sin tener que gestionar instancias de infraestructura. Está diseñado para simplificar el proceso de implementación y escalado automático de aplicaciones y permite aplicaciones directamente desde el código fuente o desde contenedores Docker.
 
 
 
 \subsection{AWS Glue}
 
-blablabla
-
-\subsection{AWS Athena}
-
-blablabla
-
+AWS Glue es un servicio totalmente administrado de AWS diseñado para facilitar la extracción, transformación y carga de datos (ETL) en la nube que permite a los usuarios descubrir, preparar y combinar datos de múltiples fuentes para su análisis y almacenamiento en data lakes, data warehouses o bases de datos. Resulta útil para proyectos de Big Data y análisis de datos ya que brinda un servicio de catálogo de datos, asistencia para la generación de código ETL y un servicio de ejecución de trabajos de procesamiento paralelo.
 
 
 \subsection{AWS S3}
 
-blablabla
+AWS S3 (Simple Storage Service) es un servicio de almacenamiento de objetos proporcionado por AWS totalmente administrado. Está diseñado para almacenar y recuperar cualquier cantidad de datos desde cualquier lugar, de forma segura, escalable y económica. Es ideal para almacenamiento de datos no estructurado de grandes volúmenes, sitios web estáticos, archivos multimedia, copias de seguridad, etc.
+
+\subsection{AWS Athena}
+
+AWS Athena es un servicio de análisis de datos serverless proporcionado por AWS que permite consultar directamente datos almacenados en Amazon S3 y los esquemas definidos en Glue, utilizando SQL estándar sin necesidad de configurar ni administrar servidores. Es ideal para analizar grandes volúmenes de datos de forma rápida y económica.
+
 
 
 \subsection{MQTT}
 
-blablabla
+MQTT (Message Queuing Telemetry Transport) es un protocolo de comunicación asincrónico, ligero y orientado a mensajes, diseñado específicamente para dispositivos con recursos limitados y redes de baja ancho de banda. Es ampliamente utilizado en casos de uso IoT para la transmisión de datos en tiempo real entre dispositivos, sensores y aplicaciones. Utiliza un modelo de comunicacion basado en publish/subscribe y una estructura de datos basada en topics a los cuales los componentes clientes se conectan a un servicio broker para publicar o recibir notificaciones. 
 
 
-\subsection{Node}
 
-blablabla
+
+\subsection{Node.js}
+
+Node.js es un entorno de ejecución de código abierto, construido sobre el motor de JavaScript V8 de Google Chrome. Aunque debido a su diseño puede ser utilizado para desarrollar aplicaciones backend de propósito general que requieran escalabilidad y rendimiento, es utilizado principalmente como servidor web. Para su funcionamiento utiliza un modelo single-thread de event loop con I/O no bloqueante, por lo que gestiona un bucle de eventos encolados y los procesa invocando sus callbacks de forma asincrónica sin realizar bloqueo de entradas y salidas en los puertos de comunicaciones, permitiendo atención de multiples solicitudes y paralelismo de tareas.
 
 \section{Tecnologías Blockchain utilizadas}
 
 
-\subsection{Ethereum}
+\subsection{Red Ethereum}
 
-blablabla
+Ethereum es una red blockchain pública diseñada para el procesamiento de transacciones de forma descentralizada con almacenamiento distribuido, inmutable y de acceso libre ( \textit{permissionless}). La red se encuentra formada por los nodos de procesamiento, tambien denominados validadores, que tienen como función procesar transacciones y como otras redes blockchain, utiliza una estructura de datos basada en una cadena de bloques, en los cuales se van agrupando las transacciones validadas. 
+
+Ethereum tiene como \textit{token} el Ether cuyo símbolo es ETH y tiene varios usos, pudiendo ser utilizado como criptomoneda de cambio y ahorro entre los usuarios finales de la red, pero también para pagar el gas (costo de ejecución de transacciones y smart contracts) y los fees a los validadores.
+
+El proceso de validación de transacciones y generación de bloques, a partir de la versión 2.0 de Ethereum, utiliza el protocolo PoS (Proof-of-Stake) y opera en ranuras de tiempo llamadas slots, con un bloque propuesto aproximadamente cada 12 segundos. El primer paso es la recolección de transacciones enviadas por los usuarios a la red (por ejemplo, para transferir dinero o ejecutar contratos) y su almacenamiento en un \textit{mempool} temporal. Luego, un validador es seleccionado de forma aleatoria para proponer el siguiente bloque, seleccionando del \textit{mempool} aquellas transacciones con tarifas de gas mas altas para maximizar su recompensa. El validador seleccionado incluye: las transacciones válidas, estado actualizado del sistema, hash del bloque anterior y los datos adicionales como la firma del bloque. Como resultado, este bloque es propuesto al resto de la red. Un comité de validadores, seleccionado de forma aleatoria, revisa el bloque verificando que las transacciones sean válidas, el bloque no esté duplicado o malicioso y el bloque sea coherente con el estado de la blockchain. Si el bloque es válido, los validadores emiten un voto (attestation) que confirma su aprobación. Si más de 2/3 de los validadores en el comité atestiguan el bloque, se considera finalizado y el bloque es agregado a la cadena de bloques de forma permanente.
+
+El proceso de compensación y penalización de PoS retribuye a los validadores por diferentes acciones, con el fin de mantener la seguridadm, integridad y consenso de la red, aplica una técnica llamada slashing para la penalización por acciones malisiosas o incorrectas durante el procesamiento. El validador que propone el bloque recibe recompensas por bloque y tarifas de gas. Los validadores que votan correctamente para validar bloques también reciben recompensas proporcionales a su participación. Si el validador no presenta comportamiento malicioso o inactividad, no es penalizado. Sin embargo, los validadores pueden perder parte o todo su capital en stak si proponen múltiples bloques en un mismo slot, o votan de manera inconsistente (por ejemplo, intentando atacar la red), o están inactivos durante largos períodos de tiempo.
+
+Antes de la versión 2.0 de Ethereum, se utilizaba otro protocolo de consenso llamado PoW (Proof-of-Work), en el cual los nodos validadores desempeñaban el rol de mineros que competían por la generación del bloque, recompensando al que lo lograba generar y desaprovechando los recursos de cómputo utilizados por los que no lo lograron. El protocolo PoS en la version actual de Ethereum tiene varias ventajas con respecto a PoW consumiendo un 99,9 \% de energía, aumenta la escalabilidad con técnicas de sharding, y reduce las barreras de entrada al no requerir disponer de un hardware costoso para poder participar del proceso de validación.
+
+*intro a la evm*
+
+Se diferencia de otras blockchains, como Bitcoin, porque no es solo un libro mayor digital, sino también una plataforma programable en la cual utilizando un SDK se pueden contruir programas denominados Smart Contracts que se despliegan y ejecutan en la red.
+
+Los Smart Contracts (o contratos inteligentes) son programas informáticos autónomos que se ejecutan en redes blockchain como Ethereum, Solana o Binance Smart Chain. Están diseñados para automatizar, verificar y hacer cumplir acuerdos sin necesidad de intermediarios. Funcionan bajo el principio de "Si sucede X, entonces ejecutar Y", permitiendo transacciones y acciones de forma transparente, segura e inmutable. Una vez desplegados en la blockchain, no se pueden modificar, y todas las transacciones quedan registradas públicamente. 
+
+El ciclo de vida de los Smart Contracts comienza con su desarrollo utilizando alguno de los lenguajes de programación y SDK soportado, como por ejemplo Solidity y Truffle. Una vez desarrollado, el contrato es desplegado en la red de blockchain, siendo este proceso de despliegue una transacción inmutable para la red. Al estar desplegado y disponible puede ser invocado o ejecutado automaticamente cuando se cumplen ciertas condiciones, generando nuevas transacciónes inmutables, procesadas por la red y disponibles para ser consultadas.
+
+
+Ethereum tiene varias redes diseñadas para distintos propósitos, desde la Mainnet (red principal) hasta múltiples testnets para pruebas de desarrollo. Estas redes permiten a desarrolladores y usuarios probar contratos inteligentes y aplicaciones descentralizadas (dApps) sin arriesgar fondos reales. Cada red tiene sus propias características y configuración de parámetros como el consenso, gas fees y emisión de bloques.
+
 
 \subsection{Solidity}
 
-blablabla
+Solidity \cite{solidity} es un lenguaje de programación de alto nivel, orientado a contratos inteligentes, específicamente diseñado para funcionar en la Ethereum Virtual Machine (EVM). Fue creado en 2014 por Gavin Wood, Christian Reitwiessner y otros desarrolladores de Ethereum. Su sintaxis es similar a JavaScript, Python y C++, lo que facilita el aprendizaje para desarrolladores familiarizados con esos lenguajes. crear y desplegar contratos inteligentes (smart contracts) en Ethereum y otras blockchains compatibles con EVM, como Binance Smart Chain y Polygon. Estos contratos inteligentes automatizan y aseguran transacciones sin necesidad de intermediarios, siendo usados en:
 
 
-\subsection{Web3}
+\subsection{Biblioteca Web3.js}
 
 blablabla
 
 
 \subsection{Ganache}
 
-blablabla
+Ganache \cite{ganache_website} es una herramienta de desarrollo de Ethereum que permite crear una blockchain local para probar, desarrollar y depurar contratos inteligentes y dApps de forma rápida y segura. Es parte del conjunto de herramientas de Truffle Suite y es ampliamente utilizada por desarrolladores para simular una red Ethereum sin necesidad de usar una red pública como Mainnet o Testnets (Goerli, Sepolia).
 
 
 \subsection{Truffle}
 
-blablabla
+Truffle \cite{truffle_website} es un framework de desarrollo para Ethereum y otras blockchains compatibles con EVM (Ethereum Virtual Machine). Es parte de Truffle Suite y proporciona herramientas para compilar, desplegar y probar contratos inteligentes, además de facilitar la gestión de proyectos basados en Web3. Truffle automatiza gran parte del proceso de desarrollo de dApps, reduciendo errores y mejorando la eficiencia.
 
 \subsection{Alchemy}
 
-blablabla
-
+Como se mencionó mas arriba, la dApp, implementada como un servicio Node.js, es la responsable de invocar al Smart Contract desplegado en Ethereum utilizando un endpoint RPC publicado por cualquier nodo de la red. Debido a que los nodos públicos de la red pueden resultar limitados por motivos de seguridad, rendimiento y confiabilidad, resulta una mejor alternativa levantar un nodo EVM administrado o consumir esto como un servicio de un proveedor como Alchemy. Alchemy \cite{alchemy_website} es una plataforma de desarrollo blockchain que proporciona herramientas e infraestructura para crear y gestionar dApps en Ethereum y otras redes compatibles con EVM. Es conocida como el "AWS de Blockchain" debido a que ofrece nodos como servicio y herramientas para facilitar la interacción con la blockchain sin necesidad de que los desarrolladores configuren y mantengan sus propios nodos. En el trabajo actual, se utilizó Alchemy como punto de integración entre la dApp y los Smart Contracts.
 
 \subsection{Etherscan}
 
-blablabla
+Etherscan \cite{etherscan} es un explorador de bloques y plataforma de análisis para la red Ethereum. Permite a los usuarios buscar, verificar y rastrear transacciones, contratos inteligentes, direcciones de billeteras y otros datos en tiempo real. Es una herramienta fundamental para los desarrolladores y usuarios de Web3, ya que ofrece transparencia y acceso abierto a la información almacenada en la blockchain de Ethereum, tanto la Mainnet como las redes de prueba (Sepolia, Holesky, etc).
 
 \subsection{Metamask}
 
-blablabla
-
+MetaMask \cite{metamask} es una billetera digital y extensión de navegador (también disponible como aplicación móvil) que permite a los usuarios interactuar con blockchains basadas en Ethereum y otros ecosistemas compatibles con Ethereum, como Binance Smart Chain (BSC) y Polygon. Es una herramienta fundamental para interactuar con aplicaciones descentralizadas (dApps), contratos inteligentes y realizar transacciones de criptomonedas directamente desde tu navegador.
+En el presente trabajo se utilizó para almacenar los fondos en ETH obtenidos a través de faucets necesarios para pagar el gas de las transacciones.
 
 \section{Tecnologías de desarrollo utilizadas}
 
@@ -153,8 +172,8 @@ Durante el proceso de desarrollo del producto se utilizó CI/CD (\textit{continu
 
 \begin{itemize}
 	\item Github \cite{SoftwareTool_Github}: servicio de repositorio y control de versiones de código fuente.
-	\item Google Cloud Build \cite{SoftwareTool_CloudBuild}: servicio de compilación, empaquetado y ejecución \textit{builds}.
-	\item Google Artifact Registry \cite{SoftwareTool_ArtifactRegistry}: servicio de repositorio y control de versiones de imágenes Docker.
+	\item AWS CodePipeline \cite{SoftwareTool_codePipeline}: servicio de compilación, empaquetado y ejecución \textit{builds}.
+	\item AWS Elastic Container Registry \cite{SoftwareTool_ECR}: servicio de repositorio y control de versiones de imágenes Docker.
 \end{itemize}
 
 El objetivo de esta configuración de servicios es permitir que por cada cambio en el código fuente versionado en el controlador de versiones Github, se dispare un proceso de compilación y ejecución de tests unitarios notificando en tiempo real si dicho cambio agrega o no una falla al actual estado del desarrollo. En caso de pasar satisfactoriamente la compilación y ejecución de los tests entonces se genera una nueva imagen Docker con la última versión del codigo compilado y se versiona en Artifact Registry.

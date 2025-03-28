@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.5.12)  25 MAR 2025 19:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.5.12)  28 MAR 2025 15:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1050,31 +1050,35 @@ LaTeX Info: Redefining \% on input line 1.
 
 (./Chapters/Chapter1.tex
 Cap\'{\i }tulo 1.
+
+LaTeX Warning: Citation '5g' on page 1 undefined on input line 29.
+
 1: section
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.40 
+l.41 
       [1
 
 
 ]
-LaTeX Info: Redefining \. on input line 64.
-LaTeX Info: Redefining \% on input line 64.
+LaTeX Info: Redefining \. on input line 65.
+LaTeX Info: Redefining \% on input line 65.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.64 
-      [2]
-LaTeX Info: Redefining \. on input line 105.
-LaTeX Info: Redefining \% on input line 105.
+l.65 L
+      a  forma de interactuar con los \textit{smart contracts} en un caso de...
+[2]
+LaTeX Info: Redefining \. on input line 108.
+LaTeX Info: Redefining \% on input line 108.
  [3]
-LaTeX Info: Redefining \. on input line 141.
-LaTeX Info: Redefining \% on input line 141.
+LaTeX Info: Redefining \. on input line 144.
+LaTeX Info: Redefining \% on input line 144.
  [4])
 LaTeX Info: Redefining \. on input line 117.
 LaTeX Info: Redefining \% on input line 117.
@@ -1104,45 +1108,46 @@ t line 19.
 [7]
 
 LaTeX Warning: Citation 'SoftwareTool_Ceedling' on page 8 undefined on input li
-ne 46.
+ne 45.
 
 
 LaTeX Warning: Citation 'SoftwareTool_CMock' on page 8 undefined on input line 
-47.
+46.
 
 
 LaTeX Warning: Citation 'SoftwareTool_Unity' on page 8 undefined on input line 
-48.
+47.
 
 
 LaTeX Warning: Citation 'SoftwareTool_CeedlingGCov' on page 8 undefined on inpu
-t line 49.
+t line 48.
 
-LaTeX Info: Redefining \. on input line 101.
-LaTeX Info: Redefining \% on input line 101.
+LaTeX Info: Redefining \. on input line 76.
+LaTeX Info: Redefining \% on input line 76.
 [8]
-
-LaTeX Warning: Citation 'SoftwareTool_Github' on page 9 undefined on input line
- 155.
-
-
-LaTeX Warning: Citation 'SoftwareTool_CloudBuild' on page 9 undefined on input 
-line 156.
-
-LaTeX Info: Redefining \. on input line 157.
-LaTeX Info: Redefining \% on input line 157.
-[9]
-
-LaTeX Warning: Citation 'SoftwareTool_ArtifactRegistry' on page 10 undefined on
- input line 157.
-
-)
+LaTeX Info: Redefining \. on input line 102.
+LaTeX Info: Redefining \% on input line 102.
+ [9]
+LaTeX Info: Redefining \. on input line 114.
+LaTeX Info: Redefining \% on input line 114.
+ [10]
+LaTeX Info: Redefining \. on input line 140.
+LaTeX Info: Redefining \% on input line 140.
+ [11]
+LaTeX Info: Redefining \. on input line 170.
+LaTeX Info: Redefining \% on input line 170.
+ [12])
 LaTeX Info: Redefining \. on input line 118.
 LaTeX Info: Redefining \% on input line 118.
- [10]
+ [13]
 \openout2 = `Chapters/Chapter3.aux'.
 
- (./Chapters/Chapter3.tex
+ (./Chapters/Chapter3.tex [14
+
+
+
+
+]
 Cap\'{\i }tulo 3.
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2023/02/27 1.9 listings language file
@@ -1160,22 +1165,17 @@ Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 68.
 
 1: section
-[11
-
-
-
-
-])
+[15])
 LaTeX Info: Redefining \. on input line 119.
 LaTeX Info: Redefining \% on input line 119.
- [12]
+ [16]
 \openout2 = `Chapters/Chapter4.aux'.
 
  (./Chapters/Chapter4.tex
 Cap\'{\i }tulo 4.
 )
 1: section
-[13
+[17
 
 
 
@@ -1183,7 +1183,7 @@ Cap\'{\i }tulo 4.
 ]
 \openout2 = `Chapters/Chapter5.aux'.
 
- (./Chapters/Chapter5.tex [14
+ (./Chapters/Chapter5.tex [18
 
 
 
@@ -1192,7 +1192,7 @@ Cap\'{\i }tulo 4.
 Cap\'{\i }tulo 5.
 )
 1: section
-[15] [16
+[19] [20
 
 
 
@@ -1217,17 +1217,23 @@ Overfull \hbox (21.05476pt too wide) in paragraph at lines 139--139
 mqtt . org / mqtt -[] speci^^\cation/$[][]. 
  []
 
-
+1: section
+[21]
 Overfull \hbox (1.52678pt too wide) in paragraph at lines 139--139
 []\T1/ppl/m/n/10.95 FreeRTOS. \T1/ppl/m/it/10.95 FreeR-TOS | Real-time ope-ra-t
 ing sys-tem for mi-cro-con-tro-llers and small
  []
 
-1: section
-[17]
+
+Overfull \hbox (4.34854pt too wide) in paragraph at lines 139--139
+[]\T1/ppl/m/n/10.95 Truffle Sui-te. \T1/ppl/m/it/10.95 Ga-na-che | One click bl
+ock-chain\T1/ppl/m/n/10.95 . \T1/ppl/m/sc/10.95 url\T1/ppl/m/n/10.95 : [][]$htt
+ps : / / archive . tru^^_esuite .
+ []
+
 LaTeX Info: Redefining \. on input line 141.
 LaTeX Info: Redefining \% on input line 141.
- [18] (./memorianueva.aux (./portada.aux)
+[22] (./memorianueva.aux (./portada.aux)
 LaTeX Info: Redefining \sptext on input line 16.
 LaTeX Info: Redefining \. on input line 16.
 LaTeX Info: Redefining \% on input line 16.
@@ -1243,7 +1249,7 @@ L3 programming layer <2020/03/25>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `memorianueva.out' has not changed.
-(rerunfilecheck)             Checksum: 976EE828A18C182DAD569CD6FA6D568E;6446.
+(rerunfilecheck)             Checksum: ECA030067B01DA5F1BE6FF3BD48A9AD7;6453.
 
 Package biblatex Warning: Please (re)run BibTeX on the file(s):
 (biblatex)                memorianueva
@@ -1254,10 +1260,10 @@ Package logreq Info: Writing requests to 'memorianueva.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 31568 strings out of 474222
- 675985 string characters out of 5748733
+ 31645 strings out of 474222
+ 678624 string characters out of 5748733
  2001975 words of memory out of 5000000
- 53270 multiletter control sequences out of 15000+600000
+ 53330 multiletter control sequences out of 15000+600000
  613610 words of font info for 99 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
  96i,20n,94p,1969b,2838s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1268,10 +1274,10 @@ s/type1/urw/helvetic/uhvro8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw
 /palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/up
 lr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on memorianueva.pdf (28 pages, 191261 bytes).
+Output written on memorianueva.pdf (32 pages, 206801 bytes).
 PDF statistics:
- 591 PDF objects out of 1000 (max. 8388607)
- 535 compressed objects within 6 object streams
- 171 named destinations out of 1000 (max. 500000)
+ 660 PDF objects out of 1000 (max. 8388607)
+ 600 compressed objects within 6 object streams
+ 188 named destinations out of 1000 (max. 500000)
  342 words of extra memory for PDF output out of 10000 (max. 10000000)
 
