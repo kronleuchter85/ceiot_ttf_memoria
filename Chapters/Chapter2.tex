@@ -12,43 +12,19 @@ Esta sección presenta una breve introducción técnica a las herramientas hardw
 \section{Tecnologías de hardware y firmware utilizadas}
 
 
-\subsection{Robot de exploración ambiental Espressif ESP32}
+\subsection{Robot de exploración ambiental}
+
+Como dispositivo hardware se utilizó el robot de exploración ambiental desarrollado en el marco de la carrera de Especialización de Sistemas Embebidos \citep{cese_gonzalo_memoria}. En la siguiente imagen (\ref{fig:Robot_y_Joystick_1}) se puede apreciar una foto del mismo.
 
 
-ESP32 \cite{ESP32} es una serie de microcontroladores embebidos en un chip con Wi-Fi y Bluetooth integrados, de bajo costo y consumo, desarrollado por \textit{Espressif Systems}. Emplea dos cores Xtensa® 32-bit LX6 CPU, incluye interruptores de antena, amplificador de potencia, amplificador de recepción de bajo ruido, un co-procesador ULP (\textit{Ultra Low Power}), módulos de administración de energía y varios periféricos.
-En la siguiente imagen (\ref{fig:esp32}) se puede apreciar la placa ESP32-WROOM-32D \cite{ESP32_wroom_32d_datasheet} utilizada para el desarrollo del presente trabajo.
+\begin{center}
+   \includegraphics[scale=0.5]{Robot_y_Joystick_1}
+   \captionof{figure}{Robot de exploración ambiental.}
+   \label{fig:Robot_y_Joystick_1}
+\end{center}
 
+El robot de exploración ambiental es un sistema embebido desarrollado sobre \cite{ESP32} utilizando el marco de desarrollo ESP-IDF \cite{ESPIDF_home} de \textit{Espressif Systems} y FreeRTOS (Free Real-Time Operating System) \citep{FreeRTOS} como sistema operativo. Sus principales funciones son la exploración de terrenos de forma controlada por joystick y el la obtención de ciertos parámetros ambientales como luminosidad, presión atmosférica, temperatura y humedad.
 
-
-\subsection{Marco de trabajo ESP-IDF}
-
-\textit{Espressif Systems} proporciona recursos básicos de hardware y software para ayudar a los desarrolladores de aplicaciones a realizar sus ideas utilizando el hardware de la serie ESP32. El framework de software de Espressif está destinado al desarrollo de aplicaciones de IoT (Internet de las cosas) con Wi-Fi, Bluetooth, administración de energía y varias otras características del sistema.
-Sus componentes son:
-\begin{enumerate}
-	\item Toolchain, utilizado para compilar el código para ESP32.
-	\item Build tools, que provee utilidades como CMake \cite{cmake_website} y Ninja \cite{ninja_website} para construir la aplicación completa para ESP32.
-	\item ESP-IDF \cite{ESPIDF_home}, que brinda la API de desarrollo para ESP32 y scripts para ejecutar Toolchain.
-	
-\end{enumerate}
-
-Además de las herramientas mencionadas se utilizó el conjunto de bibliotecas y drivers provistos por el proyecto ESP-IDF-Lib \cite{esp_idf_lib_website} basados en el framework ESP-IDF.
-
-
-
-\subsection{Sistema operativo FreeRTOS}
-
-FreeRTOS (Free Real-Time Operating System) \citep{FreeRTOS} es un sistema operativo en tiempo real (RTOS) de código abierto diseñado para microcontroladores y sistemas embebidos. Es ligero, eficiente y está optimizado para ejecutar tareas con bajas latencias, siendo ideal para dispositivos con recursos limitados. FreeRTOS permite la gestión de tareas concurrentes, sincronización de eventos y comunicación entre tareas, todo en un entorno de ejecución determinista.
-
-\subsection{Testing unitario}
-Con el fin de maximizar la calidad durante el proceso de desarrollo del producto se implementaron test unitarios para todos los servicios del robot y del joystick. El conjunto de herramientas utilizadas para tal fin fueron:
-\begin{itemize}
-	\item Ceedling \cite{SoftwareTool_Ceedling}: herramienta de orquestacion de tests unitarios, inyección de objetos mocks.
-	\item CMock \cite{SoftwareTool_CMock}: framework de mock objects para sistemas embebidos.
-	\item Unity \cite{SoftwareTool_Unity}: framework de unit testing para sistemas embebidos.
-	\item Gcov \cite{SoftwareTool_CeedlingGCov}: plugin the ceedling para evaluar y reportar la cobertura.
-\end{itemize}
-
-En los capítulos siguientes se describe la configuración de dichas herramientas y se presentan los resultados tras su ejecución.
 
 
 \section{Tecnologías backend utilizadas}
@@ -56,76 +32,78 @@ En los capítulos siguientes se describe la configuración de dichas herramienta
 
 \subsection{Amazon Web Services}
 
-Amazon Web Services (AWS) es una de las principales plataformas de servicios en la nube pública proporcionada por Amazon, que ofrece una amplia gama de productos y herramientas para computación, almacenamiento, bases de datos, redes, inteligencia artificial, seguridad y herramientas de desarrollo.
+AWS (\textit{Amazon Web Services}) \citep{aws}  es una de las principales plataformas de servicios en la nube pública proporcionada por Amazon, que ofrece una amplia gama de productos y herramientas para computación, almacenamiento, bases de datos, redes, inteligencia artificial, seguridad y herramientas de desarrollo.
 
 
 \subsection{AWS App Runner}
 
-AWS App Runner es un servicio completamente administrado de AWS que permite implementar y ejecutar aplicaciones web y servicios de forma rápida, sin tener que gestionar instancias de infraestructura. Está diseñado para simplificar el proceso de implementación y escalado automático de aplicaciones y permite aplicaciones directamente desde el código fuente o desde contenedores Docker.
+AWS App Runner \citep{aws_app_runner} es un servicio completamente administrado de AWS que permite implementar y ejecutar aplicaciones web y servicios de forma rápida, sin tener que gestionar instancias de infraestructura. Está diseñado para simplificar el proceso de implementación y escalado automático de aplicaciones y permite aplicaciones directamente desde el código fuente o desde contenedores Docker.
 
 
 
 \subsection{AWS Glue}
 
-AWS Glue es un servicio totalmente administrado de AWS diseñado para facilitar la extracción, transformación y carga de datos (ETL) en la nube que permite a los usuarios descubrir, preparar y combinar datos de múltiples fuentes para su análisis y almacenamiento en data lakes, data warehouses o bases de datos. Resulta útil para proyectos de Big Data y análisis de datos ya que brinda un servicio de catálogo de datos, asistencia para la generación de código ETL y un servicio de ejecución de trabajos de procesamiento paralelo.
+AWS Glue \citep{aws_glue} es un servicio totalmente administrado de AWS diseñado para facilitar la extracción, transformación y carga de datos (ETL) en la nube que permite a los usuarios descubrir, preparar y combinar datos de múltiples fuentes para su análisis y almacenamiento en data lakes, data warehouses o bases de datos. Resulta útil para proyectos de Big Data y análisis de datos ya que brinda un servicio de catálogo de datos, asistencia para la generación de código ETL y un servicio de ejecución de trabajos de procesamiento paralelo.
 
 
 \subsection{AWS S3}
 
-AWS S3 (Simple Storage Service) es un servicio de almacenamiento de objetos proporcionado por AWS totalmente administrado. Está diseñado para almacenar y recuperar cualquier cantidad de datos desde cualquier lugar, de forma segura, escalable y económica. Es ideal para almacenamiento de datos no estructurado de grandes volúmenes, sitios web estáticos, archivos multimedia, copias de seguridad, etc.
+AWS S3 (\textit{Simple Storage Service}) \citep{aws_s3} es un servicio de almacenamiento de objetos proporcionado por AWS totalmente administrado. Está diseñado para almacenar y recuperar cualquier cantidad de datos desde cualquier lugar, de forma segura, escalable y económica. Es ideal para almacenamiento de datos no estructurado de grandes volúmenes, sitios web estáticos, archivos multimedia, copias de seguridad, etc.
 
 \subsection{AWS Athena}
 
-AWS Athena es un servicio de análisis de datos serverless proporcionado por AWS que permite consultar directamente datos almacenados en Amazon S3 y los esquemas definidos en Glue, utilizando SQL estándar sin necesidad de configurar ni administrar servidores. Es ideal para analizar grandes volúmenes de datos de forma rápida y económica.
+AWS Athena \citep{aws_athena} es un servicio de análisis de datos serverless proporcionado por AWS que permite consultar directamente datos almacenados en Amazon S3 y los esquemas definidos en Glue, utilizando SQL estándar sin necesidad de configurar ni administrar servidores. Es ideal para analizar grandes volúmenes de datos de forma rápida y económica.
 
 
 
 \subsection{MQTT}
 
-MQTT (Message Queuing Telemetry Transport) es un protocolo de comunicación asincrónico, ligero y orientado a mensajes, diseñado específicamente para dispositivos con recursos limitados y redes de baja ancho de banda. Es ampliamente utilizado en casos de uso IoT para la transmisión de datos en tiempo real entre dispositivos, sensores y aplicaciones. Utiliza un modelo de comunicacion basado en publish/subscribe y una estructura de datos basada en topics a los cuales los componentes clientes se conectan a un servicio broker para publicar o recibir notificaciones. 
+MQTT (\textit{Message Queuing Telemetry Transport}) \citep{mqtt_spec} es un protocolo de comunicación asincrónico, ligero y orientado a mensajes, diseñado específicamente para dispositivos con recursos limitados y redes de baja ancho de banda. Es ampliamente utilizado en casos de uso IoT para la transmisión de datos en tiempo real entre dispositivos, sensores y aplicaciones. Utiliza un modelo de comunicacion basado en publish/subscribe y una estructura de datos basada en topics a los cuales los componentes clientes se conectan a un servicio broker para publicar o recibir notificaciones. 
 
+\subsection{AWS IoT Core}
 
-
+AWS IoT Core \citep{aws_iot_core} es un servicio totalmente administrado de AWS que permite conectar dispositivos IoT (Internet of Things) a la nube de manera segura y confiable. Proporciona una infraestructura escalable para recopilar, procesar y analizar datos de dispositivos en tiempo real, así como para interactuar con otros servicios de AWS a los que se redirigen los mensajes recibidos mediante la configuración de reglas. Tiene soporte para varios protocolos de comunicaciones, entre los que se destacan principalmente MQTT, HTTP/S, WebSockets y LoRaWAN.
 
 \subsection{Node.js}
 
-Node.js es un entorno de ejecución de código abierto, construido sobre el motor de JavaScript V8 de Google Chrome. Aunque debido a su diseño puede ser utilizado para desarrollar aplicaciones backend de propósito general que requieran escalabilidad y rendimiento, es utilizado principalmente como servidor web. Para su funcionamiento utiliza un modelo single-thread de event loop con I/O no bloqueante, por lo que gestiona un bucle de eventos encolados y los procesa invocando sus callbacks de forma asincrónica sin realizar bloqueo de entradas y salidas en los puertos de comunicaciones, permitiendo atención de multiples solicitudes y paralelismo de tareas.
+Node.js \citep{nodejs} es un entorno de ejecución de código abierto, construido sobre el motor de JavaScript V8 de Google Chrome. Aunque debido a su diseño puede ser utilizado para desarrollar aplicaciones backend de propósito general que requieran escalabilidad y rendimiento, es utilizado principalmente como servidor web. Para su funcionamiento utiliza un modelo single-thread de event loop con I/O no bloqueante, por lo que gestiona un bucle de eventos encolados y los procesa invocando sus callbacks de forma asincrónica sin realizar bloqueo de entradas y salidas en los puertos de comunicaciones, permitiendo atención de multiples solicitudes y paralelismo de tareas.
 
 \section{Tecnologías Blockchain utilizadas}
 
 
-\subsection{Red Ethereum}
+\subsection{Ecosistema Ethereum}
 
-Ethereum es una red blockchain pública diseñada para el procesamiento de transacciones de forma descentralizada con almacenamiento distribuido, inmutable y de acceso libre ( \textit{permissionless}). La red se encuentra formada por los nodos de procesamiento, tambien denominados validadores, que tienen como función procesar transacciones y como otras redes blockchain, utiliza una estructura de datos basada en una cadena de bloques, en los cuales se van agrupando las transacciones validadas. 
+Ethereum \citep{ethereum} es una red blockchain pública diseñada para el procesamiento de transacciones de forma descentralizada con almacenamiento distribuido, inmutable y de acceso libre ( \textit{permissionless}). La red se encuentra formada por los nodos de procesamiento, tambien denominados validadores, que tienen como función procesar transacciones y como otras redes blockchain, utiliza una estructura de datos basada en una cadena de bloques, en los cuales se van agrupando las transacciones validadas. 
 
 Ethereum tiene como \textit{token} el Ether cuyo símbolo es ETH y tiene varios usos, pudiendo ser utilizado como criptomoneda de cambio y ahorro entre los usuarios finales de la red, pero también para pagar el gas (costo de ejecución de transacciones y smart contracts) y los fees a los validadores.
 
-El proceso de validación de transacciones y generación de bloques, a partir de la versión 2.0 de Ethereum, utiliza el protocolo PoS (Proof-of-Stake) y opera en ranuras de tiempo llamadas slots, con un bloque propuesto aproximadamente cada 12 segundos. El primer paso es la recolección de transacciones enviadas por los usuarios a la red (por ejemplo, para transferir dinero o ejecutar contratos) y su almacenamiento en un \textit{mempool} temporal. Luego, un validador es seleccionado de forma aleatoria para proponer el siguiente bloque, seleccionando del \textit{mempool} aquellas transacciones con tarifas de gas mas altas para maximizar su recompensa. El validador seleccionado incluye: las transacciones válidas, estado actualizado del sistema, hash del bloque anterior y los datos adicionales como la firma del bloque. Como resultado, este bloque es propuesto al resto de la red. Un comité de validadores, seleccionado de forma aleatoria, revisa el bloque verificando que las transacciones sean válidas, el bloque no esté duplicado o malicioso y el bloque sea coherente con el estado de la blockchain. Si el bloque es válido, los validadores emiten un voto (attestation) que confirma su aprobación. Si más de 2/3 de los validadores en el comité atestiguan el bloque, se considera finalizado y el bloque es agregado a la cadena de bloques de forma permanente.
+El proceso de validación de transacciones y generación de bloques, a partir de la versión 2.0 de Ethereum, utiliza el protocolo PoS (Proof-of-Stake) \citep{PoS} y opera en ranuras de tiempo llamadas slots, con un bloque propuesto aproximadamente cada 12 segundos. 
+
+El primer paso de este proceso es la recolección de transacciones enviadas por los usuarios a la red (por ejemplo, para transferir dinero o ejecutar contratos) y su almacenamiento en un \textit{mempool} temporal. Luego, un validador es seleccionado de forma aleatoria para proponer el siguiente bloque, seleccionando del \textit{mempool} aquellas transacciones con tarifas de gas mas altas para maximizar su recompensa. El validador seleccionado incluye: las transacciones válidas, estado actualizado del sistema, hash del bloque anterior y los datos adicionales como la firma del bloque. Como resultado, este bloque es propuesto al resto de la red, en la que posteriormente, un comité de validadores, seleccionado de forma aleatoria, revisa el bloque verificando que las transacciones sean válidas, el bloque no esté duplicado o malicioso y sea coherente con el estado de la blockchain. Si el bloque es válido, los validadores emiten un voto (attestation) que confirma su aprobación. Si más de 2/3 de los validadores en el comité atestiguan el bloque, se considera finalizado y el bloque es agregado a la cadena de bloques de forma permanente.
 
 El proceso de compensación y penalización de PoS retribuye a los validadores por diferentes acciones, con el fin de mantener la seguridadm, integridad y consenso de la red, aplica una técnica llamada slashing para la penalización por acciones malisiosas o incorrectas durante el procesamiento. El validador que propone el bloque recibe recompensas por bloque y tarifas de gas. Los validadores que votan correctamente para validar bloques también reciben recompensas proporcionales a su participación. Si el validador no presenta comportamiento malicioso o inactividad, no es penalizado. Sin embargo, los validadores pueden perder parte o todo su capital en stak si proponen múltiples bloques en un mismo slot, o votan de manera inconsistente (por ejemplo, intentando atacar la red), o están inactivos durante largos períodos de tiempo.
 
-Antes de la versión 2.0 de Ethereum, se utilizaba otro protocolo de consenso llamado PoW (Proof-of-Work), en el cual los nodos validadores desempeñaban el rol de mineros que competían por la generación del bloque, recompensando al que lo lograba generar y desaprovechando los recursos de cómputo utilizados por los que no lo lograron. El protocolo PoS en la version actual de Ethereum tiene varias ventajas con respecto a PoW consumiendo un 99,9 \% de energía, aumenta la escalabilidad con técnicas de sharding, y reduce las barreras de entrada al no requerir disponer de un hardware costoso para poder participar del proceso de validación.
+Antes de la versión 2.0 de Ethereum, se utilizaba otro protocolo de consenso llamado PoW (Proof-of-Work) \citep{PoW}, en el cual los nodos validadores desempeñaban el rol de mineros que competían por la generación del bloque, recompensando al que lo lograba generar y desaprovechando los recursos de cómputo utilizados por los que no lo lograron. El protocolo PoS en la version actual de Ethereum tiene varias ventajas con respecto a PoW consumiendo un 99,9 \% de energía, aumenta la escalabilidad con técnicas de sharding, y reduce las barreras de entrada al no requerir disponer de un hardware costoso para poder participar del proceso de validación.
 
-*intro a la evm*
+% *intro a la evm*
 
-Se diferencia de otras blockchains, como Bitcoin, porque no es solo un libro mayor digital, sino también una plataforma programable en la cual utilizando un SDK se pueden contruir programas denominados Smart Contracts que se despliegan y ejecutan en la red.
+Ethereum se diferencia de otras blockchains, como Bitcoin, porque no es solo un libro mayor digital, sino también una plataforma programable en la cual utilizando un SDK se pueden contruir programas denominados \textit{Smart Contracts} que se despliegan y ejecutan en la red. Como se mencionó anteriormente, los Smart Contracts (o contratos inteligentes) son programas informáticos autónomos que se ejecutan en redes blockchain como Ethereum, Solana o Binance Smart Chain. y están diseñados para automatizar, verificar y hacer cumplir acuerdos sin necesidad de intermediarios. Funcionan bajo el principio de si sucede una condición, entonces ejecutar una acción, aunque también pueden ser invocados de forma directa para operaciones de lectura y escritura. Una vez desplegados en la blockchain, no se pueden modificar, y todas las transacciones quedan registradas públicamente. 
 
-Los Smart Contracts (o contratos inteligentes) son programas informáticos autónomos que se ejecutan en redes blockchain como Ethereum, Solana o Binance Smart Chain. Están diseñados para automatizar, verificar y hacer cumplir acuerdos sin necesidad de intermediarios. Funcionan bajo el principio de "Si sucede X, entonces ejecutar Y", permitiendo transacciones y acciones de forma transparente, segura e inmutable. Una vez desplegados en la blockchain, no se pueden modificar, y todas las transacciones quedan registradas públicamente. 
+El ciclo de vida de los \textit{smart contracts} comienza con su desarrollo utilizando alguno de los lenguajes de programación y SDK disponibles, como por ejemplo Solidity y Truffle. Una vez desarrollado, tras el proceso de compilación se obtiene un ABI \citep{abi} o especificación del contrato en formato JSON que no es enviado a la blockchain, sino que tiene como proposito poder ser utilizado posteriormente para acceder a los atributos y métodos del mismo a la hora de invocarlo. Posteriormente, durante el proceso de despliegue, se genera un binario del contrato que es enviado a la blockchain y tras ser procesado como una transacción mas, queda disponible en la red de manera inmutable. Al estar desplegado y disponible puede ser invocado o ejecutado automaticamente cuando se cumplen ciertas condiciones, generando nuevas transacciónes inmutables procesadas por la red y disponibles para ser consultadas.
 
-El ciclo de vida de los Smart Contracts comienza con su desarrollo utilizando alguno de los lenguajes de programación y SDK soportado, como por ejemplo Solidity y Truffle. Una vez desarrollado, el contrato es desplegado en la red de blockchain, siendo este proceso de despliegue una transacción inmutable para la red. Al estar desplegado y disponible puede ser invocado o ejecutado automaticamente cuando se cumplen ciertas condiciones, generando nuevas transacciónes inmutables, procesadas por la red y disponibles para ser consultadas.
+Como se mencionó anteriormente, para la invocación a los \textit{smart contracts} se utilizan las dApps como componente de abstracción. Las dApps son aplicaciones que se ejecutan fuera de la blockchain (pudiendo ser por ejemplo un \textit{backend} en Node.js o un \textit{frontend} Javascript) e interactúan con la blockchain a través de ciertas bibliotecas, como por ejemplo, Web3.js \citep{web3}. Para poder acceder a la red, y posteriormente invocar el \textit{smart contract}, la dApp necesita utilizar un endpoint RPC publicado por cualquier nodo de la red y disponer de la especificación ABI del \textit{smart contract} obtenido durante su compilación (y no se disponible en la red).
 
-
-Ethereum tiene varias redes diseñadas para distintos propósitos, desde la Mainnet (red principal) hasta múltiples testnets para pruebas de desarrollo. Estas redes permiten a desarrolladores y usuarios probar contratos inteligentes y aplicaciones descentralizadas (dApps) sin arriesgar fondos reales. Cada red tiene sus propias características y configuración de parámetros como el consenso, gas fees y emisión de bloques.
+Ethereum consta de varias redes disponibles para distintos propósitos. La Mainnet \citep{mainnet} es su red principal para usos productivos. Además existen múltiples \textit{testnets}, o redes de prueba, como Sepolia \citep{sepolia} y Holesky \citep{holesky} entre otras, disponibles para ser usadas durante el desarrollo y evaluación de soluciones blockchain en entornos productivos sin necesidad de pagar con fondos reales. Cada red tiene sus propias características y configuración de parámetros como el consenso, gas \textit{fees} y emisión de bloques.
 
 
 \subsection{Solidity}
 
-Solidity \cite{solidity} es un lenguaje de programación de alto nivel, orientado a contratos inteligentes, específicamente diseñado para funcionar en la Ethereum Virtual Machine (EVM). Fue creado en 2014 por Gavin Wood, Christian Reitwiessner y otros desarrolladores de Ethereum. Su sintaxis es similar a JavaScript, Python y C++, lo que facilita el aprendizaje para desarrolladores familiarizados con esos lenguajes. crear y desplegar contratos inteligentes (smart contracts) en Ethereum y otras blockchains compatibles con EVM, como Binance Smart Chain y Polygon. Estos contratos inteligentes automatizan y aseguran transacciones sin necesidad de intermediarios, siendo usados en:
+Solidity \cite{solidity} es un lenguaje de programación de alto nivel, orientado a contratos inteligentes, específicamente diseñado para funcionar en la Ethereum Virtual Machine (EVM). Fue creado en 2014 por Gavin Wood, Christian Reitwiessner y otros desarrolladores de Ethereum. Su sintaxis es similar a JavaScript, Python y C++, lo que facilita el aprendizaje para desarrolladores familiarizados con esos lenguajes. 
 
 
 \subsection{Biblioteca Web3.js}
 
-blablabla
+web3.js \citep{web3} es una biblioteca de JavaScript que permite interactuar con la blockchain de Ethereum y otros protocolos compatibles con Ethereum Virtual Machine (EVM). Proporciona una forma sencilla de conectarse a nodos de Ethereum, realizar transacciones y leer datos de contratos inteligentes, directamente desde aplicaciones web o Node.js.
 
 
 \subsection{Ganache}

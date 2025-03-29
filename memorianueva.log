@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.5.12)  28 MAR 2025 15:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.5.12)  29 MAR 2025 01:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -978,7 +978,7 @@ LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10> not available
 
 pdfTeX warning: /usr/bin/pdflatex (file ./Figures/fondo.pdf): PDF inclusion: fo
 und PDF version <1.6>, but at most version <1.5> allowed
-<Figures/fondo.pdf, id=172, 597.55246pt x 845.07718pt>
+<Figures/fondo.pdf, id=164, 597.55246pt x 845.07718pt>
 File: Figures/fondo.pdf Graphic file (type pdf)
 <use Figures/fondo.pdf>
 Package pdftex.def Info: Figures/fondo.pdf  used on input line 50.
@@ -1050,99 +1050,92 @@ LaTeX Info: Redefining \% on input line 1.
 
 (./Chapters/Chapter1.tex
 Cap\'{\i }tulo 1.
-
-LaTeX Warning: Citation '5g' on page 1 undefined on input line 29.
-
 1: section
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.41 
-      [1
+l.42 	
+       [1
 
 
 ]
-LaTeX Info: Redefining \. on input line 65.
-LaTeX Info: Redefining \% on input line 65.
+Overfull \hbox (3.84854pt too wide) in paragraph at lines 61--62
+[]\T1/ppl/m/n/10.95 Spot [[][]12[][]], de-sa-rro-lla-do por Bos-ton Dy-na-mics,
+ un ro-bot ex-plo-ra-dor cua-drupe-
+ []
+
+LaTeX Info: Redefining \. on input line 66.
+LaTeX Info: Redefining \% on input line 66.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.65 L
-      a  forma de interactuar con los \textit{smart contracts} en un caso de...
-[2]
-LaTeX Info: Redefining \. on input line 108.
-LaTeX Info: Redefining \% on input line 108.
+l.66 
+      [2]
+LaTeX Info: Redefining \. on input line 89.
+LaTeX Info: Redefining \% on input line 89.
  [3]
-LaTeX Info: Redefining \. on input line 144.
-LaTeX Info: Redefining \% on input line 144.
- [4])
+Overfull \hbox (6.64879pt too wide) in paragraph at lines 92--93
+[]\T1/ppl/m/n/10.95 La so-lu-ción im-ple-men-ta-da por la em-pre-sa Sal-to-ki e
+n co-la-bo-ra-ción con EcoMT
+ []
+
+LaTeX Info: Redefining \. on input line 125.
+LaTeX Info: Redefining \% on input line 125.
+[4]
+LaTeX Info: Redefining \. on input line 172.
+LaTeX Info: Redefining \% on input line 172.
+ [5])
 LaTeX Info: Redefining \. on input line 117.
 LaTeX Info: Redefining \% on input line 117.
- [5]
+ [6]
 \openout2 = `Chapters/Chapter2.aux'.
 
- (./Chapters/Chapter2.tex [6
-
-
-
-
-]
+ (./Chapters/Chapter2.tex
 Cap\'{\i }tulo 2.
-LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 1
-8.
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ppl.fd
-File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
-)
+<Figures/Robot_y_Joystick_1.png, id=388, 501.875pt x 335.2525pt>
+File: Figures/Robot_y_Joystick_1.png Graphic file (type png)
+<use Figures/Robot_y_Joystick_1.png>
+Package pdftex.def Info: Figures/Robot_y_Joystick_1.png  used on input line 21.
 
-LaTeX Warning: Reference `fig:esp32' on page 7 undefined on input line 19.
+(pdftex.def)             Requested size: 250.93687pt x 167.62584pt.
 
-
-LaTeX Warning: Citation 'ESP32_wroom_32d_datasheet' on page 7 undefined on inpu
-t line 19.
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 22.
+See the caption package documentation for explanation.
 
 1: section
-[7]
-
-LaTeX Warning: Citation 'SoftwareTool_Ceedling' on page 8 undefined on input li
-ne 45.
+[7
 
 
-LaTeX Warning: Citation 'SoftwareTool_CMock' on page 8 undefined on input line 
-46.
 
 
-LaTeX Warning: Citation 'SoftwareTool_Unity' on page 8 undefined on input line 
-47.
-
-
-LaTeX Warning: Citation 'SoftwareTool_CeedlingGCov' on page 8 undefined on inpu
-t line 48.
-
-LaTeX Info: Redefining \. on input line 76.
-LaTeX Info: Redefining \% on input line 76.
-[8]
-LaTeX Info: Redefining \. on input line 102.
-LaTeX Info: Redefining \% on input line 102.
+ <./Figures/Robot_y_Joystick_1.png>]
+LaTeX Info: Redefining \. on input line 66.
+LaTeX Info: Redefining \% on input line 66.
+ [8]
+LaTeX Info: Redefining \. on input line 83.
+LaTeX Info: Redefining \% on input line 83.
  [9]
-LaTeX Info: Redefining \. on input line 114.
-LaTeX Info: Redefining \% on input line 114.
+LaTeX Info: Redefining \. on input line 95.
+LaTeX Info: Redefining \% on input line 95.
  [10]
-LaTeX Info: Redefining \. on input line 140.
-LaTeX Info: Redefining \% on input line 140.
+LaTeX Info: Redefining \. on input line 121.
+LaTeX Info: Redefining \% on input line 121.
  [11]
-LaTeX Info: Redefining \. on input line 170.
-LaTeX Info: Redefining \% on input line 170.
+LaTeX Info: Redefining \. on input line 152.
+LaTeX Info: Redefining \% on input line 152.
  [12])
 LaTeX Info: Redefining \. on input line 118.
 LaTeX Info: Redefining \% on input line 118.
  [13]
 \openout2 = `Chapters/Chapter3.aux'.
 
- (./Chapters/Chapter3.tex [14
+
+(./Chapters/Chapter3.tex [14
 
 
 
@@ -1197,6 +1190,13 @@ Cap\'{\i }tulo 5.
 
 
 ]
+Overfull \hbox (22.60277pt too wide) in paragraph at lines 139--139
+[]\T1/ppl/m/n/10.95 Wikipedia. \T1/ppl/m/it/10.95 Na-rrow-band IoT\T1/ppl/m/n/1
+0.95 . \T1/ppl/m/sc/10.95 url\T1/ppl/m/n/10.95 : [][]$https : / / en . wikipedi
+a . org / wiki / Narrowband _
+ []
+
+
 Overfull \hbox (6.68208pt too wide) in paragraph at lines 139--139
 []\T1/ppl/m/n/10.95 Boston Dy-na-mics. \T1/ppl/m/it/10.95 Spot\T1/ppl/m/n/10.95
  . \T1/ppl/m/sc/10.95 url\T1/ppl/m/n/10.95 : [][]$https : / / www . bostondynam
@@ -1210,18 +1210,25 @@ ierno ar-gen-tino quie-re im-ple-men-tar-los\T1/ppl/m/n/10.95 . \T1/ppl/m/sc/10
 .95 url\T1/ppl/m/n/10.95 :
  []
 
-
+1: section
+[21]
 Overfull \hbox (21.05476pt too wide) in paragraph at lines 139--139
 []\T1/ppl/m/n/10.95 OASIS. \T1/ppl/m/it/10.95 MQTT Pro-to-col Spe-ci-fi-ca-tion
 \T1/ppl/m/n/10.95 . \T1/ppl/m/sc/10.95 url\T1/ppl/m/n/10.95 : [][]$https : / / 
 mqtt . org / mqtt -[] speci^^\cation/$[][]. 
  []
 
-1: section
-[21]
+
 Overfull \hbox (1.52678pt too wide) in paragraph at lines 139--139
 []\T1/ppl/m/n/10.95 FreeRTOS. \T1/ppl/m/it/10.95 FreeR-TOS | Real-time ope-ra-t
 ing sys-tem for mi-cro-con-tro-llers and small
+ []
+
+
+Overfull \hbox (2.37863pt too wide) in paragraph at lines 139--139
+[]\T1/ppl/m/n/10.95 Web3.js. \T1/ppl/m/it/10.95 Web3.js - Ethe-reum Ja-vaS-crip
+t API\T1/ppl/m/n/10.95 . \T1/ppl/m/sc/10.95 url\T1/ppl/m/n/10.95 : [][]$https :
+ / / web3js . readthedocs .
  []
 
 
@@ -1231,9 +1238,12 @@ ock-chain\T1/ppl/m/n/10.95 . \T1/ppl/m/sc/10.95 url\T1/ppl/m/n/10.95 : [][]$htt
 ps : / / archive . tru^^_esuite .
  []
 
+LaTeX Info: Redefining \. on input line 139.
+LaTeX Info: Redefining \% on input line 139.
+[22]
 LaTeX Info: Redefining \. on input line 141.
 LaTeX Info: Redefining \% on input line 141.
-[22] (./memorianueva.aux (./portada.aux)
+ [23] (./memorianueva.aux (./portada.aux)
 LaTeX Info: Redefining \sptext on input line 16.
 LaTeX Info: Redefining \. on input line 16.
 LaTeX Info: Redefining \% on input line 16.
@@ -1249,7 +1259,7 @@ L3 programming layer <2020/03/25>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `memorianueva.out' has not changed.
-(rerunfilecheck)             Checksum: ECA030067B01DA5F1BE6FF3BD48A9AD7;6453.
+(rerunfilecheck)             Checksum: E7580939281DF4E38F90B3A608CC38F3;5996.
 
 Package biblatex Warning: Please (re)run BibTeX on the file(s):
 (biblatex)                memorianueva
@@ -1260,13 +1270,13 @@ Package logreq Info: Writing requests to 'memorianueva.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 31645 strings out of 474222
- 678624 string characters out of 5748733
+ 31729 strings out of 474222
+ 682207 string characters out of 5748733
  2001975 words of memory out of 5000000
- 53330 multiletter control sequences out of 15000+600000
- 613610 words of font info for 99 fonts, out of 8000000 for 9000
+ 53402 multiletter control sequences out of 15000+600000
+ 613056 words of font info for 97 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
- 96i,20n,94p,1969b,2838s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 96i,20n,94p,1969b,2795s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/font
@@ -1274,10 +1284,10 @@ s/type1/urw/helvetic/uhvro8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw
 /palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/up
 lr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on memorianueva.pdf (32 pages, 206801 bytes).
+Output written on memorianueva.pdf (33 pages, 401098 bytes).
 PDF statistics:
- 660 PDF objects out of 1000 (max. 8388607)
- 600 compressed objects within 6 object streams
- 188 named destinations out of 1000 (max. 500000)
- 342 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 739 PDF objects out of 1000 (max. 8388607)
+ 675 compressed objects within 7 object streams
+ 205 named destinations out of 1000 (max. 500000)
+ 331 words of extra memory for PDF output out of 10000 (max. 10000000)
 

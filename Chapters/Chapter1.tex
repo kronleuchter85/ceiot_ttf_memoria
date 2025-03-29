@@ -26,10 +26,26 @@ Esta sección presenta la motivación, alcance, objetivos y requerimientos del p
 
 Las soluciones IoT (\textit{Internet of Things} o Internet de las Cosas) se basan en la conexión de dispositivos físicos con sistemas software para recopilar, transmitir y analizar datos en \textit{streaming} y de forma \textit{batch}, mejorando la automatización, observabilidad y toma de decisiones en diversos casos de uso. 
 
-Su arquitectura estándar en general incluye dispositivos y sensores para capturar datos, conectividad por red (Wi-Fi \cite{wifi}, 5G \cite{5g}, LoRaWAN \cite{lorawan}) para transmitirlos, una plataforma \textit{back-end} formada por sistemas distribuidos en la nube para el almacenamiento, procesamiento y análisis de datos, y una interfaz de usuario para la visualización de resultados, pudiendo, en ocasiones, contar con sistemas de publicación y distribuición de eventos en \textit{streaming}.
+Su arquitectura estándar en general incluye dispositivos y sensores para capturar datos, conectividad por red (Wi-Fi \cite{wifi}, 5G \cite{5g}, LoRaWAN \cite{lorawan}) para transmitirlos, una plataforma \textit{backend} formada por sistemas distribuidos en la nube para el almacenamiento, procesamiento y análisis de datos, y una interfaz de usuario para la visualización de resultados, pudiendo, en ocasiones, contar con sistemas de publicación y distribuición de eventos en \textit{streaming}. En general, las soluciones IoT generalmente estan organizadas en las siguientes capas:
+
+\begin{itemize}
+
+	\item Capa de percepción (\textit{Sensing Layer}): Es la capa más cercana al entorno físico y se encarga de la captura de datos. Los dispositivos IoT y sensores recolectan información del entorno, como temperatura, humedad, presión, movimiento, geolocalización, etc. Se implementan generalmente sistemas embebidos integrando sensores y actuadores conectados para poder interactuar con el ambiente físico.
+	
+	\item Capa de red (\textit{Network Layer}): Se encarga de la transmisión de datos desde los dispositivos hasta los sistemas de procesamiento. Aquí es donde ocurre la conectividad mediante diversos protocolos de comunicación usando tecnologías inalámbricas (tales como Wi-Fi, Bluetooth \citep{Bluetooth}, Zigbee \citep{zigbee}, LoRaWAN, NB-IoT \citep{Narrowband_IoT}, etc.) y protocolos de red (por ejmplo, MQTT, CoAP, HTTP, etc.)
+	
+	\item Capa de procesamiento o Borde (\textit{Edge Computing Layer}): Procesa datos cerca de donde se generan para reducir la latencia y el tráfico hacia la nube. Se toman decisiones inmediatas, y solo los datos relevantes se envían a niveles superiores. 
+	
+	\item Capa de almacenamiento y procesamiento \textit{cloud} (\textit{Data Storage/Cloud Layer}): Almacena y procesa grandes volúmenes de datos recolectados en la nube permitiendo realizar análisis más profundos, modelado de datos y aprendizaje automático. Se utilizan herramientas \textit{cloud} (como AWS IoT Core \citep{aws_iot_core}, Azure Iot Hub \citep{azure_iot}, etc.) y Big Data.
+	
+	\item Capa de aplicación (\textit{Application Layer}): Es la interfaz que permite a los usuarios interactuar con el sistema IoT. Aquí se presentan los datos de manera visual o se automatizan acciones basadas en la información recibida. Se utilizan tecnologías web y mobile, orientadas a eventos \textit{streaming} o dashboards para visualizar reportes \textit{batch}.
+	
+	\item Capa de seguridad (\textit{Security Layer}): Esta capa es transversal a los layers anteriores y tiene como función segurar la protección de datos, dispositivos y redes en todas las capas del sistema IoT. Es fundamental para evitar vulnerabilidades y ataques. Utiliza algoritmos de encriptación (como por ejemplo TLS/SSL y AES), protocolos de seguridad (como OAuth, OpenID Connect, etc).
+	
+\end{itemize}
 
 
-Existen casos de uso de IoT en los cuales, debido a las condiciones del entorno y por motivos de capacidad, practicidad o seguridad para un humano, se utilizan robots exploradores como dispositivos físicos para la recopilación de datos. Los robots exploradores son dispositivos robotizados capaces de moverse de forma autónoma y/o controlados a distancia que utilizan sensores avanzados, inteligencia artificial y comunicación en tiempo real para navegar y monitorear condiciones ambientales en entornos peligrosos, como minas, plataformas petrolíferas, espacios confinados o áreas afectadas por desastres, entre otros. En agricultura, pueden inspeccionar cultivos; en medio ambiente, pueden monitorear la calidad del aire, del agua; en el espacio y océanos, son capaces de explorar lugares inaccesibles para el ser humano. 
+Existen casos de uso de IoT en los cuales se utilizan robots exploradores como dispositivos físicos para la recopilación de datos en la capa de percepción. Los robots exploradores son dispositivos robotizados capaces de moverse de forma autónoma y/o controlados a distancia que utilizan sensores avanzados, inteligencia artificial y comunicación en tiempo real para navegar y monitorear condiciones ambientales en entornos peligrosos, como minas, plataformas petrolíferas, espacios confinados o áreas afectadas por desastres, entre otros. En agricultura, pueden inspeccionar cultivos; en medio ambiente, pueden monitorear la calidad del aire, del agua; en el espacio y océanos, son capaces de explorar lugares inaccesibles para el ser humano. 
 
 
 Tanto en el ámbito académico como en la industria existen varios trabajos, proyectos, e implementaciones comerciales de soluciones IoT utilizando robots para mejorar la seguridad, la eficiencia y la toma de decisiones basada en datos, como por ejemplo: 
@@ -60,12 +76,25 @@ En situaciones en las que es necesario explorar y monitorear un área ambientalm
 
 Una arquitectura blockchain \cite{blockchain} se basa en el agrupamiento de transacciones que luego de ser procesadas, son almacenadas en bloques encadenados de forma distribuida e inmutable, entre los nodos de una red. Esta estructura de datos se conoce como una cadena de bloques y sus datos almacenados forma un \textit{distributed ledger} (o asiento contable distribuido). De esta manera, como los datos forman registros que no se pueden modificar una vez creados, se puede asegurar la inmutabilidad, y como el almacenamiento y procesamiento de la red se encuentran distribuidos, se puede garantizar su transparencia.
 
-La mayoría de las redes blockchain constan de ciertas tecnologías para la implementación de código ejecutable en la misma red, que aunque su nombre puede cambiar dependiendo de la red, usualmente se los conoce como \textit{Smart Contracts} \citep{smart_contracts}. La ejecución de estos componentes es realizada por los nodos de la red en el proceso que se conoce como minería o validación.
+La mayoría de las redes blockchain constan de ciertas tecnologías para la implementación de código ejecutable en la misma red, que aunque su nombre puede cambiar dependiendo de la red, usualmente se los conoce como \textit{Smart Contracts} \citep{smart_contracts}. La ejecución de estos componentes es realizada por los nodos de la red en el proceso que se conoce como minería o validación. La forma de interactuar con los \textit{smart contracts} se realiza a través de otro componente conocido como dApps \textit{(de-centralized applications)} \citep{dapp} que haciendo uso de ciertas tecnologías invocan a estos componentes para almacenar y obtener datos en y desde el \textit{distributed ledger}.
 
-La  forma de interactuar con los \textit{smart contracts} en un caso de uso interactivo desde afuera de la red, se realiza a través de otro componente conocido como dApps \textit{(de-centralized applications)} \citep{dapp} que haciendo uso de ciertas bibliotecas invocan a estos componentes para almacenar y obtener datos en y desde el \textit{distributed ledger}.
+La utilización de blockchain en arquitecturas IoT tiene varias ventajas, entre las que se pueden mencionar las vinculadas a las capacidades de descentralización, cifrado, seguridad y consenso que ayudan a aumentar la trazabilidad y transparencia de las operaciones, y la automatización de operaciones disparadas por eventos utilizando Smart Contracts.
 
-La utilización de blockchain en arquitecturas IoT tiene varias ventajas, entre las que se pueden mencionar las vinculadas a las capacidades de descentralización, cifrado, seguridad y consenso que ayudan a aumentar la trazabilidad y transparencia de las operaciones, y la automatización de operaciones disparados por eventos utilizando Smart Contracts.
-En la industria se pueden encontrar 
+Existen en la industria varias implementaciónes de casos de uso IoT en los que se ha utilizado blockchain como por ejemplo:
+
+\begin{itemize}
+
+	\item La solución basada en blockchain implementada por Walmart \citep{iot_usecase_blockchain_walmart} para mejorar la trazabilidad de productos alimenticios en su cadena de suministro. Al integrar dispositivos IoT, la empresa puede monitorear en tiempo real variables como temperatura y humedad durante el transporte y almacenamiento de productos perecederos. Estos datos se registran en una blockchain, garantizando la inmutabilidad y transparencia de la información.
+	
+\item La solución implementada por ScanTrust \citep{iot_usecase_blockchain_scantrust} que utiliza códigos QR seguros para conectar productos físicos con el entorno digital. Al integrar IoT y blockchain, permite a las empresas y consumidores autenticar productos y rastrear su origen y cadena de suministro en tiempo real. Los códigos QR, impresos en los envases, se escanean con dispositivos móviles, proporcionando información detallada y asegurando la autenticidad del producto.
+		
+	
+	\item La solución implementada por la empresa Saltoki en colaboración con EcoMT \citep{iot_usecase_blockchain_saltoki}, que permite monitorizar y gestionar el consumo energético, certificando la producción renovable y los ahorros obtenidos mediante tecnología blockchain. 
+	
+	
+\end{itemize}
+
+
 
 %----------------------------------------------------------------------------------------
 
@@ -82,15 +111,15 @@ Por otra parte, se buscó desarrollar un producto cuya implementación pueda con
 
 \section{Alcance y objetivos}
 
-A continuación se detallan las funcionalidades incluidas en el alcance del trabajo.
+A continuación, se detallan las funcionalidades incluidas en el alcance del trabajo.
 
 
 \begin{itemize}
 	\item La publicación del endpoint MQTT \citep{mqtt_spec} para la recepción de los datos enviados por el robot.
-	\item La adaptación del sistema embebido del robot de exploración ambiental para la conexión segura con el \textit{back-end} vía MQTT.
-	\item La arquitectura e implementación de los sistemas \textit{back-end} y el modelo de datos necesario para el almacenamiento de las mediciones enviadas por el robot.
-	\item La arquitectura, implementación y despliegue de la dApp y \textit{smart contracts} necesarios para el almacenamiento de las mediciones en una red Blockchain.
-	\item La definición de métricas agregadas de valor y posterior arquitectura e implementación de los sistemas analíticos para procesar de forma \textit{batch} y/o \textit{real-time} utilizando herramientas de procesamiento paralelo basadas en big data.
+	\item La adaptación del sistema embebido del robot de exploración ambiental para la conexión segura con el \textit{backend} vía MQTT.
+	\item La arquitectura e implementación de los sistemas \textit{backend} y el modelo de datos necesario para el almacenamiento de las mediciones enviadas por el robot.
+	\item La arquitectura, implementación y despliegue de la dApp \citep{dapp} y \textit{smart contracts} \citep{smart_contracts} necesarios para el almacenamiento de las mediciones en una red Blockchain.
+	\item La definición de métricas agregadas de valor y posterior arquitectura e implementación de los sistemas analíticos para procesar de forma \textit{batch} y/o \textit{real-time} utilizando herramientas de procesamiento paralelo basadas en Big Data.
 	\item La implementación de la interfaz gráfica para poder visualizar los datos enviados y analíticas calculadas.
 
 \end{itemize}
@@ -114,24 +143,24 @@ A continuación, se listan los requerimientos del producto:
 			\item Representan un máximo o mínimo global sensado hasta el momento.				
 			\item Representan un máximo o mínimo local durante el último día.				
 		\end{enumerate}			
-		\item La plataforma debe poder recibir y almacenar las mediciones de parámetros ambientales enviadas por el robot.
+		\item La solución a desarrollar debe poder recibir y almacenar las mediciones de parámetros ambientales enviadas por el robot.
 		\item Los datos considerados críticos deben ser almacenados en un sistema inmutable.
-		\item La plataforma debe poder procesar las mediciones de parámetros ambientales enviadas por el robot para generar métricas de valor para el usuario de negocio.		
-		\item La plataforma debe brindar dos \textit{front-end} con interfaz web:
+		\item La solución a desarrollar debe poder procesar las mediciones de parámetros ambientales enviadas por el robot para generar métricas de valor para el usuario de negocio.		
+		\item La solución a desarrollar debe brindar dos \textit{frontend} con interfaz web:
 			\begin{enumerate}				
-				\item El \textit{front-end} para el usuario de negocio.				
-				\item El \textit{front-end} para el usuario administrador.				
+				\item El \textit{frontend} para el usuario de negocio.				
+				\item El \textit{frontend} para el usuario administrador.				
 			\end{enumerate}			
 		
-		\item El \textit{front-end} para el usuario de negocio debe proveer métricas para visualizar:
+		\item El \textit{frontend} para el usuario de negocio debe proveer métricas para visualizar:
 			\begin{enumerate}				
 				\item Las lecturas históricas almacenadas.				
-				\item Agregaciones (máximo, mínimo, promedio, etc) de cada parámetro ambiental agrupado por frecuencias (ventanas de tiempo) y coordenadas geográficas.				
+				\item Agregaciones (máximo, mínimo, promedio, etc.) de cada parámetro ambiental agrupado por frecuencias (ventanas de tiempo) y coordenadas geográficas.				
 				\item Las referencias a los datos persistidos en blockchain.
 			\end{enumerate}			
-		\item El \textit{front-end} para el usuario de administración debe permitir:
+		\item El \textit{frontend} para el usuario de administración debe permitir:
 			\begin{enumerate}				
-				\item Acceder a los diferentes recursos utilizados por la herramienta (topics MQTT, \textit{smart contracts}, \textit{buckets}, etc).
+				\item Acceder a los diferentes recursos utilizados por la herramienta (topics MQTT, \textit{smart contracts}, \textit{buckets}, etc.).
 				\item Resetear valores y estado.			
 			\end{enumerate}			
 		\end{enumerate}	
@@ -139,9 +168,9 @@ A continuación, se listan los requerimientos del producto:
 					
 	\item Requerimientos no funcionales		
 	\begin{enumerate}	
-		\item La plataforma debe contar con al menos un \textit{back-end} de procesamiento y acceso a datos operacionales para la lógica de negocio.
-		\item La plataforma debe contar con al menos un \textit{back-end} de acceso, procesamiento, almacenamiento de datos analíticos para la generación de métricas.		
-		\item El envío de los valores ambientales censados al \textit{back-end} debe ser mediante MQTT.
+		\item La solución a desarrollar debe contar con al menos un \textit{backend} de procesamiento y acceso a datos operacionales para la lógica de negocio.
+		\item La solución a desarrollar debe contar con al menos un \textit{backend} de acceso, procesamiento, almacenamiento de datos analíticos para la generación de métricas.		
+		\item El envío de los valores ambientales censados al \textit{backend} debe ser mediante MQTT.
 		\item Las lecturas ambientales categorizadas como críticas deben ser almacenadas en blockchain para garantizar fiabilidad e inmutabilidad.
 		\item La gestión de datos almacenados en blockchain debe ser implementada mediante \textit{smart contracts} desplegados en la red.
 		\item La interacción con los \textit{smart contracts} debe realizarse desde una dApp.
@@ -159,10 +188,10 @@ A continuación, se listan los requerimientos del producto:
 
 		
 		
-	\item Requerimiento de testing		
+	\item Requerimientos de testing		
 		\begin{enumerate}			
-			\item Se debe incluir tests de unitarios de componentes.
-			\item Se debe incluir tests funcionales (\textit{smoke test}) del producto general.		
+			\item Se deben incluir tests de unitarios de componentes.
+			\item Se deben incluir tests funcionales (\textit{smoke test}) del producto general.		
 		\end{enumerate}	
 	
 	\item Requerimientos opcionales		
@@ -170,7 +199,7 @@ A continuación, se listan los requerimientos del producto:
 			\item De infraestructura y despliegue:
 				\begin{enumerate}			
 					\item Se permite realizar el despliegue de la dApp en un IPFS (preferentemente) o en la nube.					
-					\item Se permite agregado hardware al robot para la captura de datos adicionales.
+					\item Se permite la incorporación de nuevo hardware al robot para la captura de datos adicionales.
 					\item Se permite agregar automatización para la creación de la infraestructura como código.
 				\end{enumerate}			
 			
