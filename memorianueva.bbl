@@ -512,24 +512,6 @@
     \endverb
   \endentry
 
-  \entry{mqtt_spec}{online}{}
-    \name{author}{1}{}{%
-      {{hash=O}{%
-         family={OASIS},
-         familyi={O\bibinitperiod},
-      }}%
-    }
-    \keyw{latex,knuth}
-    \strng{namehash}{O1}
-    \strng{fullhash}{O1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{title}{MQTT Protocol Specification}
-    \verb{url}
-    \verb https://mqtt.org/mqtt-specification/
-    \endverb
-  \endentry
-
   \entry{cese_gonzalo_memoria}{online}{}
     \name{author}{1}{}{%
       {{hash=CEIG}{%
@@ -553,21 +535,41 @@
     \endverb
   \endentry
 
-  \entry{ESP32}{online}{}
+  \entry{nube_publica}{online}{}
     \name{author}{1}{}{%
-      {{hash=E}{%
-         family={Espressif},
-         familyi={E\bibinitperiod},
+      {{hash=SAW}{%
+         family={Services},
+         familyi={S\bibinitperiod},
+         given={Amazon\bibnamedelima Web},
+         giveni={A\bibinitperiod\bibinitdelim W\bibinitperiod},
       }}%
     }
     \keyw{latex,knuth}
-    \strng{namehash}{E1}
-    \strng{fullhash}{E1}
+    \strng{namehash}{SAW2}
+    \strng{fullhash}{SAW2}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{title}{ESP32}
+    \field{title}{¿Qué es una nube pública?}
     \verb{url}
-    \verb https://www.espressif.com/en/products/socs/esp32
+    \verb https://aws.amazon.com/es/what-is/public-cloud/
+    \endverb
+  \endentry
+
+  \entry{mqtt_spec}{online}{}
+    \name{author}{1}{}{%
+      {{hash=O}{%
+         family={OASIS},
+         familyi={O\bibinitperiod},
+      }}%
+    }
+    \keyw{latex,knuth}
+    \strng{namehash}{O1}
+    \strng{fullhash}{O1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{MQTT Protocol Specification}
+    \verb{url}
+    \verb https://mqtt.org/mqtt-specification/
     \endverb
   \endentry
 
@@ -587,6 +589,24 @@
     \verb{url}
     \verb https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-start
     \verb ed/
+    \endverb
+  \endentry
+
+  \entry{ESP32}{online}{}
+    \name{author}{1}{}{%
+      {{hash=E}{%
+         family={Espressif},
+         familyi={E\bibinitperiod},
+      }}%
+    }
+    \keyw{latex,knuth}
+    \strng{namehash}{E1}
+    \strng{fullhash}{E1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{ESP32}
+    \verb{url}
+    \verb https://www.espressif.com/en/products/socs/esp32
     \endverb
   \endentry
 
@@ -745,78 +765,6 @@
     \endverb
   \endentry
 
-  \entry{PoS}{online}{}
-    \name{author}{1}{}{%
-      {{hash=W}{%
-         family={Wikipedia},
-         familyi={W\bibinitperiod},
-      }}%
-    }
-    \keyw{latex,knuth}
-    \strng{namehash}{W2}
-    \strng{fullhash}{W2}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{title}{Proof of Stake}
-    \verb{url}
-    \verb https://en.wikipedia.org/wiki/Proof_of_stake
-    \endverb
-  \endentry
-
-  \entry{PoW}{online}{}
-    \name{author}{1}{}{%
-      {{hash=W}{%
-         family={Wikipedia},
-         familyi={W\bibinitperiod},
-      }}%
-    }
-    \keyw{latex,knuth}
-    \strng{namehash}{W2}
-    \strng{fullhash}{W2}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{title}{Proof of Work}
-    \verb{url}
-    \verb https://en.wikipedia.org/wiki/Proof_of_work
-    \endverb
-  \endentry
-
-  \entry{abi}{online}{}
-    \name{author}{1}{}{%
-      {{hash=S}{%
-         family={Soliditylang.org},
-         familyi={S\bibinitperiod},
-      }}%
-    }
-    \keyw{latex,knuth}
-    \strng{namehash}{S1}
-    \strng{fullhash}{S1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{title}{Contract ABI Specification}
-    \verb{url}
-    \verb https://docs.soliditylang.org/en/latest/abi-spec.html
-    \endverb
-  \endentry
-
-  \entry{web3}{online}{}
-    \name{author}{1}{}{%
-      {{hash=W}{%
-         family={Web3.js},
-         familyi={W\bibinitperiod},
-      }}%
-    }
-    \keyw{latex,knuth}
-    \strng{namehash}{W1}
-    \strng{fullhash}{W1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{title}{Web3.js - Ethereum JavaScript API}
-    \verb{url}
-    \verb https://web3js.readthedocs.io/en/v1.10.0/
-    \endverb
-  \endentry
-
   \entry{mainnet}{online}{}
     \name{author}{1}{}{%
       {{hash=ST}{%
@@ -874,6 +822,60 @@
     \field{title}{Truffle | What is Truffle?}
     \verb{url}
     \verb https://holesky.etherscan.io/
+    \endverb
+  \endentry
+
+  \entry{abi}{online}{}
+    \name{author}{1}{}{%
+      {{hash=S}{%
+         family={Soliditylang.org},
+         familyi={S\bibinitperiod},
+      }}%
+    }
+    \keyw{latex,knuth}
+    \strng{namehash}{S1}
+    \strng{fullhash}{S1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Contract ABI Specification}
+    \verb{url}
+    \verb https://docs.soliditylang.org/en/latest/abi-spec.html
+    \endverb
+  \endentry
+
+  \entry{web3}{online}{}
+    \name{author}{1}{}{%
+      {{hash=W}{%
+         family={Web3.js},
+         familyi={W\bibinitperiod},
+      }}%
+    }
+    \keyw{latex,knuth}
+    \strng{namehash}{W1}
+    \strng{fullhash}{W1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Web3.js - Ethereum JavaScript API}
+    \verb{url}
+    \verb https://web3js.readthedocs.io/en/v1.10.0/
+    \endverb
+  \endentry
+
+  \entry{PoS}{online}{}
+    \name{author}{1}{}{%
+      {{hash=W}{%
+         family={Wikipedia},
+         familyi={W\bibinitperiod},
+      }}%
+    }
+    \keyw{latex,knuth}
+    \strng{namehash}{W2}
+    \strng{fullhash}{W2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Proof of Stake}
+    \verb{url}
+    \verb https://en.wikipedia.org/wiki/Proof_of_stake
     \endverb
   \endentry
 
@@ -1098,26 +1100,6 @@
     \field{title}{Ubuntu}
     \verb{url}
     \verb https://ubuntu.com/
-    \endverb
-  \endentry
-
-  \entry{nube_publica}{online}{}
-    \name{author}{1}{}{%
-      {{hash=SAW}{%
-         family={Services},
-         familyi={S\bibinitperiod},
-         given={Amazon\bibnamedelima Web},
-         giveni={A\bibinitperiod\bibinitdelim W\bibinitperiod},
-      }}%
-    }
-    \keyw{latex,knuth}
-    \strng{namehash}{SAW2}
-    \strng{fullhash}{SAW2}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{title}{¿Qué es una nube pública?}
-    \verb{url}
-    \verb https://aws.amazon.com/es/what-is/public-cloud/
     \endverb
   \endentry
 \enddatalist

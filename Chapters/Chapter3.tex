@@ -3,98 +3,31 @@
 \label{Chapter3} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{ChapterX}
 
 
+
+
+\section{Arquitectura de software del sistema}
+
+
 El sistema cuenta con una arquitectura robusta y flexible en la que se integra el dispositivo robótico de exploración ambiental \citep{cese_gonzalo_memoria} desarrollado en el marco de la Carrera de Especialización de Sistemas Embebidos, con un sistema \textit{back-end} desplegado en la nube pública \citep{nube_publica}, y una red Blockchain \cite{blockchain} a fin de poder asegurar la inmutabilidad y transparencia de las lecturas ambientales. 
 
 
-
-
-Todos los capítulos deben comenzar con un breve párrafo introductorio que indique cuál es el contenido que se encontrará al leerlo.  La redacción sobre el contenido de la memoria debe hacerse en presente y todo lo referido al proyecto en pasado, siempre de modo impersonal.
-
-\definecolor{mygreen}{rgb}{0,0.6,0}
-\definecolor{mygray}{rgb}{0.5,0.5,0.5}
-\definecolor{mymauve}{rgb}{0.58,0,0.82}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% parámetros para configurar el formato del código en los entornos lstlisting
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\lstset{ %
-  backgroundcolor=\color{white},   % choose the background color; you must add \usepackage{color} or \usepackage{xcolor}
-  basicstyle=\footnotesize,        % the size of the fonts that are used for the code
-  breakatwhitespace=false,         % sets if automatic breaks should only happen at whitespace
-  breaklines=true,                 % sets automatic line breaking
-  captionpos=b,                    % sets the caption-position to bottom
-  commentstyle=\color{mygreen},    % comment style
-  deletekeywords={...},            % if you want to delete keywords from the given language
-  %escapeinside={\%*}{*)},          % if you want to add LaTeX within your code
-  %extendedchars=true,              % lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8
-  %frame=single,	                % adds a frame around the code
-  keepspaces=true,                 % keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
-  keywordstyle=\color{blue},       % keyword style
-  language=[ANSI]C,                % the language of the code
-  %otherkeywords={*,...},           % if you want to add more keywords to the set
-  numbers=left,                    % where to put the line-numbers; possible values are (none, left, right)
-  numbersep=5pt,                   % how far the line-numbers are from the code
-  numberstyle=\tiny\color{mygray}, % the style that is used for the line-numbers
-  rulecolor=\color{black},         % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
-  showspaces=false,                % show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
-  showstringspaces=false,          % underline spaces within strings only
-  showtabs=false,                  % show tabs within strings adding particular underscores
-  stepnumber=1,                    % the step between two line-numbers. If it's 1, each line will be numbered
-  stringstyle=\color{mymauve},     % string literal style
-  tabsize=2,	                   % sets default tabsize to 2 spaces
-  title=\lstname,                  % show the filename of files included with \lstinputlisting; also try caption instead of title
-  morecomment=[s]{/*}{*/}
-}
-
-
-%----------------------------------------------------------------------------------------
-%	SECTION 1
-%----------------------------------------------------------------------------------------
-\section{Análisis del software}
+\section{Arquitectura de hardware e infraestructura del sistema}
  
-La idea de esta sección es resaltar los problemas encontrados, los criterios utilizados y la justificación de las decisiones que se hayan tomado.
+ 
+\section{Integración de los módulos y subsistemas}
 
-Se puede agregar código o pseudocódigo dentro de un entorno lstlisting con el siguiente código:
+\subsection{Capas de percepción y red}
 
-\begin{verbatim}
-\begin{lstlisting}[caption= "un epígrafe descriptivo"]
-	las líneas de código irían aquí...
-\end{lstlisting}
-\end{verbatim}
+El desarrollo e integración de los componentes de estas capa consistió en la publicación de un \textit{topic} MQTT desde el \textit{backend} y la adaptación del firmware desplegado en el robot explorador para extender sus funcionalidades y enviar las lecturas ambientales al \textit{topic}. Para esto se configuró el servicio AWS IoT Core, donde se creó una nueva instancia de un dispositivo remoto con el nombre ceit-robot-explorador y se configuró el nombre del \textit{topic} como /ceit/robot/readings.
 
-A modo de ejemplo:
+Se configuró la redirección de los mensajes MQTT recibidos a un \textbf{bucket} AWS S3 para poder ser almacenados y se descargó el empaquetado de certificados de seguridad que deben ser desplegados en el robot explorador para poder conectarse al \textit{topic}.
 
-\begin{lstlisting}[label=cod:vControl,caption=Pseudocódigo del lazo principal de control.]  % Start your code-block
+\subsection{Capas de procesamiento y almacenamiento cloud}
 
-#define MAX_SENSOR_NUMBER 3
-#define MAX_ALARM_NUMBER  6
-#define MAX_ACTUATOR_NUMBER 6
 
-uint32_t sensorValue[MAX_SENSOR_NUMBER];		
-FunctionalState alarmControl[MAX_ALARM_NUMBER];	//ENABLE or DISABLE
-state_t alarmState[MAX_ALARM_NUMBER];						//ON or OFF
-state_t actuatorState[MAX_ACTUATOR_NUMBER];			//ON or OFF
 
-void vControl() {
+\section{Plataforma de desarrollo y despliegue}
 
-	initGlobalVariables();
-	
-	period = 500 ms;
-		
-	while(1) {
-
-		ticks = xTaskGetTickCount();
-		
-		updateSensors();
-		
-		updateAlarms();
-		
-		controlActuators();
-		
-		vTaskDelayUntil(&ticks, period);
-	}
-}
-\end{lstlisting}
 
 
 

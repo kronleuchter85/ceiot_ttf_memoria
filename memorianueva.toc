@@ -8,34 +8,39 @@
 \contentsline {section}{\numberline {1.2}Motivación del trabajo}{4}{section.1.2}%
 \contentsline {section}{\numberline {1.3}Alcance y objetivos}{4}{section.1.3}%
 \contentsline {section}{\numberline {1.4}Requerimientos del producto}{5}{section.1.4}%
-\contentsline {chapter}{\numberline {2}Introducción específica}{7}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Tecnologías de hardware y firmware utilizadas}{7}{section.2.1}%
-\contentsline {subsection}{\numberline {2.1.1}Robot de exploración ambiental}{7}{subsection.2.1.1}%
-\contentsline {section}{\numberline {2.2}Tecnologías backend utilizadas}{7}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Amazon Web Services}{7}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}AWS App Runner}{8}{subsection.2.2.2}%
-\contentsline {subsection}{\numberline {2.2.3}AWS Glue}{8}{subsection.2.2.3}%
-\contentsline {subsection}{\numberline {2.2.4}AWS S3}{8}{subsection.2.2.4}%
-\contentsline {subsection}{\numberline {2.2.5}AWS Athena}{8}{subsection.2.2.5}%
-\contentsline {subsection}{\numberline {2.2.6}MQTT}{8}{subsection.2.2.6}%
-\contentsline {subsection}{\numberline {2.2.7}AWS IoT Core}{9}{subsection.2.2.7}%
-\contentsline {subsection}{\numberline {2.2.8}Node.js}{9}{subsection.2.2.8}%
-\contentsline {section}{\numberline {2.3}Tecnologías Blockchain utilizadas}{9}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Ecosistema Ethereum}{9}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}Solidity}{11}{subsection.2.3.2}%
-\contentsline {subsection}{\numberline {2.3.3}Biblioteca Web3.js}{11}{subsection.2.3.3}%
-\contentsline {subsection}{\numberline {2.3.4}Ganache}{11}{subsection.2.3.4}%
-\contentsline {subsection}{\numberline {2.3.5}Truffle}{11}{subsection.2.3.5}%
-\contentsline {subsection}{\numberline {2.3.6}Alchemy}{12}{subsection.2.3.6}%
-\contentsline {subsection}{\numberline {2.3.7}Etherscan}{12}{subsection.2.3.7}%
-\contentsline {subsection}{\numberline {2.3.8}Metamask}{12}{subsection.2.3.8}%
-\contentsline {section}{\numberline {2.4}Tecnologías de desarrollo utilizadas}{12}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}Plataforma Docker}{12}{subsection.2.4.1}%
+\contentsline {chapter}{\numberline {2}Introducción específica}{9}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Tecnologías de hardware y firmware utilizadas}{9}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Robot de exploración ambiental}{9}{subsection.2.1.1}%
+\contentsline {section}{\numberline {2.2}Tecnologías backend utilizadas}{9}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Amazon Web Services}{9}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}AWS App Runner}{10}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}AWS Glue}{10}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.4}AWS S3}{10}{subsection.2.2.4}%
+\contentsline {subsection}{\numberline {2.2.5}AWS Athena}{10}{subsection.2.2.5}%
+\contentsline {subsection}{\numberline {2.2.6}MQTT}{10}{subsection.2.2.6}%
+\contentsline {subsection}{\numberline {2.2.7}AWS IoT Core}{10}{subsection.2.2.7}%
+\contentsline {subsection}{\numberline {2.2.8}Node.js}{11}{subsection.2.2.8}%
+\contentsline {section}{\numberline {2.3}Tecnologías Blockchain utilizadas}{11}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Ecosistema Ethereum}{11}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Solidity}{12}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}Biblioteca Web3.js}{12}{subsection.2.3.3}%
+\contentsline {subsection}{\numberline {2.3.4}Ganache}{12}{subsection.2.3.4}%
+\contentsline {subsection}{\numberline {2.3.5}Truffle}{13}{subsection.2.3.5}%
+\contentsline {subsection}{\numberline {2.3.6}Alchemy}{13}{subsection.2.3.6}%
+\contentsline {subsection}{\numberline {2.3.7}Etherscan}{13}{subsection.2.3.7}%
+\contentsline {subsection}{\numberline {2.3.8}Metamask}{13}{subsection.2.3.8}%
+\contentsline {section}{\numberline {2.4}Tecnologías de desarrollo utilizadas}{13}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Plataforma Docker}{13}{subsection.2.4.1}%
 \contentsline {subsection}{\numberline {2.4.2}Plataforma de CI/CD}{13}{subsection.2.4.2}%
-\contentsline {subsection}{\numberline {2.4.3}Visual Studio Code}{13}{subsection.2.4.3}%
-\contentsline {subsection}{\numberline {2.4.4}Sistema operativo Ubuntu}{13}{subsection.2.4.4}%
+\contentsline {subsection}{\numberline {2.4.3}Visual Studio Code}{14}{subsection.2.4.3}%
+\contentsline {subsection}{\numberline {2.4.4}Sistema operativo Ubuntu}{14}{subsection.2.4.4}%
 \contentsline {chapter}{\numberline {3}Diseño e implementación}{15}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Análisis del software}{15}{section.3.1}%
+\contentsline {section}{\numberline {3.1}Arquitectura de software del sistema}{15}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Arquitectura de hardware e infraestructura del sistema}{15}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Integración de los módulos y subsistemas}{15}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Capas de percepción y red}{15}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Capas de procesamiento y almacenamiento cloud}{15}{subsection.3.3.2}%
+\contentsline {section}{\numberline {3.4}Plataforma de desarrollo y despliegue}{15}{section.3.4}%
 \contentsline {chapter}{\numberline {4}Ensayos y resultados}{17}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Pruebas funcionales del hardware}{17}{section.4.1}%
 \contentsline {chapter}{\numberline {5}Conclusiones}{19}{chapter.5}%
