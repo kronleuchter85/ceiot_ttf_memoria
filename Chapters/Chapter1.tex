@@ -5,7 +5,7 @@
 \label{Chapter1} % For referencing the chapter elsewhere, use \ref{Chapter1} 
 \label{IntroGeneral}
 
-Esta sección presenta la motivación, alcance, objetivos y requerimientos del producto en el marco del estado del arte y su importancia en la industria.
+Este capítulo presenta la motivación, alcance, objetivos y requerimientos del producto en el marco del estado del arte y su importancia en la industria.
 
 %----------------------------------------------------------------------------------------
 
@@ -24,34 +24,39 @@ Esta sección presenta la motivación, alcance, objetivos y requerimientos del p
 %----------------------------------------------------------------------------------------
 \section{Estado del arte}
 
-Las soluciones IoT (\textit{Internet of Things} o Internet de las Cosas) se basan en la conexión de dispositivos físicos con sistemas software para recopilar, transmitir y analizar datos en \textit{streaming} y de forma \textit{batch}, mejorando la automatización, observabilidad y toma de decisiones en diversos casos de uso. 
+\subsection{Introducción a las soluciones IoT}
 
-Su arquitectura estándar en general incluye dispositivos y sensores para capturar datos, conectividad por red (Wi-Fi \cite{wifi}, 5G \cite{5g}, LoRaWAN \cite{lorawan}) para transmitirlos, una plataforma \textit{backend} formada por sistemas distribuidos en la nube para el almacenamiento, procesamiento y análisis de datos, y una interfaz de usuario para la visualización de resultados, pudiendo, en ocasiones, contar con sistemas de publicación y distribuición de eventos en \textit{streaming}. En general, las soluciones IoT generalmente estan organizadas en las siguientes capas:
+
+Las soluciones IoT (\textit{Internet of Things} o Internet de las Cosas) se basan en la conexión de dispositivos físicos con aplicaciones informáticas para recopilar, transmitir y analizar datos en \textit{streaming} y de forma \textit{batch}. Esto mejora la automatización, observabilidad y toma de decisiones en diversos casos de uso. 
+
+Su arquitectura estándar en general incluye dispositivos y sensores para capturar datos, conectividad de red (Wi-Fi \cite{wifi}, 5G \cite{5g}, LoRaWAN \cite{lorawan}) para su transmisión, una plataforma \textit{backend} en la nube formada por sistemas distribuidos para el almacenamiento, procesamiento y análisis de datos, y una interfaz de usuario para la visualización de resultados. En ocasiones también puede incluir sistemas de publicación y distribuición de eventos en \textit{streaming}. En general, las soluciones IoT generalmente estan organizadas en las siguientes capas:
 
 \begin{itemize}
 
-	\item Capa de percepción (\textit{Sensing Layer}): Es la capa más cercana al entorno físico y se encarga de la captura de datos. Los dispositivos IoT y sensores recolectan información del entorno, como temperatura, humedad, presión, movimiento, geolocalización, etc. Se implementan generalmente sistemas embebidos integrando sensores y actuadores conectados para poder interactuar con el ambiente físico.
+	\item Capa de percepción (\textit{Sensing Layer}): esta capa, la más cercana al entorno físico, captura datos del ambiente (temperatura, humedad, etc.) mediante dispositivos IoT y sensores. Generalmente, se usan sistemas embebidos con sensores y actuadores para interactuar con el entorno.
 	
-	\item Capa de red (\textit{Network Layer}): Se encarga de la transmisión de datos desde los dispositivos hasta los sistemas de procesamiento. Aquí es donde ocurre la conectividad mediante diversos protocolos de comunicación usando tecnologías inalámbricas (tales como Wi-Fi, Bluetooth \citep{Bluetooth}, Zigbee \citep{zigbee}, LoRaWAN, NB-IoT \citep{Narrowband_IoT}, etc.) y protocolos de red (por ejmplo, MQTT, CoAP, HTTP, etc.)
+	\item Capa de red (\textit{Network Layer}): se encarga de la transmisión de datos desde los dispositivos hasta los sistemas de procesamiento. Aquí es donde ocurre la conectividad mediante diversos protocolos de comunicación usando tecnologías inalámbricas (tales como Wi-Fi, Bluetooth \citep{Bluetooth}, Zigbee \citep{zigbee}, LoRaWAN, NB-IoT \citep{Narrowband_IoT}, etc.) y protocolos de red (por ejmplo, MQTT, CoAP, HTTP, etc.)
 	
-	\item Capa de procesamiento o Borde (\textit{Edge Computing Layer}): Procesa datos cerca de donde se generan para reducir la latencia y el tráfico hacia la nube. Se toman decisiones inmediatas, y solo los datos relevantes se envían a niveles superiores. 
+	\item Capa de procesamiento o borde (\textit{Edge Computing Layer}): procesa datos cerca de donde se generan para reducir la latencia y el tráfico hacia la nube. Se toman decisiones inmediatas, y solo los datos relevantes se envían a niveles superiores. 
 	
-	\item Capa de almacenamiento y procesamiento \textit{cloud} (\textit{Data Storage/Cloud Layer}): Almacena y procesa grandes volúmenes de datos recolectados en la nube permitiendo realizar análisis más profundos, modelado de datos y aprendizaje automático. Se utilizan herramientas \textit{cloud} (como AWS IoT Core \citep{aws_iot_core}, Azure Iot Hub \citep{azure_iot}, etc.) y Big Data.
+	\item Capa de almacenamiento y procesamiento \textit{cloud} (\textit{Data Storage/Cloud Layer}): almacena y procesa grandes volúmenes de datos recopilados en la nube, lo que permite realizar análisis más profundos, modelado de datos y aprendizaje automático. Se utilizan herramientas \textit{cloud} (como AWS IoT Core \citep{aws_iot_core}, Azure Iot Hub \citep{azure_iot}, etc.) y Big Data.
 	
-	\item Capa de aplicación (\textit{Application Layer}): Es la interfaz que permite a los usuarios interactuar con el sistema IoT. Aquí se presentan los datos de manera visual o se automatizan acciones basadas en la información recibida. Se utilizan tecnologías web y mobile, orientadas a eventos \textit{streaming} o dashboards para visualizar reportes \textit{batch}.
+	\item Capa de aplicación (\textit{Application Layer}): es la interfaz que permite a los usuarios interactuar con el sistema IoT. Aquí se presentan los datos de manera visual o se automatizan acciones basadas en la información recibida. Se utilizan tecnologías web y mobile, orientadas a eventos \textit{streaming} o dashboards para visualizar reportes \textit{batch}.
 	
-	\item Capa de seguridad (\textit{Security Layer}): Esta capa es transversal a los layers anteriores y tiene como función segurar la protección de datos, dispositivos y redes en todas las capas del sistema IoT. Es fundamental para evitar vulnerabilidades y ataques. Utiliza algoritmos de encriptación (como por ejemplo TLS/SSL y AES), protocolos de seguridad (como OAuth, OpenID Connect, etc).
+	\item Capa de seguridad (\textit{Security Layer}): esta capa es transversal a las capas anteriores y tiene como función segurar la protección de datos, dispositivos y redes en todas las capas del sistema IoT. Es fundamental para evitar vulnerabilidades y ataques. Utiliza algoritmos de encriptación (como por ejemplo TLS/SSL y AES), protocolos de seguridad (como OAuth, OpenID Connect, etc).
 	
 \end{itemize}
 
 
+\subsection{Soluciones IoT que utilizan robots exploradores}
+
+
 Existen casos de uso de IoT en los cuales se utilizan robots exploradores como dispositivos físicos para la recopilación de datos en la capa de percepción. Los robots exploradores son dispositivos robotizados capaces de moverse de forma autónoma y/o controlados a distancia que utilizan sensores avanzados, inteligencia artificial y comunicación en tiempo real para navegar y monitorear condiciones ambientales en entornos peligrosos, como minas, plataformas petrolíferas, espacios confinados o áreas afectadas por desastres, entre otros. En agricultura, pueden inspeccionar cultivos; en medio ambiente, pueden monitorear la calidad del aire, del agua; en el espacio y océanos, son capaces de explorar lugares inaccesibles para el ser humano. 
 
-
-Tanto en el ámbito académico como en la industria existen varios trabajos, proyectos, e implementaciones comerciales de soluciones IoT utilizando robots para mejorar la seguridad, la eficiencia y la toma de decisiones basada en datos, como por ejemplo: 
+Tanto en el ámbito académico como en la industria, existen diversos trabajos, proyectos e implementaciones comerciales de soluciones IoT que utilizan robots para mejorar la seguridad, la eficiencia y la toma de decisiones basada en datos. Por ejemplo:
 
 \begin{itemize}
-	\item El desplegado en Lotus Mountain \cite{iot_usecase_seg_china} en Jilin, China para la seguridad en estaciones de esquí, implementado por perros robóticos equipados con sensores y tecnología de imágenes 3D que patrullan las pistas identificando peligros como desprendimientos y bloqueos en las rutas, mejorando así la seguridad de los esquiadores.
+	\item En Lotus Mountain, Jilin, China, se implementó un sistema de seguridad para estaciones de esquí que utiliza perros robóticos equipados con sensores y tecnología de imágenes 3D. Estos robots patrullan las pistas para identificar peligros como desprendimientos y bloqueos, mejorando así la seguridad de los esquiadores \cite{iot_usecase_seg_china}.
 
 	\item El implementado por el Ayuntamiento de Bilbao \cite{iot_usecase_bilbao} para la inspección y mantenimiento de redes de saneamiento, que por medio de drones y robots, busca mejorar la eficiencia operativa y la seguridad de los trabajadores al reducir la necesidad de intervenciones humanas en entornos subterráneos y potencialmente peligrosos.
 
@@ -72,24 +77,26 @@ Tanto en el ámbito académico como en la industria existen varios trabajos, pro
 \end{itemize}
 
 
-En situaciones en las que es necesario explorar y monitorear un área ambientalmente sensible, como una reserva natural o un sitio afectado por un desastre ecológico y el objetivo es recopilar datos críticos, tales como niveles de contaminación, temperatura, humedad, y calidad del aire, es de gran importancia almacenar estas mediciones de una manera en la que se pueda asegurar la integridad y transparencia de los datos, como por ejemplo, en una cadena de bloques (blockchain).
+\subsection{Soluciones IoT que utilizan blockchain}
 
-Una arquitectura blockchain \cite{blockchain} se basa en el agrupamiento de transacciones que luego de ser procesadas, son almacenadas en bloques encadenados de forma distribuida e inmutable, entre los nodos de una red. Esta estructura de datos se conoce como una cadena de bloques y sus datos almacenados forma un \textit{distributed ledger} (o asiento contable distribuido). De esta manera, como los datos forman registros que no se pueden modificar una vez creados, se puede asegurar la inmutabilidad, y como el almacenamiento y procesamiento de la red se encuentran distribuidos, se puede garantizar su transparencia.
 
-La mayoría de las redes blockchain constan de ciertas tecnologías para la implementación de código ejecutable en la misma red, que aunque su nombre puede cambiar dependiendo de la red, usualmente se los conoce como \textit{Smart Contracts} \citep{smart_contracts}. La ejecución de estos componentes es realizada por los nodos de la red en el proceso que se conoce como minería o validación. La forma de interactuar con los \textit{smart contracts} se realiza a través de otro componente conocido como dApps \textit{(de-centralized applications)} \citep{dapp} que haciendo uso de ciertas tecnologías invocan a estos componentes para almacenar y obtener datos en y desde el \textit{distributed ledger}.
+Para la exploración y monitoreo de áreas ambientalmente sensibles (reservas naturales, sitios de desastre ecológico), la recopilación de datos críticos (contaminación, temperatura, etc.) requiere el almacenamiento en un sistema que garantice la integridad y transparencia, como una cadena de bloques.
 
-La utilización de blockchain en arquitecturas IoT tiene varias ventajas, entre las que se pueden mencionar las vinculadas a las capacidades de descentralización, cifrado, seguridad y consenso que ayudan a aumentar la trazabilidad y transparencia de las operaciones, y la automatización de operaciones disparadas por eventos utilizando Smart Contracts.
+Una arquitectura blockchain \cite{blockchain} se basa en el agrupamiento de transacciones que luego de ser procesadas, son almacenadas en bloques encadenados de forman distribuida e inmutable, entre los nodos de una red. Esta estructura de datos se conoce como una cadena de bloques y sus datos almacenados forma un \textit{distributed ledger} (o asiento contable distribuido). De esta manera, como los datos forman registros que no se pueden modificar una vez creados, se puede asegurar la inmutabilidad, y como el almacenamiento y procesamiento de la red se encuentran distribuidos, se puede garantizar su transparencia.
+
+La mayoría de las redes blockchain constan de ciertas tecnologías para la implementación de código ejecutable en la misma red, que aunque su nombre puede cambiar dependiendo de la red, usualmente se los conoce como \textit{smart contracts} \citep{smart_contracts}. La ejecución de estos componentes es realizada por los nodos de la red en el proceso que se conoce como minería o validación. La forma de interactuar con los \textit{smart contracts} se realiza a través de otro componente conocido como dApps \textit{(de-centralized applications)} \citep{dapp} que haciendo uso de ciertas tecnologías invocan a estos componentes para almacenar y obtener datos en y desde el \textit{distributed ledger}.
+
+El uso de blockchain en arquitecturas IoT ofrece ventajas como descentralización, cifrado, seguridad y consenso, lo que aumenta la trazabilidad, la transparencia y la automatización mediante \textit{smart contracts}.
 
 Existen en la industria varias implementaciónes de casos de uso IoT en los que se ha utilizado blockchain como por ejemplo:
 
 \begin{itemize}
 
-	\item La solución basada en blockchain implementada por Walmart \citep{iot_usecase_blockchain_walmart} para mejorar la trazabilidad de productos alimenticios en su cadena de suministro. Al integrar dispositivos IoT, la empresa puede monitorear en tiempo real variables como temperatura y humedad durante el transporte y almacenamiento de productos perecederos. Estos datos se registran en una blockchain, garantizando la inmutabilidad y transparencia de la información.
+	\item La solución basada en blockchain implementada por Walmart \citep{iot_usecase_blockchain_walmart} para mejorar la trazabilidad de productos alimenticios en su cadena de suministro. Al integrar dispositivos IoT, la empresa puede monitorear en tiempo real variables como temperatura y humedad durante el transporte y almacenamiento de productos perecederos. Estos datos se registran en una blockchain para garantizar la inmutabilidad y transparencia de la información.
 	
-\item La solución implementada por ScanTrust \citep{iot_usecase_blockchain_scantrust} que utiliza códigos QR seguros para conectar productos físicos con el entorno digital. Al integrar IoT y blockchain, permite a las empresas y consumidores autenticar productos y rastrear su origen y cadena de suministro en tiempo real. Los códigos QR, impresos en los envases, se escanean con dispositivos móviles, proporcionando información detallada y asegurando la autenticidad del producto.
+	\item La solución implementada por ScanTrust \citep{iot_usecase_blockchain_scantrust} que utiliza códigos QR seguros para conectar productos físicos con el entorno digital. Al integrar IoT y blockchain, permite a las empresas y consumidores autenticar productos y rastrear su origen y cadena de suministro en tiempo real. Los códigos QR, impresos en los envases, se escanean con dispositivos móviles para proporcionar información detallada y asegurar la autenticidad del producto.
 		
-	
-	\item La solución implementada por la empresa Saltoki en colaboración con EcoMT \citep{iot_usecase_blockchain_saltoki}, que permite monitorizar y gestionar el consumo energético, certificando la producción renovable y los ahorros obtenidos mediante tecnología blockchain. 
+	\item La solución implementada por la empresa Saltoki en colaboración con EcoMT \citep{iot_usecase_blockchain_saltoki}, que permite monitorizar y gestionar el consumo energético, para certificar la producción renovable y los ahorros obtenidos mediante tecnología blockchain. 
 	
 	
 \end{itemize}
@@ -103,22 +110,22 @@ Existen en la industria varias implementaciónes de casos de uso IoT en los que 
 
 La motivación del presente trabajo fue primeramente volcar y unificar en un emprendimiento personal los conceptos aprendidos en la maestría de Internet de las Cosas. 
 
-Se pretendió implementar una arquitectura robusta y flexible que pueda ser extrapolada a casos de uso en la industria en los que sea necesaria la integración de un sistema embebido con una red blockchain para el almacenamiento transparente e inmutable de datos sensibles.  
+Se diseñó una arquitectura robusta y flexible, con el fin de ser implementada en la industria, donde la integración de sistemas embebidos con blockchain es crucial para el almacenamiento transparente e inalterable de datos sensibles.
 
-Por otra parte, se buscó desarrollar un producto cuya implementación pueda contribuir a aumentar el conocimiento público y el estado del arte de proyectos de código abierto para soluciones IoT integradas a blockchain en Argentina.
+Asimismo, se procuró crear un producto que pudiera fomentar el conocimiento público y el estado del arte de proyectos de código abierto relacionados con soluciones IoT integradas a blockchain en Argentina.
 
 %----------------------------------------------------------------------------------------
 
 \section{Alcance y objetivos}
 
-A continuación, se detallan las funcionalidades incluidas en el alcance del trabajo.
+A continuación, se detallan las funcionalidades incluidas en el alcance del trabajo:
 
 
 \begin{itemize}
 	\item La publicación del endpoint MQTT \citep{mqtt_spec} para la recepción de los datos enviados por el robot.
 	\item La adaptación del sistema embebido del robot de exploración ambiental para la conexión segura con el \textit{backend} vía MQTT.
 	\item La arquitectura e implementación de los sistemas \textit{backend} y el modelo de datos necesario para el almacenamiento de las mediciones enviadas por el robot.
-	\item La arquitectura, implementación y despliegue de la dApp \citep{dapp} y \textit{smart contracts} \citep{smart_contracts} necesarios para el almacenamiento de las mediciones en una red Blockchain.
+	\item La arquitectura, implementación y despliegue de la dApp \citep{dapp} y \textit{smart contracts} \citep{smart_contracts} necesarios para el almacenamiento de las mediciones en una red blockchain.
 	\item La definición de métricas agregadas de valor y posterior arquitectura e implementación de los sistemas analíticos para procesar de forma \textit{batch} y/o \textit{real-time} utilizando herramientas de procesamiento paralelo basadas en Big Data.
 	\item La implementación de la interfaz gráfica para poder visualizar los datos enviados y analíticas calculadas.
 
@@ -138,7 +145,7 @@ A continuación, se listan los requerimientos del producto:
 	\begin{enumerate}	
 		
 		\item El robot de exploración ambiental debe poder enviar a la plataforma datos de mediciones de parámetros ambientales, incluyendo los datos de fecha, hora, localización geográfica (que puede ser implementada como un valor \textit{mock}) y la categorización si es o no un valor crítico.
-		\item El robot de exploración ambiental debe incorporar lógica para categorizar los valores medidos de cada parámetro ambiental como valores críticos si:
+		\item El robot de exploración ambiental debe incorporar una lógica para categorizar los valores medidos de cada parámetro ambiental como valores críticos si:
 		\begin{enumerate}				
 			\item Representan un máximo o mínimo global sensado hasta el momento.				
 			\item Representan un máximo o mínimo local durante el último día.				
