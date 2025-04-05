@@ -765,6 +765,24 @@
     \endverb
   \endentry
 
+  \entry{evm}{online}{}
+    \name{author}{1}{}{%
+      {{hash=W}{%
+         family={Wthereum.org},
+         familyi={W\bibinitperiod},
+      }}%
+    }
+    \keyw{latex,knuth}
+    \strng{namehash}{W3}
+    \strng{fullhash}{W3}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Ethereum Virtual Machine (EVM)}
+    \verb{url}
+    \verb https://ethereum.org/en/developers/docs/evm/
+    \endverb
+  \endentry
+
   \entry{mainnet}{online}{}
     \name{author}{1}{}{%
       {{hash=ST}{%
