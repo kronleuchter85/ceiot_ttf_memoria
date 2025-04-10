@@ -669,6 +669,24 @@
     \endverb
   \endentry
 
+  \entry{docker_website}{online}{}
+    \name{author}{1}{}{%
+      {{hash=D}{%
+         family={Docker},
+         familyi={D\bibinitperiod},
+      }}%
+    }
+    \keyw{latex,knuth}
+    \strng{namehash}{D1}
+    \strng{fullhash}{D1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Docker}
+    \verb{url}
+    \verb https://docker.com/
+    \endverb
+  \endentry
+
   \entry{aws_glue}{online}{}
     \name{author}{1}{}{%
       {{hash=SAW}{%
@@ -1006,24 +1024,6 @@
     \field{title}{Metamask | Your home in Web3}
     \verb{url}
     \verb https://metamask.io/
-    \endverb
-  \endentry
-
-  \entry{docker_website}{online}{}
-    \name{author}{1}{}{%
-      {{hash=D}{%
-         family={Docker},
-         familyi={D\bibinitperiod},
-      }}%
-    }
-    \keyw{latex,knuth}
-    \strng{namehash}{D1}
-    \strng{fullhash}{D1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{title}{Docker}
-    \verb{url}
-    \verb https://docker.com/
     \endverb
   \endentry
 

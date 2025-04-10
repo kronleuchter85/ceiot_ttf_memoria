@@ -14,7 +14,7 @@ En este capítulo se presenta una breve introducción técnica a las herramienta
 
 \subsection{Robot de exploración ambiental}
 
-Como dispositivo físico en la capa de percepción, se utilizó el robot de exploración ambiental desarrollado en el marco de la carrera de Especialización de Sistemas Embebidos \citep{cese_gonzalo_memoria}. En la figura \ref{fig:Robot_y_Joystick_1} se puede apreciar una foto del mismo.
+Como dispositivo físico en la capa de percepción, se utilizó el robot de exploración ambiental desarrollado en el marco de la Carrera de Especialización en Sistemas Embebidos \citep{cese_gonzalo_memoria}. En la figura \ref{fig:Robot_y_Joystick_1} se puede apreciar una foto del robot.
 
 
 \begin{center}
@@ -23,17 +23,17 @@ Como dispositivo físico en la capa de percepción, se utilizó el robot de expl
    \label{fig:Robot_y_Joystick_1}
 \end{center}
 
-El robot de exploración ambiental es un sistema embebido desarrollado con el marco de desarrollo ESP-IDF \cite{ESPIDF_home} de \textit{Espressif Systems} que utiliza un microcontrolador ESP32 \cite{ESP32} y FreeRTOS \citep{FreeRTOS} como sistema operativo. Está diseñado para explorar terrenos mediante control de joystick y para obtener parámetros ambientales como luminosidad, presión atmosférica, temperatura y humedad.
+El robot de exploración ambiental es un sistema embebido desarrollado con el marco de desarrollo ESP-IDF \cite{ESPIDF_home} de Espressif Systems que utiliza un microcontrolador ESP32 \cite{ESP32} y FreeRTOS \citep{FreeRTOS} como sistema operativo. Está diseñado para explorar terrenos mediante control de joystick y para obtener parámetros ambientales como luminosidad, presión atmosférica, temperatura y humedad.
 
 \subsection{Microcontrolador ESP32}
 
 
-ESP32 \cite{ESP32} es una serie de microcontroladores embebidos en un chip con Wi-Fi y Bluetooth integrados, de bajo costo y consumo, desarrollado por \textit{Espressif Systems}. Emplea dos cores Xtensa® 32-bit LX6 CPU, incluye interruptores de antena, amplificador de potencia, amplificador de recepción de bajo ruido, un co-procesador ULP (\textit{Ultra Low Power}), módulos de administración de energía y varios periféricos.
+ESP32 \cite{ESP32} es una serie de microcontroladores embebidos en un chip con Wi-Fi y Bluetooth integrados, de bajo costo y consumo, desarrollado por \textit{Espressif Systems}. Emplea dos núcleos Xtensa® 32-bit LX6 CPU, incluye interruptores de antena, amplificador de potencia, amplificador de recepción de bajo ruido, un co-procesador ULP (\textit{Ultra Low Power}), módulos de administración de energía y diversos periféricos.
 
 
 \subsection{Marco de trabajo ESP-IDF}
 
-El marco de trabajo ESP-IDF de \textit{Espressif Systems} proporciona un conjunto de recursos para facilitar el desarrollo de \textit{firmware} para ESP32. Utiliza FreeRTOS como sistema operativo base y brinda varias utilidades de desarrollo y bibliotecas de código para poder acceder y controlar los diferentes recursos del microcontrolador.
+El marco de trabajo ESP-IDF\cite{ESPIDF_home} de Espressif Systems proporciona un conjunto de recursos para facilitar el desarrollo de \textit{firmware} para ESP32. Utiliza FreeRTOS como sistema operativo base y brinda varias utilidades de desarrollo y bibliotecas de código para poder acceder y controlar los diferentes recursos del microcontrolador.
 
 
 \subsection{FreeRTOS}
@@ -50,7 +50,7 @@ AWS (\textit{Amazon Web Services}) \citep{aws}  es una de las principales plataf
 
 \subsection{AWS App Runner}
 
-AWS App Runner \citep{aws_app_runner} es un servicio completamente administrado de AWS que permite implementar y ejecutar aplicaciones web y servicios de forma rápida, sin tener que gestionar instancias de infraestructura. Está diseñado para simplificar el proceso de implementación y escalado automático de aplicaciones y permite aplicaciones directamente desde el código fuente o desde contenedores Docker.
+AWS App Runner \citep{aws_app_runner} es un servicio completamente administrado de AWS que permite implementar y ejecutar aplicaciones web y servicios de forma rápida, sin tener que gestionar instancias de infraestructura. Está diseñado para simplificar el proceso de implementación y escalado automático de aplicaciones y permite aplicaciones directamente desde el código fuente o desde contenedores Docker \cite{docker_website}.
 
 
 
@@ -81,10 +81,10 @@ AWS IoT Core \citep{aws_iot_core} es un servicio totalmente administrado de AWS 
 
 \subsection{Node.js}
 
-Node.js \citep{nodejs} es un entorno de ejecución de código abierto basado en el motor V8 de Chrome, utilizado principalmente como servidor web. Emplea un modelo single-thread de event loop con I/O no bloqueante para gestionar múltiples solicitudes y paralelismo de tareas mediante callbacks asíncronos.
+Node.js \citep{nodejs} es un entorno de ejecución de código abierto basado en el motor V8 de Chrome, utilizado principalmente como servidor web. Emplea un modelo \textit{single-thread} de \textit{event loop} con I/O no bloqueante para gestionar múltiples solicitudes y paralelismo de tareas mediante callbacks asíncronos.
 
 
-\section{Tecnologías Blockchain utilizadas}
+\section{Tecnologías blockchain utilizadas}
 
 
 \subsection{Ecosistema Ethereum}
@@ -116,7 +116,7 @@ Solidity \cite{solidity} es un lenguaje de programación de alto nivel, orientad
 
 \subsection{Biblioteca Web3.js}
 
-web3.js \citep{web3} es una biblioteca de JavaScript que permite interactuar con la blockchain de Ethereum y otros protocolos compatibles con EVM. Proporciona una forma sencilla de conectarse a nodos de Ethereum, realizar transacciones y leer datos de contratos inteligentes, directamente desde aplicaciones web o Node.js.
+Web3.js \citep{web3} es una biblioteca de JavaScript que permite interactuar con la blockchain de Ethereum y otros protocolos compatibles con EVM. Proporciona una forma sencilla de conectarse a nodos de Ethereum, realizar transacciones y leer datos de contratos inteligentes, directamente desde aplicaciones web o Node.js.
 
 
 \subsection{Ganache}

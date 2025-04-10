@@ -2,16 +2,16 @@
 
 \label{Chapter3} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{ChapterX}
 
-
+En este capítulo se presentan los detalles técnicos de diseño e implementación de la solución IoT que se tuvieron en cuenta durante el desarrollo del trabajo.
 
 
 \section{Arquitectura de software del sistema}
 
 
-El sistema cuenta con una arquitectura robusta y flexible en la que se integra el dispositivo robótico de exploración ambiental \citep{cese_gonzalo_memoria} desarrollado en el marco de la Carrera de Especialización de Sistemas Embebidos, con un sistema \textit{back-end} desplegado en la nube pública \citep{nube_publica}, y una red Blockchain \cite{blockchain} a fin de poder asegurar la inmutabilidad y transparencia de las lecturas ambientales. 
+El sistema cuenta con una arquitectura robusta y flexible en la que se integra el dispositivo robótico de exploración ambiental \citep{cese_gonzalo_memoria} desarrollado en el marco de la Carrera de Especialización en Sistemas Embebidos, con un sistema \textit{back-end} desplegado en la nube pública \citep{nube_publica}, y una red Blockchain \cite{blockchain} a fin de poder asegurar la inmutabilidad y transparencia de las lecturas ambientales. 
 
 
-\section{Arquitectura de hardware e infraestructura del sistema}
+\section{Hardware e infraestructura del sistema}
  
  
 \section{Integración de los módulos y subsistemas}
@@ -20,7 +20,7 @@ El sistema cuenta con una arquitectura robusta y flexible en la que se integra e
 
 El desarrollo e integración de los componentes de estas capa consistió en la publicación de un \textit{topic} MQTT desde el \textit{backend} y la adaptación del firmware desplegado en el robot explorador para extender sus funcionalidades y enviar las lecturas ambientales al \textit{topic}. Para esto se configuró el servicio AWS IoT Core, donde se creó una nueva instancia de un dispositivo remoto con el nombre ceit-robot-explorador y se configuró el nombre del \textit{topic} como /ceit/robot/readings.
 
-Se configuró la redirección de los mensajes MQTT recibidos a un \textbf{bucket} AWS S3 para poder ser almacenados y se descargó el empaquetado de certificados de seguridad que deben ser desplegados en el robot explorador para poder conectarse al \textit{topic}.
+Se configuró la redirección de los mensajes MQTT recibidos a un \textit{bucket} AWS S3 para poder ser almacenados y se descargó el empaquetado de certificados de seguridad que deben ser desplegados en el robot explorador para poder conectarse al \textit{topic}.
 
 \subsection{Capas de procesamiento y almacenamiento cloud}
 

@@ -35,9 +35,9 @@ Su arquitectura estándar en general incluye dispositivos y sensores para captur
 
 	\item Capa de percepción (\textit{Sensing Layer}): esta capa, la más cercana al entorno físico, captura datos del ambiente (temperatura, humedad, etc.) mediante dispositivos IoT y sensores. Generalmente, se usan sistemas embebidos con sensores y actuadores para interactuar con el entorno.
 	
-	\item Capa de red (\textit{Network Layer}): se encarga de la transmisión de datos desde los dispositivos hasta los sistemas de procesamiento. Aquí es donde ocurre la conectividad mediante diversos protocolos de comunicación usando tecnologías inalámbricas (tales como Wi-Fi, Bluetooth \citep{Bluetooth}, Zigbee \citep{zigbee}, LoRaWAN, NB-IoT \citep{Narrowband_IoT}, etc.) y protocolos de red (por ejmplo, MQTT, CoAP, HTTP, etc.)
+	\item Capa de red (\textit{Network Layer}): se encarga de la transmisión de datos desde los dispositivos hasta los sistemas de procesamiento. Aquí es donde ocurre la conectividad mediante diversos protocolos de comunicación usando tecnologías inalámbricas (tales como Wi-Fi, Bluetooth \citep{Bluetooth}, Zigbee \citep{zigbee}, LoRaWAN, NB-IoT \citep{Narrowband_IoT}, etc.) y protocolos de red (por ejemplo, MQTT, CoAP, HTTP, etc.)
 	
-	\item Capa de procesamiento de borde (\textit{Edge Computing Layer}): procesa datos cerca de donde se generan para reducir la latencia y el tráfico hacia la nube. Se toman decisiones inmediatas, y solo los datos relevantes se envían a niveles superiores. 
+	\item Capa de procesamiento de borde (\textit{Edge Computing Layer}): procesa datos cerca de donde se generan para reducir la latencia y el tráfico hacia la nube. Se toman decisiones inmediatas y solo los datos relevantes se envían a niveles superiores. 
 	
 	\item Capa de almacenamiento y procesamiento \textit{cloud} (\textit{Data Storage/Cloud Layer}): almacena y procesa grandes volúmenes de datos recopilados en la nube, lo que permite realizar análisis más profundos, modelado de datos y aprendizaje automático. Se utilizan herramientas \textit{cloud} (como AWS IoT Core \citep{aws_iot_core}, Azure Iot Hub \citep{azure_iot}, etc.) y Big Data.
 	
@@ -84,11 +84,11 @@ Para la exploración y monitoreo de áreas ambientalmente sensibles (reservas na
 
 Una arquitectura blockchain \cite{blockchain} se basa en el agrupamiento de transacciones que luego de ser procesadas, son almacenadas en bloques encadenados de forman distribuida e inmutable, entre los nodos de una red. Esta estructura de datos se conoce como una cadena de bloques y sus datos almacenados forma un \textit{distributed ledger} (o asiento contable distribuido). De esta manera, como los datos forman registros que no se pueden modificar una vez creados, se puede asegurar la inmutabilidad, y como el almacenamiento y procesamiento de la red se encuentran distribuidos, se puede garantizar su transparencia.
 
-La mayoría de las redes blockchain constan de ciertas tecnologías para la implementación de código ejecutable en la misma red, que aunque su nombre puede cambiar dependiendo de la red, usualmente se los conoce como \textit{smart contracts} \citep{smart_contracts}. La ejecución de estos componentes es realizada por los nodos de la red en el proceso que se conoce como minería o validación. La forma de interactuar con los \textit{smart contracts} se realiza a través de otro componente conocido como dApps \textit{(de-centralized applications)} \citep{dapp} que haciendo uso de ciertas tecnologías invocan a estos componentes para almacenar y obtener datos en y desde el \textit{distributed ledger}.
+La mayoría de las redes blockchain constan de ciertas tecnologías para la implementación de código ejecutable en la misma red, que aunque su nombre puede cambiar dependiendo de la red, usualmente se los conoce como \textit{smart contracts} \citep{smart_contracts}. La ejecución de estos componentes es realizada por los nodos de la red en el proceso que se conoce como minería o validación. La forma de interactuar con los \textit{smart contracts} se realiza a través de otro componente conocido como dApps \textit{(de-centralized applications)} \citep{dapp} que por medio del uso de ciertas tecnologías invocan a estos componentes para almacenar y obtener datos en y desde el \textit{distributed ledger}.
 
 El uso de blockchain en arquitecturas IoT ofrece ventajas como descentralización, cifrado, seguridad y consenso, lo que aumenta la trazabilidad, la transparencia y la automatización mediante \textit{smart contracts}.
 
-Existen en la industria varias implementaciónes de casos de uso IoT en los que se ha utilizado blockchain como por ejemplo:
+Existen en la industria varias implementaciones de casos de uso IoT en los que se ha utilizado blockchain como por ejemplo:
 
 \begin{itemize}
 
@@ -108,7 +108,7 @@ Existen en la industria varias implementaciónes de casos de uso IoT en los que 
 \section{Motivación del trabajo}
 
 
-La motivación del presente trabajo fue primeramente volcar y unificar en un emprendimiento personal los conceptos aprendidos en la maestría de Internet de las Cosas. 
+La motivación del presente trabajo fue primeramente volcar y unificar en un emprendimiento personal los conceptos aprendidos en la Maestría en Internet de las Cosas. 
 
 Se diseñó una arquitectura robusta y flexible, con el fin de ser implementada en la industria, donde la integración de sistemas embebidos con blockchain es crucial para el almacenamiento transparente e inalterable de datos sensibles.
 
@@ -118,7 +118,7 @@ Asimismo, se procuró crear un producto que pudiera fomentar el conocimiento pú
 
 \section{Alcance y objetivos}
 
-El objetivo del trabajo es la integración del dispositivo robótico de exploración ambiental \citep{cese_gonzalo_memoria} desarrollado en el marco de la Carrera de Especialización de Sistemas Embebidos, con un sistema \textit{backend} desplegado en la nube pública \citep{nube_publica}, y una red blockchain \cite{blockchain} a fin de poder asegurar la inmutabilidad y transparencia de las lecturas ambientales. 
+El objetivo del trabajo es la integración del dispositivo robótico de exploración ambiental \citep{cese_gonzalo_memoria} desarrollado en el marco de la Carrera en Especialización de Sistemas Embebidos, con un sistema \textit{backend} desplegado en la nube pública \citep{nube_publica}, y una red blockchain \cite{blockchain} a fin de poder asegurar la inmutabilidad y transparencia de las lecturas ambientales. 
 
 A continuación, se detallan las funcionalidades incluidas en el alcance del trabajo:
 
