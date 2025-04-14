@@ -16,14 +16,117 @@ El sistema cuenta con una arquitectura robusta y flexible en la que se integra e
  
 \section{Integración de los módulos y subsistemas}
 
-\subsection{Capas de percepción y red}
 
-El desarrollo e integración de los componentes de estas capa consistió en la publicación de un \textit{topic} MQTT desde el \textit{backend} y la adaptación del firmware desplegado en el robot explorador para extender sus funcionalidades y enviar las lecturas ambientales al \textit{topic}. Para esto se configuró el servicio AWS IoT Core, donde se creó una nueva instancia de un dispositivo remoto con el nombre ceit-robot-explorador y se configuró el nombre del \textit{topic} como /ceit/robot/readings.
 
-Se configuró la redirección de los mensajes MQTT recibidos a un \textit{bucket} AWS S3 para poder ser almacenados y se descargó el empaquetado de certificados de seguridad que deben ser desplegados en el robot explorador para poder conectarse al \textit{topic}.
 
-\subsection{Capas de procesamiento y almacenamiento cloud}
+\subsection{Capa de percepción}
 
+
+El desarrollo e integración de los componentes de estas capas consistió en la adaptación del firmware desplegado en el robot explorador para extender sus funcionalidades y enviar las lecturas ambientales al \textit{topic}. Dentro de las funcionalidades que se le agregaron al robot explorador se encontraron:
+
+\begin{itemize}
+	\item Enviar fecha y hora.
+	\item Enviar coordenadas geograficas (con datos \textit{mock}).
+	\item Conexión segura con tópico MQTT.	
+		
+\end{itemize}
+
+La configuración de la fecha y hora se realizó por medio del uso del servicio SNTP \citep{sntp} que permite la sincronización del hardware de una red con la fecha y hora provista por servicios externos en estandar en una zona horaria. Esta configuración se realizó incluyendo el encabezado \textbf{esp_sntp.h} en el código del robot, y configuró el parámetro  Se configuro la hora en ESP32 utilizando SNTP.
+- Se generaron coordenadas geograficas random.
+
+\subsection{Capa de red}
+
+El desarrollo de los componentes de esta capa consistió en la publicación de un \textit{topic} MQTT desde el servicio AWS IoT Core y la configuración de la lógica de redirección y almacenamiento de los mensajes recibidos en AWS S3.
+
+
+Para la conexión segura con el tópico MQTT se configuró el servicio AWS IoT Core, donde se creó una nueva instancia de un dispositivo remoto con el nombre ESP32. Una vez creado este dispositivo se descargaron e instalaron en el código del robot los certificados listados a continuación:
+
+
+\begin{itemize}
+	\item AmazonRootCA1.pem, renombrado a brokerCA.crt:	Es la autoridad certificadora que AWS usa para firmar certificados de sus servidores. El dispositivo lo necesita para verificar la identidad del servidor AWS IoT al conectarse.
+	\item dev-certificate.pem.crt, renombrado a client.crt: Contiene la clave pública correspondiente a la clave privada (.key) y está firmado por AWS (o por una CA en la que AWS confía) para verificar la identidad del dispositivo.
+	\item dev-private.pem.key, renombrado a client.key: Usada por el dispositivo para firmar su identidad durante la conexión TLS. Nunca se comparte ni se sube a AWS. Tu dispositivo la usa para autenticar su certificado (.crt).
+		
+\end{itemize}
+
+
+Para el almacenamiento en AWS S3 de los mensajes recibidos, se configuro una \textit{routing rule} o regla de redirección en AWS IoT Core, indicando mediante una consulta al estilo SQL que todos los mensajes recibidos en el tópico readings deben almacernarce en el bucket S3 ceiot-exploratory-robot.
+ 
+
+
+
+Add:
+
+- Creacion de esquema y tablas Glue. 
+
+
+
+%y se configuró el nombre del \textit{topic} como /readings.
+
+
+
+\begin{table}[h]
+	\centering
+	\caption[caption corto]{Tabla de objetos AWS}
+	\begin{tabular}{l c c}    
+		\toprule
+		\textbf{Servicio} & \textbf{Propósito} & \textbf{Nombre de objeto}  \\
+		\midrule
+		AWS IoT Core & \textit{Thing} & ESP32 \\		
+		AWS IoT Core & \textit{MQTT topic} & /readings \\		
+		AWS IoT Core & \textit{Routing Rule} & StoreToS3 \\		
+		AWS S3 & Bucket & ceiot-exploratory-robot \\		
+		\bottomrule
+		\hline
+	\end{tabular}
+	\label{tab:peces}
+\end{table}
+
+
+
+\begin{table}[h]
+	\centering
+	\caption[caption corto]{Desc.}
+	\begin{tabular}{l c c}    
+		\toprule
+		\textbf{A} 	 & \textbf{B} 		& \textbf{C}  \\
+		\midrule
+		- & - & - \\		
+		- & - & - \\		
+		- & - & - \\		
+		\bottomrule
+		\hline
+	\end{tabular}
+	\label{tab:peces}
+\end{table}
+
+
+
+
+\subsection{Capas de procesamiento y almacenamiento - blockchain}
+
+La capa de procesamiento y almacenamiento blockchain esta formada por los componentes \textit{smart contracts} y la dApp que los accede.
+
+Para el desarrollo de los \textit{smart contracts} se utilizó Solidity como lenguaje de programanción y Truffle como herramienta de gestión de configuración, compilación, empaquetado y despliegue. Truffle utiliza una configuración basada en archivos Javascript para la descripción de las tareas, y para realizar el despliegue a diferentes redes, como por ejemplo de forma local a Ganache o de forma remota a redes como Sepolia, Holesky y Mainnet.
+
+El proceso de desarrollo de 
+
+
+Desde el punto de vista del \textit{backend} blockchain, se desarrollo la dApp utilizando Node.js y la biblioteca Javascript Web3.js para la comunicación con los \textit{smart contracts}.
+
+Se desarrollaron varios \textit{endpoints} listados a continuacion en la siguiente tabla:
+
+'
+'
+'
+'
+
+Para el acceso a los \textit{smart contracts} la dApp necesita tener disponible los archivos ABI generados en la compilacion.
+
+\subsection{Capas de procesamiento y almacenamiento - cloud}
+
+Configuracion de esquema, base de datos y tablas Glue
+Consultas en Athena
 
 
 \section{Plataforma de desarrollo y despliegue}
