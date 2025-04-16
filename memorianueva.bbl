@@ -1120,5 +1120,26 @@
     \verb https://ubuntu.com/
     \endverb
   \endentry
+
+  \entry{sntp}{online}{}
+    \name{author}{1}{}{%
+      {{hash=DI}{%
+         family={Documentation},
+         familyi={D\bibinitperiod},
+         given={IBM},
+         giveni={I\bibinitperiod},
+      }}%
+    }
+    \keyw{latex,knuth}
+    \strng{namehash}{DI1}
+    \strng{fullhash}{DI1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Simple Network Time Protocol}
+    \verb{url}
+    \verb https://www.ibm.com/docs/en/i/7.4.0?topic=services-simple-network-tim
+    \verb e-protocol
+    \endverb
+  \endentry
 \enddatalist
 \endinput

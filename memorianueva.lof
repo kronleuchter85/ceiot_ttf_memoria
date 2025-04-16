@@ -3,5 +3,10 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Robot de exploración ambiental.}}{9}{figure.2.1}%
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Prueba de recepción de mensajes MQTT.}}{19}{figure.3.1}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Configuración de redirección de mensajes MQTT.}}{20}{figure.3.2}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Almacenamiento de mensajes JSON en AWS S3.}}{20}{figure.3.3}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Creación de base datos, tabla y esquema AWS Glue.}}{21}{figure.3.4}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Consulta de datos SQL desde AWS Athena.}}{22}{figure.3.5}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
