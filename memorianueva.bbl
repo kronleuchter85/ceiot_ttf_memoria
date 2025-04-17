@@ -1141,5 +1141,23 @@
     \verb e-protocol
     \endverb
   \endentry
+
+  \entry{google_faucets}{online}{}
+    \name{author}{1}{}{%
+      {{hash=G}{%
+         family={Google},
+         familyi={G\bibinitperiod},
+      }}%
+    }
+    \keyw{latex,knuth}
+    \strng{namehash}{G2}
+    \strng{fullhash}{G2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Google Cloud Web3}
+    \verb{url}
+    \verb https://cloud.google.com/application/web3/faucet
+    \endverb
+  \endentry
 \enddatalist
 \endinput

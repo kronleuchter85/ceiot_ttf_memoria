@@ -13,6 +13,7 @@ El sistema cuenta con una arquitectura robusta y flexible en la que se integra e
 
 \section{Hardware e infraestructura del sistema}
  
+<A desarrollar>
  
 \section{Integración de los módulos y subsistemas}
 
@@ -152,23 +153,60 @@ Con el esquema de datos definido en el catálogo de AWS Glue, fue posible realiz
 
 \subsection{Capas de procesamiento y almacenamiento - blockchain}
 
-La capa de procesamiento y almacenamiento blockchain esta formada por los componentes \textit{smart contracts} y la dApp que los accede.
+Uno de los primeros pasos para poder comenzar a desarrollar los componentes blockchain fue la obtención de tokens para poder realizar despliegues y ejecutar la aplicación en las redes de prueba de Ethereum sin utilizar fondos reales. Para Para poder realizar esto, primero fue necesario crear un \textit{wallet} o billetera digital, para lo que se utilizó el servicio Metamask. Luego, para la obtención de créditos se utilizaron los \textit{faucets} de Google \citep{google_faucets}. Como se puede apreciar en las figura \ref{fig:google_faucets2} y tras seleccionar la dirección del \textit{wallet} y \ref{fig:metamask_balance}, tras realizar las transacciones en el \textit{faucet} se reciben los fondos en la billeta digital. 
 
-Para el desarrollo de los \textit{smart contracts} se utilizó Solidity como lenguaje de programanción y Truffle como herramienta de gestión de configuración, compilación, empaquetado y despliegue. Truffle utiliza una configuración basada en archivos Javascript para la descripción de las tareas, y para realizar el despliegue a diferentes redes, como por ejemplo de forma local a Ganache o de forma remota a redes como Sepolia, Holesky y Mainnet.
+\begin{center}
+   \includegraphics[scale=0.35]{blockchain/google_faucets2}
+   \captionof{figure}{Obtención de créditos mediante Google Web3.}
+   \label{fig:google_faucets2}
+\end{center}
 
-El proceso de desarrollo de 
+\begin{center}
+   \includegraphics[scale=0.35]{blockchain/metamask_balance}
+   \captionof{figure}{Saldo en Metamask.}
+   \label{fig:metamask_balance}
+\end{center}
+
+Posteriormente como podemos apreciar en la figura, en el servicio Etherscan las transacciones realizadas para generar fondos en la dirección de la billetera quedan publicadas en la red.
 
 
-Desde el punto de vista del \textit{backend} blockchain, se desarrollo la dApp utilizando Node.js y la biblioteca Javascript Web3.js para la comunicación con los \textit{smart contracts}.
+\begin{center}
+   \includegraphics[scale=0.3]{blockchain/sepolia_funding2}
+   \captionof{figure}{Transacciones de generación de fondos de prueba.}
+   \label{fig:sepolia_funding2}
+\end{center}
 
-Se desarrollaron varios \textit{endpoints} listados a continuacion en la siguiente tabla:
 
-'
-'
-'
-'
+Una vez obtenidos los fondos de prueba en la billetera se procedió con el desarrollo de los componentes blockchain. Para el desarrollo de los \textit{smart contracts} se utilizó Solidity como lenguaje de programanción y Truffle como herramienta de gestión de configuración, compilación, empaquetado y despliegue. Truffle utiliza una configuración basada en archivos Javascript para la descripción de las tareas, y para realizar el despliegue a diferentes redes, como por ejemplo de forma local a Ganache o de forma remota a redes como Sepolia, Holesky y Mainnet. En la los archivos de configuración de Truffle se agregaron entradas para poder desplegar a Ganache y a Sepolia como se puede apreciar en la figura \ref{fig:truffle_redes}.
 
-Para el acceso a los \textit{smart contracts} la dApp necesita tener disponible los archivos ABI generados en la compilacion.
+\begin{center}
+   \includegraphics[scale=0.4]{blockchain/truffle_redes}
+   \captionof{figure}{Configuración de redes de despliegue en Truffle.}
+   \label{fig:truffle_redes}
+\end{center}
+
+
+Desde el punto de vista del \textit{backend} blockchain, se desarrolló la dApp utilizando Node.js y la biblioteca Javascript Web3.js para la comunicación con los \textit{smart contracts}. Para la dApp, se desarrollaron varios \textit{endpoints} listados a continuacion en la siguiente tabla:
+
+
+
+Como se puede apreciar en la figura \ref{fig:sm_deployment}, durante el proceso de despliegue se pueden observar cierta información por pantalla:
+
+\begin{itemize}
+	\item La red a la cual se esta realizando el despliegue.
+	\item Los \textit{smart contracts} incluidos en el despliegue y la dirección que toman una vez desplegados. 
+	\item El \textit{hash} o identificador de la transacción.
+	\item El número de bloque en el que se encuentra la transacción de despliegue.
+	\item La dirección de la billetera digital y el balance disponible previo a la transacción.
+	\item La cantidad de gas utilizado en el despliegue, el costo unitario y el costo total de la transacción.
+\end{itemize}
+
+\begin{center}
+   \includegraphics[scale=0.35]{blockchain/sm_deployment}
+   \captionof{figure}{Salida por pantalla durante el proceso de despliegue de los componentes blockchain.}
+   \label{fig:sm_deployment}
+\end{center}
+
 
 
 
@@ -189,9 +227,12 @@ Para el acceso a los \textit{smart contracts} la dApp necesita tener disponible 
 		\textbf{Servicio} & \textbf{Propósito} & \textbf{Nombre de objeto}  \\
 		\midrule
 		AWS IoT Core & \textit{Thing} & ESP32 \\		
-		AWS IoT Core & \textit{MQTT topic} & /readings \\		
+		AWS IoT Core & \textit{MQTT topic} & readings \\		
 		AWS IoT Core & \textit{Routing Rule} & StoreToS3 \\		
-		AWS S3 & Bucket & ceiot-exploratory-robot \\		
+		AWS S3 & Bucket & ceiot-exploratory-robot \\	
+		AWS Glue & \textit Base de datos & ceit \\		
+		AWS Glue & Tabla & \textit{Readings} \\		
+
 		\bottomrule
 		\hline
 	\end{tabular}

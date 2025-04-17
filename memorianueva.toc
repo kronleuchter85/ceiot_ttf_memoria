@@ -45,11 +45,11 @@
 \contentsline {subsection}{\numberline {3.3.2}Capa de red}{18}{subsection.3.3.2}%
 \contentsline {subsection}{\numberline {3.3.3}Capas de procesamiento y almacenamiento - cloud}{21}{subsection.3.3.3}%
 \contentsline {subsection}{\numberline {3.3.4}Capas de procesamiento y almacenamiento - blockchain}{22}{subsection.3.3.4}%
-\contentsline {section}{\numberline {3.4}Plataforma de desarrollo y despliegue}{23}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Tabla de todos los objetos AWS creados}{23}{section.3.5}%
-\contentsline {chapter}{\numberline {4}Ensayos y resultados}{25}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Pruebas funcionales del hardware}{25}{section.4.1}%
-\contentsline {chapter}{\numberline {5}Conclusiones}{27}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Conclusiones generales }{27}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Próximos pasos}{27}{section.5.2}%
-\contentsline {chapter}{Bibliografía}{29}{appendix*.8}%
+\contentsline {section}{\numberline {3.4}Plataforma de desarrollo y despliegue}{25}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Tabla de todos los objetos AWS creados}{25}{section.3.5}%
+\contentsline {chapter}{\numberline {4}Ensayos y resultados}{27}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Pruebas funcionales del hardware}{27}{section.4.1}%
+\contentsline {chapter}{\numberline {5}Conclusiones}{29}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Conclusiones generales }{29}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Próximos pasos}{29}{section.5.2}%
+\contentsline {chapter}{Bibliografía}{31}{appendix*.8}%
