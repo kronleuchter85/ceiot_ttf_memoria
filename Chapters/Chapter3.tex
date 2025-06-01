@@ -8,8 +8,17 @@ En este capítulo se presentan los detalles técnicos de diseño e implementaci�
 \section{Arquitectura de software del sistema}
 
 
-El sistema cuenta con una arquitectura robusta y flexible en la que se integra el dispositivo robótico de exploración ambiental \citep{cese_gonzalo_memoria} desarrollado en el marco de la Carrera de Especialización en Sistemas Embebidos, con un sistema \textit{back-end} desplegado en la nube pública \citep{nube_publica}, y una red Blockchain \cite{blockchain} a fin de poder asegurar la inmutabilidad y transparencia de las lecturas ambientales. 
+El sistema cuenta con una arquitectura multi-cloud en la que se integra como hardware el robot de exploración ambiental \citep{cese_gonzalo_memoria} desarrollado en el marco de la Carrera de Especialización en Sistemas Embebidos, con un sistema \textit{back-end} desplegado en la nube de Amazon Web Services \citep{aws}, Smart Contracts desplegados en la red Blockchain Ethereum \cite{ethereum}, y un plataforma analítica de datos desplegada en la nube de Azure \cite{azure} utilizando la herramienta Microsoft Fabric \cite{azure_fabric}. 
 
+
+En la siguiente figura \ref{fig:software_architecture} podemos apreciar la arquitectura de la solución.
+
+
+\begin{center}
+   \includegraphics[scale=0.2]{global/software_architecture}
+   \captionof{figure}{Arquitectura de la solución.}
+   \label{fig:software_architecture}
+\end{center}
 
 \section{Hardware e infraestructura del sistema}
  

@@ -18,7 +18,7 @@ Como dispositivo físico en la capa de percepción, se utilizó el robot de expl
 
 
 \begin{center}
-   \includegraphics[scale=0.5]{Robot_y_Joystick_1}
+   \includegraphics[scale=0.5]{hardware/Robot_y_Joystick_1}
    \captionof{figure}{Robot de exploración ambiental.}
    \label{fig:Robot_y_Joystick_1}
 \end{center}
@@ -40,12 +40,21 @@ El marco de trabajo ESP-IDF\cite{ESPIDF_home} de Espressif Systems proporciona u
 
 FreeRTOS (\textit{Free Real-Time Operating System}) \citep{FreeRTOS} es un sistema operativo en tiempo real de código abierto, ligero y diseñado para microcontroladores y sistemas embebidos. Permite ejecutar múltiples tareas concurrentemente mediante planificación por prioridades, ofreciendo servicios como manejo de tareas, colas, temporizadores, semáforos y sincronización. Es ampliamente usado en aplicaciones IoT y sistemas críticos donde se requiere una respuesta rápida y predecible, y se puede portar fácilmente a una gran variedad de arquitecturas de hardware como ARM Cortex-M, RISC-V, entre otras.
 
-\section{Tecnologías backend utilizadas}
+
+
+
+\section{Tecnologías de Amazon Web Services utilizadas}
 
 
 \subsection{Amazon Web Services}
 
 AWS (\textit{Amazon Web Services}) \citep{aws}  es una de las principales plataformas de servicios en la nube pública proporcionada por Amazon, que ofrece una amplia gama de productos y herramientas para computación, almacenamiento, bases de datos, redes, inteligencia artificial, seguridad y herramientas de desarrollo.
+
+
+
+\subsection{AWS IoT Core}
+
+AWS IoT Core \citep{aws_iot_core} es un servicio totalmente administrado de AWS que permite conectar dispositivos IoT a la nube de manera segura y confiable. Proporciona una infraestructura escalable para recopilar, procesar y analizar datos de dispositivos en tiempo real, así como para interactuar con otros servicios de AWS a los que se redirigen los mensajes recibidos mediante la configuración de reglas. Tiene soporte para varios protocolos de comunicaciones, entre los que se destacan principalmente MQTT, HTTP/S, WebSockets y LoRaWAN.
 
 
 \subsection{AWS App Runner}
@@ -70,39 +79,71 @@ AWS S3 (\textit{Simple Storage Service}) \citep{aws_s3} es un servicio de almace
 AWS Athena \citep{aws_athena} es un servicio de análisis de datos sin servidor de AWS que permite consultar directamente datos almacenados en Amazon S3 y esquemas definidos en Glue, utilizando SQL estándar. No requiere configuración ni administración de servidores, y es ideal para analizar grandes volúmenes de datos de forma rápida y económica.
 
 \subsection{AWS SNS}
-....
+Amazon SNS (\textit{Amazon Simple Notification Service}) \citep{aws_sns} es un servicio de mensajería totalmente gestionado que permite el envío de notificaciones desde aplicaciones a otros sistemas distribuidos, servicios en la nube o usuarios finales. Funciona bajo un modelo de publicación-suscripción (pub/sub), donde los productores de mensajes (publicadores) envían mensajes a un \textit{topic}, y los consumidores (suscriptores) los reciben. Amazon SNS es ideal para aplicaciones que requieren alta disponibilidad, baja latencia y escalabilidad para distribuir eventos o alertas en tiempo real.
+
 
 \subsection{AWS SQS}
-....
+Amazon SQS (\textit{Amazon Simple Queue Service}) \citep{aws_sqs} es un servicio de colas de mensajes completamente gestionado que permite desacoplar y escalar componentes de aplicaciones distribuidas, eliminando la necesidad de administrar infraestructura de mensajería. SQS actúa como intermediario entre productores y consumidores de mensajes, almacenando mensajes de forma temporal hasta que los sistemas receptores estén listos para procesarlos. Amazon SQS es ideal para construir sistemas resilientes, desacoplados y altamente escalables, como pipelines de procesamiento de datos, flujos de trabajo asincrónicos o integración entre microservicios.
 
-\subsection{AWS SNS}
-....
 
 \subsection{AWS Secrets Manager}
-....
+AWS Secrets Manager \citep{aws_secrets} es un servicio gestionado que permite almacenar, gestionar, rotar y recuperar credenciales, claves API, contraseñas y otros secretos de forma segura. Brinda una API que permite a las aplicaciones recuperar secretos de forma programática, eliminando la necesidad de codificar credenciales directamente en el código fuente o archivos de configuración. Es compatible con varios servicios de AWS para la rotación automática de credenciales, y se integra muy facilmente con todos los servicios de AWS, mejorando la seguridad, el cumplimiento y la gestión centralizada de secretos.
 
 
 \subsection{AWS Lambda}
-....
+AWS Lambda \citep{aws_lambda} es un servicio de computación serverless ideal para crear aplicaciones escalables, desacopladas, reactivas y de baja latencia, que permite ejecutar código en respuesta a eventos sin necesidad de aprovisionar ni administrar servidores. Permite cargar funciones escritas en lenguajes como Python, Node.js, Java, entre otros, y Lambda se encarga automáticamente de ejecutar el código cuando se produce un evento, escalarlo según la demanda y gestionar la infraestructura subyacente. Lambda se integra de forma nativa con otros servicios de AWS como S3, DynamoDB, API Gateway, SNS y SQS, lo que permite construir arquitecturas basadas en eventos de manera sencilla y eficiente. 
 
 
-\subsection{AWS Dynamo}
-....
+\subsection{AWS DynamoDB}
+Amazon DynamoDB \citep{aws_dynamodb} es un servicio de base de datos NoSQL totalmente gestionado que ofrece almacenamiento de datos clave-valor y de documentos con alta disponibilidad, rendimiento escalable y baja latencia. Está diseñado para manejar cargas de trabajo intensivas y aplicaciones que requieren respuestas en tiempo real, ideal para casos de uso IoT por ese motivo. DynamoDB permite escalar automáticamente la capacidad de lectura y escritura, y ofrece opciones avanzadas como almacenamiento en caché, backup y restauración bajo demanda, replicación global y soporte para transacciones ACID. 
 
-\subsection{MQTT}
+\subsection{AWS IAM}
+AWS IAM (\textit{AWS Identity and Access Management}) \citep{aws_iam} es un servicio que permite gestionar de forma segura el acceso a los recursos de AWS mediante la creación y control de usuarios, grupos, roles y políticas de permisos. Con IAM se pueden definir quién puede acceder a qué recursos, en qué condiciones y con qué nivel de privilegio, aplicando el principio de mínimo privilegio. IAM permite la autenticación de identidades y la autorización de acciones tanto para usuarios internos como para aplicaciones y servicios de AWS. Además, admite políticas detalladas en formato JSON, control de acceso basado en atributos (ABAC) \citep{abac}, autenticación multifactor (MFA) \citep{mfa} y federación de identidades con directorios corporativos o proveedores externos.
 
-MQTT (\textit{Message Queuing Telemetry Transport}) \citep{mqtt_spec} es un protocolo de comunicación asíncrono, ligero y orientado a mensajes, diseñado para dispositivos con recursos limitados y redes de baja ancho de banda. Ampliamente utilizado en IoT, permite la transmisión de datos en tiempo real entre dispositivos, sensores y aplicaciones mediante un modelo publish/subscribe y topics, donde los clientes se conectan a un broker para publicar o recibir notificaciones.
 
-\subsection{AWS IoT Core}
+\subsection{AWS CloudWatch}
 
-AWS IoT Core \citep{aws_iot_core} es un servicio totalmente administrado de AWS que permite conectar dispositivos IoT a la nube de manera segura y confiable. Proporciona una infraestructura escalable para recopilar, procesar y analizar datos de dispositivos en tiempo real, así como para interactuar con otros servicios de AWS a los que se redirigen los mensajes recibidos mediante la configuración de reglas. Tiene soporte para varios protocolos de comunicaciones, entre los que se destacan principalmente MQTT, HTTP/S, WebSockets y LoRaWAN.
+Amazon CloudWatch \citep{aws_cloudwatch}  es un servicio de monitoreo y observabilidad totalmente gestionado que permite recopilar, visualizar y analizar métricas, logs y eventos de recursos y aplicaciones en AWS. Facilita la supervisión del rendimiento, la detección de anomalías y la generación de alertas en tiempo real a partir de datos generados por servicios como EC2, Lambda, DynamoDB, RDS, entre otros, así como por aplicaciones personalizadas mediante agentes o APIs. 
+
+
+\section{Tecnologías de propósito general utilizadas}
 
 \subsection{Node.js}
 
 Node.js \citep{nodejs} es un entorno de ejecución de código abierto basado en el motor V8 de Chrome, utilizado principalmente como servidor web. Emplea un modelo \textit{single-thread} de \textit{event loop} con I/O no bloqueante para gestionar múltiples solicitudes y paralelismo de tareas mediante callbacks asíncronos.
 
 
+\subsection{MQTT}
+
+MQTT (\textit{Message Queuing Telemetry Transport}) \citep{mqtt_spec} es un protocolo de comunicación asíncrono, ligero y orientado a mensajes, diseñado para dispositivos con recursos limitados y redes de baja ancho de banda. Ampliamente utilizado en IoT, permite la transmisión de datos en tiempo real entre dispositivos, sensores y aplicaciones mediante un modelo publish/subscribe y topics, donde los clientes se conectan a un broker para publicar o recibir notificaciones.
+
+
+\subsection{Swagger}
+Swagger \citep{open_api} es un conjunto de herramientas para diseñar, documentar y consumir APIs RESTful. Utiliza el formato OpenAPI Specification (OAS) para describir de forma estandarizada la estructura de una API, permitiendo la generación automática de documentación interactiva, clientes SDK y pruebas.
+
+
+
+
+\section{Lenguajes de programación utilizados}
+
+\subsection{Lenguaje de programación Python}
+Python es un lenguaje de programación de alto nivel, interpretado y de propósito general, conocido por su sintaxis clara y legible que favorece el desarrollo rápido y eficiente. Es ampliamente utilizado en áreas como desarrollo web, automatización, análisis de datos, inteligencia artificial y ciencia de datos, gracias a su gran ecosistema de bibliotecas, amplia documentación y comunidad activa. Fue utilizado en el trabajo en las funciones AWS Lambda.
+
+
+\subsection{Lenguaje de programación Javascript}
+JavaScript es un lenguaje de programación interpretado, de alto nivel y orientado a objetos, diseñado originalmente para el desarrollo web del lado del cliente. Se utiliza tanto en el frontend como en el backend gracias a entornos como Node.js. Fue utilizado en el trabajo para el desarrollo de la dApp como backend Node.js.
+
+
+\subsection{Lenguaje de programación C}
+C es un lenguaje de programación de propósito general, compilado y de bajo nivel, conocido por su eficiencia, velocidad y control directo sobre el hardware. Es ampliamente utilizado en sistemas operativos, software embebido y desarrollo de sistemas donde el rendimiento y el acceso a memoria son críticos. Fue utilizado en el trabajo para el desarrollo del firmware del sistema embebido.
+
+\subsection{Solidity}
+
+Solidity \cite{solidity} es un lenguaje de programación de alto nivel, orientado a contratos inteligentes, específicamente diseñado para funcionar en la EVM (\textit{Ethereum Virtual Machine}). Fue creado en 2014 por Gavin Wood, Christian Reitwiessner y otros desarrolladores de Ethereum. Su sintaxis es similar a JavaScript, Python y C++, lo que facilita el aprendizaje para desarrolladores familiarizados con esos lenguajes. Fue utilizado en el trabajo para el desarrollo de los \textit{smart contracts}.
+
+
 \section{Tecnologías blockchain utilizadas}
+
 
 
 \subsection{Ecosistema Ethereum}
@@ -127,9 +168,7 @@ El proceso de compensación y penalización de PoS retribuye a los validadores p
 
 
 
-\subsection{Solidity}
 
-Solidity \cite{solidity} es un lenguaje de programación de alto nivel, orientado a contratos inteligentes, específicamente diseñado para funcionar en la EVM (\textit{Ethereum Virtual Machine}). Fue creado en 2014 por Gavin Wood, Christian Reitwiessner y otros desarrolladores de Ethereum. Su sintaxis es similar a JavaScript, Python y C++, lo que facilita el aprendizaje para desarrolladores familiarizados con esos lenguajes. 
 
 
 \subsection{Biblioteca Web3.js}
@@ -170,24 +209,13 @@ En el presente trabajo se utilizó para almacenar los fondos en ETH obtenidos a 
 Microsoft Fabric es una plataforma unificada de analítica de datos en la nube de Azure que integra múltiples herramientas en un entorno gestionado. Está diseñada simplificar la integración, transformación, análisis y visualización de datos. Entre sus componentes principales se encuentran: 
 
 \begin{itemize}
-	\item Lakehouse \cite{link}: que combina las capacidades de un data lake y un data warehouse, permitiendo almacenar y procesar grandes volúmenes de datos estructurados y no estructurados, compatible con Spark, notebooks y consultas SQL.
-	\item Warehouse, un entorno de base de datos relacional orientado a análisis empresariales y modelado dimensional, que permite ejecutar consultas SQL sobre los datos almacenados en OneLake.
-	\item Data Factory es la herramienta de orquestación de datos que permite construir flujos ETL/ELT mediante pipelines y actividades de copiado,.
-	\item Dataflows Gen2 permite realizar transformaciones complejas sobre los datos mediante una interfaz visual sin necesidad de código, utilizando el motor Spark de forma subyacente.
-	\item Power BI está integrado de forma nativa en Fabric y permite crear visualizaciones, dashboards e informes interactivos directamente sobre datos almacenados en Lakehouse o Warehouse, sin necesidad de mover los datos.
-	\item OneLake, que actúa como repositorio de datos único para todos los servicios de Fabric, asegurando gobierno y seguridad de datos. 
+	\item Lakehouse \cite{link}: combina las capacidades de un data lake y un data warehouse, permitiendo almacenar y procesar grandes volúmenes de datos estructurados y no estructurados, compatible con Spark, notebooks y consultas SQL.
+	\item Warehouse \cite{link}: un entorno de base de datos relacional orientado a análisis empresariales y modelado dimensional, que permite ejecutar consultas SQL sobre los datos almacenados en OneLake.
+	\item Data Factory \cite{link}: herramienta de orquestación de flujos datos que permite construir ETL/ELT mediante pipelines y actividades de copiado,.
+	\item Dataflows Gen2 \cite{link}: herramienta de transformaciones de datos complejas que brinda uuna interfaz visual sin necesidad de escribir código y utiliza el motor Spark de forma subyacente.
+	\item Power BI \cite{link}: la herramienta de BI (Business Intelligence o inteligencia de negocios) en la nube de Azure, integrada de forma nativa en Fabric, permite crear visualizaciones, dashboards e informes interactivos directamente sobre datos almacenados en Lakehouse o Warehouse, mediante la abstracción de un Semantic Model que define métricas, jerarquías y relaciones, sin necesidad de mover ni duplicar los datos.
+	\item OneLake \cite{link}: actúa como repositorio de datos único para todos los servicios de Fabric, asegurando gobierno y seguridad de datos. 
 \end{itemize}
-
-
-
-
-\subsection{Azure Data Factory}
-
-
-\subsection{PowerBI}
-- Semantic Model
--
-
 
 
 
@@ -208,8 +236,8 @@ Durante el proceso de desarrollo del producto se utilizó CI/CD (\textit{continu
 
 \begin{itemize}
 	\item Github \cite{SoftwareTool_Github}: servicio de repositorio y control de versiones de código fuente.
-	\item AWS CodePipeline \cite{SoftwareTool_codePipeline}: servicio de compilación, empaquetado y ejecución \textit{builds}.
-	\item AWS Elastic Container Registry \cite{SoftwareTool_ECR}: servicio de repositorio y control de versiones de imágenes Docker.
+	\item AWS CodePipeline \cite{AWS_codePipeline}: servicio de compilación, empaquetado y ejecución \textit{builds}.
+	\item AWS Elastic Container Registry \cite{aws_ECR}: servicio de repositorio y control de versiones de imágenes Docker.
 \end{itemize}
 
 El objetivo de esta configuración de servicios es permitir que por cada cambio en el código fuente versionado en el controlador de versiones Github, se dispare un proceso de compilación y ejecución de tests unitarios notificando en tiempo real si dicho cambio agrega o no una falla al actual estado del desarrollo. En caso de pasar satisfactoriamente la compilación y ejecución de los tests entonces se genera una nueva imagen Docker con la última versión del codigo compilado y se versiona en AWS Elastic Container Registry.

@@ -3,19 +3,20 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Robot de exploración ambiental.}}{9}{figure.2.1}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Prueba de recepción de mensajes MQTT.}}{19}{figure.3.1}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Configuración de redirección de mensajes MQTT.}}{20}{figure.3.2}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Almacenamiento de mensajes JSON en AWS S3.}}{20}{figure.3.3}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Creación de base datos, tabla y esquema AWS Glue.}}{21}{figure.3.4}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Consulta de datos SQL desde AWS Athena.}}{22}{figure.3.5}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Obtención de créditos mediante Google Web3.}}{23}{figure.3.6}%
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Saldo en Metamask.}}{23}{figure.3.7}%
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Transacciones de generación de fondos de prueba.}}{24}{figure.3.8}%
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Configuración de redes de despliegue en Truffle.}}{24}{figure.3.9}%
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Salida por pantalla durante el proceso de despliegue de los componentes blockchain.}}{25}{figure.3.10}%
-\contentsline {figure}{\numberline {3.11}{\ignorespaces Transacciones de despliegue en Sepolia.}}{26}{figure.3.11}%
-\contentsline {figure}{\numberline {3.12}{\ignorespaces Detalles del contrato desplegado en Sepolia.}}{27}{figure.3.12}%
-\contentsline {figure}{\numberline {3.13}{\ignorespaces Endpoints expuestos por la dApp.}}{28}{figure.3.13}%
-\contentsline {figure}{\numberline {3.14}{\ignorespaces Frontend the Alchemy.}}{29}{figure.3.14}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Arquitectura de la solución.}}{19}{figure.3.1}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Prueba de recepción de mensajes MQTT.}}{22}{figure.3.2}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Configuración de redirección de mensajes MQTT.}}{23}{figure.3.3}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Almacenamiento de mensajes JSON en AWS S3.}}{23}{figure.3.4}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Creación de base datos, tabla y esquema AWS Glue.}}{24}{figure.3.5}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Consulta de datos SQL desde AWS Athena.}}{25}{figure.3.6}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Obtención de créditos mediante Google Web3.}}{26}{figure.3.7}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Saldo en Metamask.}}{26}{figure.3.8}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Transacciones de generación de fondos de prueba.}}{27}{figure.3.9}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Configuración de redes de despliegue en Truffle.}}{27}{figure.3.10}%
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Salida por pantalla durante el proceso de despliegue de los componentes blockchain.}}{28}{figure.3.11}%
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Transacciones de despliegue en Sepolia.}}{29}{figure.3.12}%
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Detalles del contrato desplegado en Sepolia.}}{30}{figure.3.13}%
+\contentsline {figure}{\numberline {3.14}{\ignorespaces Endpoints expuestos por la dApp.}}{31}{figure.3.14}%
+\contentsline {figure}{\numberline {3.15}{\ignorespaces Frontend the Alchemy.}}{32}{figure.3.15}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }

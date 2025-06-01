@@ -747,6 +747,182 @@
     \endverb
   \endentry
 
+  \entry{aws_sns}{online}{}
+    \name{author}{1}{}{%
+      {{hash=SAW}{%
+         family={Service},
+         familyi={S\bibinitperiod},
+         given={Amazon\bibnamedelima Web},
+         giveni={A\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+    }
+    \keyw{latex,knuth}
+    \strng{namehash}{SAW1}
+    \strng{fullhash}{SAW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{AWS SNS}
+    \verb{url}
+    \verb https://aws.amazon.com/sns/
+    \endverb
+  \endentry
+
+  \entry{aws_sqs}{online}{}
+    \name{author}{1}{}{%
+      {{hash=SAW}{%
+         family={Service},
+         familyi={S\bibinitperiod},
+         given={Amazon\bibnamedelima Web},
+         giveni={A\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+    }
+    \keyw{latex,knuth}
+    \strng{namehash}{SAW1}
+    \strng{fullhash}{SAW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{AWS SQS}
+    \verb{url}
+    \verb https://aws.amazon.com/sqs/
+    \endverb
+  \endentry
+
+  \entry{aws_secrets}{online}{}
+    \name{author}{1}{}{%
+      {{hash=SAW}{%
+         family={Service},
+         familyi={S\bibinitperiod},
+         given={Amazon\bibnamedelima Web},
+         giveni={A\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+    }
+    \keyw{latex,knuth}
+    \strng{namehash}{SAW1}
+    \strng{fullhash}{SAW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{AWS Secrets Manager}
+    \verb{url}
+    \verb https://aws.amazon.com/secrets-manager/
+    \endverb
+  \endentry
+
+  \entry{aws_lambda}{online}{}
+    \name{author}{1}{}{%
+      {{hash=SAW}{%
+         family={Service},
+         familyi={S\bibinitperiod},
+         given={Amazon\bibnamedelima Web},
+         giveni={A\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+    }
+    \keyw{latex,knuth}
+    \strng{namehash}{SAW1}
+    \strng{fullhash}{SAW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{AWS Lambda}
+    \verb{url}
+    \verb https://aws.amazon.com/lambda/
+    \endverb
+  \endentry
+
+  \entry{aws_dynamodb}{online}{}
+    \name{author}{1}{}{%
+      {{hash=SAW}{%
+         family={Service},
+         familyi={S\bibinitperiod},
+         given={Amazon\bibnamedelima Web},
+         giveni={A\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+    }
+    \keyw{latex,knuth}
+    \strng{namehash}{SAW1}
+    \strng{fullhash}{SAW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{AWS Dynamo}
+    \verb{url}
+    \verb https://aws.amazon.com/dynamodb/
+    \endverb
+  \endentry
+
+  \entry{aws_iam}{online}{}
+    \name{author}{1}{}{%
+      {{hash=SAW}{%
+         family={Service},
+         familyi={S\bibinitperiod},
+         given={Amazon\bibnamedelima Web},
+         giveni={A\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+    }
+    \keyw{latex,knuth}
+    \strng{namehash}{SAW1}
+    \strng{fullhash}{SAW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{AWS IAM}
+    \verb{url}
+    \verb https://aws.amazon.com/iam/
+    \endverb
+  \endentry
+
+  \entry{abac}{online}{}
+    \name{author}{1}{}{%
+      {{hash=W}{%
+         family={Wikipedia},
+         familyi={W\bibinitperiod},
+      }}%
+    }
+    \keyw{latex,knuth}
+    \strng{namehash}{W2}
+    \strng{fullhash}{W2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{ABAC}
+    \verb{url}
+    \verb https://en.wikipedia.org/wiki/Attribute-based_access_control
+    \endverb
+  \endentry
+
+  \entry{mfa}{online}{}
+    \name{author}{1}{}{%
+      {{hash=W}{%
+         family={Wikipedia},
+         familyi={W\bibinitperiod},
+      }}%
+    }
+    \keyw{latex,knuth}
+    \strng{namehash}{W2}
+    \strng{fullhash}{W2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{MFA}
+    \verb{url}
+    \verb https://en.wikipedia.org/wiki/Multi-factor_authentication
+    \endverb
+  \endentry
+
+  \entry{aws_cloudwatch}{online}{}
+    \name{author}{1}{}{%
+      {{hash=SAW}{%
+         family={Service},
+         familyi={S\bibinitperiod},
+         given={Amazon\bibnamedelima Web},
+         giveni={A\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+    }
+    \keyw{latex,knuth}
+    \strng{namehash}{SAW1}
+    \strng{fullhash}{SAW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{AWS CloudWatch}
+    \verb{url}
+    \verb https://aws.amazon.com/cloudwatch/
+    \endverb
+  \endentry
+
   \entry{nodejs}{online}{}
     \name{author}{1}{}{%
       {{hash=N}{%
@@ -762,6 +938,42 @@
     \field{title}{Node.js}
     \verb{url}
     \verb https://nodejs.org/en
+    \endverb
+  \endentry
+
+  \entry{open_api}{online}{}
+    \name{author}{1}{}{%
+      {{hash=s}{%
+         family={swagger.io},
+         familyi={s\bibinitperiod},
+      }}%
+    }
+    \keyw{latex,knuth}
+    \strng{namehash}{s1}
+    \strng{fullhash}{s1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Open API Specification}
+    \verb{url}
+    \verb https://swagger.io/specification/
+    \endverb
+  \endentry
+
+  \entry{solidity}{online}{}
+    \name{author}{1}{}{%
+      {{hash=s}{%
+         family={soliditylang.org},
+         familyi={s\bibinitperiod},
+      }}%
+    }
+    \keyw{latex,knuth}
+    \strng{namehash}{s1}
+    \strng{fullhash}{s1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Solidity programming language}
+    \verb{url}
+    \verb https://soliditylang.org/
     \endverb
   \endentry
 
@@ -785,14 +997,14 @@
 
   \entry{evm}{online}{}
     \name{author}{1}{}{%
-      {{hash=W}{%
-         family={Wthereum.org},
-         familyi={W\bibinitperiod},
+      {{hash=E}{%
+         family={Ethereum.org},
+         familyi={E\bibinitperiod},
       }}%
     }
     \keyw{latex,knuth}
-    \strng{namehash}{W3}
-    \strng{fullhash}{W3}
+    \strng{namehash}{E2}
+    \strng{fullhash}{E2}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{title}{Ethereum Virtual Machine (EVM)}
@@ -915,24 +1127,6 @@
     \endverb
   \endentry
 
-  \entry{solidity}{online}{}
-    \name{author}{1}{}{%
-      {{hash=s}{%
-         family={soliditylang.org},
-         familyi={s\bibinitperiod},
-      }}%
-    }
-    \keyw{latex,knuth}
-    \strng{namehash}{s1}
-    \strng{fullhash}{s1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{title}{Solidity programming language}
-    \verb{url}
-    \verb https://soliditylang.org/
-    \endverb
-  \endentry
-
   \entry{ganache_website}{online}{}
     \name{author}{1}{}{%
       {{hash=ST}{%
@@ -1045,7 +1239,7 @@
     \endverb
   \endentry
 
-  \entry{SoftwareTool_codePipeline}{online}{}
+  \entry{AWS_codePipeline}{online}{}
     \name{author}{1}{}{%
       {{hash=SAW}{%
          family={Services},
@@ -1065,7 +1259,7 @@
     \endverb
   \endentry
 
-  \entry{SoftwareTool_ECR}{online}{}
+  \entry{aws_ECR}{online}{}
     \name{author}{1}{}{%
       {{hash=SAW}{%
          family={Services},
@@ -1121,6 +1315,42 @@
     \endverb
   \endentry
 
+  \entry{azure}{online}{}
+    \name{author}{1}{}{%
+      {{hash=M}{%
+         family={Microsoft},
+         familyi={M\bibinitperiod},
+      }}%
+    }
+    \keyw{latex,knuth}
+    \strng{namehash}{M2}
+    \strng{fullhash}{M2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Microsoft Azure}
+    \verb{url}
+    \verb https://azure.microsoft.com/
+    \endverb
+  \endentry
+
+  \entry{azure_fabric}{online}{}
+    \name{author}{1}{}{%
+      {{hash=M}{%
+         family={Microsoft},
+         familyi={M\bibinitperiod},
+      }}%
+    }
+    \keyw{latex,knuth}
+    \strng{namehash}{M2}
+    \strng{fullhash}{M2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Microsoft Fabric | Fundamentals}
+    \verb{url}
+    \verb https://learn.microsoft.com/en-us/fabric/
+    \endverb
+  \endentry
+
   \entry{sntp}{online}{}
     \name{author}{1}{}{%
       {{hash=DI}{%
@@ -1157,24 +1387,6 @@
     \field{title}{Google Cloud Web3}
     \verb{url}
     \verb https://cloud.google.com/application/web3/faucet
-    \endverb
-  \endentry
-
-  \entry{open_api}{online}{}
-    \name{author}{1}{}{%
-      {{hash=s}{%
-         family={swagger.io},
-         familyi={s\bibinitperiod},
-      }}%
-    }
-    \keyw{latex,knuth}
-    \strng{namehash}{s2}
-    \strng{fullhash}{s2}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{title}{Open API Specification}
-    \verb{url}
-    \verb https://swagger.io/specification/
     \endverb
   \endentry
 \enddatalist
