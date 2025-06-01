@@ -186,11 +186,10 @@ Una vez obtenidos los fondos de prueba en la billetera se procedió con el desar
 \end{center}
 
 
-Desde el punto de vista del \textit{backend} blockchain, se desarrolló la dApp utilizando Node.js y la biblioteca Javascript Web3.js para la comunicación con los \textit{smart contracts}. Para la dApp, se desarrollaron varios \textit{endpoints} listados a continuacion en la siguiente tabla:
 
 
 
-Como se puede apreciar en la figura \ref{fig:sm_deployment}, durante el proceso de despliegue se pueden observar cierta información por pantalla:
+Como se puede apreciar en la figura \ref{fig:sm_deployment}, durante el proceso de despliegue se presenta cierta información por pantalla:
 
 \begin{itemize}
 	\item La red a la cual se esta realizando el despliegue.
@@ -221,6 +220,29 @@ Luego de haber realizado el despliegue de los \textit{smart contracts} a la red 
    \label{fig:sm_deployment_etherscan2}
 \end{center}
 
+
+
+Desde el punto de vista del \textit{backend} blockchain, se desarrolló la dApp utilizando Node.js y la biblioteca Javascript Web3.js para la comunicación con los \textit{smart contracts}. Para la dApp, se desarrollaron varios \textit{endpoints} y se expusieron mediante el estandar Open API \citep{open_api} utilizando la biblioteca Swagger, que como se puede apreciar en la figura \ref{fig:dapp_endpoints}, genera una interfaz gráfica documenta y brinda un cliente de prueba para poder invocar los \textit{endpoints} expuestos.
+
+\begin{center}
+   \includegraphics[scale=0.4]{blockchain/dapp_endpoints}
+   \captionof{figure}{Endpoints expuestos por la dApp.}
+   \label{fig:dapp_endpoints}
+\end{center}
+
+Para que la dApp pueda interactuar con la red debe poder conectarse a un endpoint RPC publicado desde cualquier nodo de la misma. Por este motivo se utilizó el servicio Alchemy que brinda publica endpoints para distintas redes, incluyendo Ethereum. Primero se creó un perfil en este servicio de manera gratuita y se creó un nuevo proyecto con el nombre iot\_robots\_storage. Una vez hecho esto se pudo acceder a los diferentes endpoints disponibles de Ethereum para las tres redes principales (Mainnet, Holesky y Sepolia) como se puede apreciar en la figura \ref{fig:alchemy1}. Posteriormente, se configuró en la inicialización de la biblioteca Web3.js en la dApp, el endpoint provisto por Alchemy y el app\_key del proyecto iot\_robots\_storage. 
+
+\begin{center}
+   \includegraphics[scale=0.3]{blockchain/alchemy1}
+   \captionof{figure}{Frontend the Alchemy.}
+   \label{fig:alchemy1}
+\end{center}
+
+Como se mencionó en el capítulo 1, la red blockchain cumple la funcion de almacenamiento transparente e inmutable en este caso de uso. Para su integración con el flujo de eventos provenientes del tópico MQTT, a fin de poder almacenar las lecturas en la red, se invocó...
+
+\subsection{Capas de procesamiento y almacenamiento - \textit{pipeline} analítico}
+
+Para 
 
 \section{Plataforma de desarrollo y despliegue}
 

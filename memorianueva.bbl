@@ -1159,5 +1159,23 @@
     \verb https://cloud.google.com/application/web3/faucet
     \endverb
   \endentry
+
+  \entry{open_api}{online}{}
+    \name{author}{1}{}{%
+      {{hash=s}{%
+         family={swagger.io},
+         familyi={s\bibinitperiod},
+      }}%
+    }
+    \keyw{latex,knuth}
+    \strng{namehash}{s2}
+    \strng{fullhash}{s2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Open API Specification}
+    \verb{url}
+    \verb https://swagger.io/specification/
+    \endverb
+  \endentry
 \enddatalist
 \endinput

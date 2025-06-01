@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.5.12)  18 APR 2025 01:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.5.12)  1 JUN 2025 09:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -978,7 +978,7 @@ LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10> not available
 
 pdfTeX warning: /usr/bin/pdflatex (file ./Figures/fondo.pdf): PDF inclusion: fo
 und PDF version <1.6>, but at most version <1.5> allowed
-<Figures/fondo.pdf, id=221, 597.55246pt x 845.07718pt>
+<Figures/fondo.pdf, id=265, 597.55246pt x 845.07718pt>
 File: Figures/fondo.pdf Graphic file (type pdf)
 <use Figures/fondo.pdf>
 Package pdftex.def Info: Figures/fondo.pdf  used on input line 51.
@@ -1105,7 +1105,7 @@ LaTeX Info: Redefining \% on input line 119.
 
 ]
 Cap\'{\i }tulo 2.
-<Figures/Robot_y_Joystick_1.png, id=501, 501.875pt x 335.2525pt>
+<Figures/Robot_y_Joystick_1.png, id=560, 501.875pt x 335.2525pt>
 File: Figures/Robot_y_Joystick_1.png Graphic file (type png)
 <use Figures/Robot_y_Joystick_1.png>
 Package pdftex.def Info: Figures/Robot_y_Joystick_1.png  used on input line 21.
@@ -1126,33 +1126,38 @@ File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
 LaTeX Info: Redefining \. on input line 66.
 LaTeX Info: Redefining \% on input line 66.
  [10]
-LaTeX Info: Redefining \. on input line 94.
-LaTeX Info: Redefining \% on input line 94.
+LaTeX Info: Redefining \. on input line 103.
+LaTeX Info: Redefining \% on input line 103.
  [11]
-LaTeX Info: Redefining \. on input line 115.
-LaTeX Info: Redefining \% on input line 115.
- [12]
-LaTeX Info: Redefining \. on input line 143.
-LaTeX Info: Redefining \% on input line 143.
- [13]
-LaTeX Info: Redefining \. on input line 181.
-LaTeX Info: Redefining \% on input line 181.
- [14])
 LaTeX Info: Redefining \. on input line 120.
 LaTeX Info: Redefining \% on input line 120.
- [15]
+ [12]
+LaTeX Info: Redefining \. on input line 149.
+LaTeX Info: Redefining \% on input line 149.
+ [13]
+
+LaTeX Warning: Citation 'link' on page 14 undefined on input line 173.
+
+LaTeX Info: Redefining \. on input line 176.
+LaTeX Info: Redefining \% on input line 176.
+[14]
+LaTeX Info: Redefining \. on input line 220.
+LaTeX Info: Redefining \% on input line 220.
+ [15])
+LaTeX Info: Redefining \. on input line 120.
+LaTeX Info: Redefining \% on input line 120.
+ [16]
 \openout2 = `Chapters/Chapter3.aux'.
 
-
-(./Chapters/Chapter3.tex [16
+ (./Chapters/Chapter3.tex
+Cap\'{\i }tulo 3.
+1: section
+[17
 
 
 
 
 ]
-Cap\'{\i }tulo 3.
-1: section
-[17]
 Overfull \hbox (3.9041pt too wide) detected at line 47
 [][]\OML/cmm/m/it/10.95 MockLong \OT1/cmr/m/n/10.95 = [] [] + \OML/cmm/m/it/10.
 95 LONG[]MIN[]
@@ -1161,7 +1166,7 @@ Overfull \hbox (3.9041pt too wide) detected at line 47
 LaTeX Info: Redefining \. on input line 101.
 LaTeX Info: Redefining \% on input line 101.
 [18]
-<Figures/AWS/aws_iot_core_mqtt_test_2.png, id=636, 1142.2675pt x 888.31876pt>
+<Figures/AWS/aws_iot_core_mqtt_test_2.png, id=695, 1142.2675pt x 888.31876pt>
 File: Figures/AWS/aws_iot_core_mqtt_test_2.png Graphic file (type png)
 <use Figures/AWS/aws_iot_core_mqtt_test_2.png>
 Package pdftex.def Info: Figures/AWS/aws_iot_core_mqtt_test_2.png  used on inpu
@@ -1178,7 +1183,7 @@ Overfull \hbox (9.99693pt too wide) in paragraph at lines 108--109
  [] 
  []
 
-<Figures/AWS/aws_iot_core_message_routing.png, id=638, 920.43875pt x 727.71875p
+<Figures/AWS/aws_iot_core_message_routing.png, id=697, 920.43875pt x 727.71875p
 t>
 File: Figures/AWS/aws_iot_core_message_routing.png Graphic file (type png)
 <use Figures/AWS/aws_iot_core_message_routing.png>
@@ -1193,7 +1198,7 @@ See the caption package documentation for explanation.
 LaTeX Info: Redefining \. on input line 118.
 LaTeX Info: Redefining \% on input line 118.
 [19 <./Figures/AWS/aws_iot_core_mqtt_test_2.png>]
-<Figures/AWS/aws_s3_bucket_data2.png, id=645, 919.435pt x 627.34375pt>
+<Figures/AWS/aws_s3_bucket_data2.png, id=704, 919.435pt x 627.34375pt>
 File: Figures/AWS/aws_s3_bucket_data2.png Graphic file (type png)
 <use Figures/AWS/aws_s3_bucket_data2.png>
 Package pdftex.def Info: Figures/AWS/aws_s3_bucket_data2.png  used on input lin
@@ -1209,7 +1214,7 @@ LaTeX Info: Redefining \. on input line 135.
 LaTeX Info: Redefining \% on input line 135.
 [20 <./Figures/AWS/aws_iot_core_message_routing.png> <./Figures/AWS/aws_s3_buck
 et_data2.png>]
-<Figures/AWS/aws_glue_table_review.png, id=653, 920.43875pt x 884.30376pt>
+<Figures/AWS/aws_glue_table_review.png, id=713, 920.43875pt x 884.30376pt>
 File: Figures/AWS/aws_glue_table_review.png Graphic file (type png)
 <use Figures/AWS/aws_glue_table_review.png>
 Package pdftex.def Info: Figures/AWS/aws_glue_table_review.png  used on input l
@@ -1221,7 +1226,7 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 138.
 See the caption package documentation for explanation.
 
-<Figures/AWS/aws_athena_config.png, id=654, 920.43875pt x 884.30376pt>
+<Figures/AWS/aws_athena_config.png, id=714, 920.43875pt x 884.30376pt>
 File: Figures/AWS/aws_athena_config.png Graphic file (type png)
 <use Figures/AWS/aws_athena_config.png>
 Package pdftex.def Info: Figures/AWS/aws_athena_config.png  used on input line 
@@ -1235,7 +1240,7 @@ See the caption package documentation for explanation.
 LaTeX Info: Redefining \. on input line 146.
 LaTeX Info: Redefining \% on input line 146.
 [21 <./Figures/AWS/aws_glue_table_review.png>]
-<Figures/blockchain/google_faucets2.png, id=664, 1084.05pt x 541.02126pt>
+<Figures/blockchain/google_faucets2.png, id=724, 1084.05pt x 541.02126pt>
 File: Figures/blockchain/google_faucets2.png Graphic file (type png)
 <use Figures/blockchain/google_faucets2.png>
 Package pdftex.def Info: Figures/blockchain/google_faucets2.png  used on input 
@@ -1250,7 +1255,7 @@ See the caption package documentation for explanation.
 LaTeX Info: Redefining \. on input line 160.
 LaTeX Info: Redefining \% on input line 160.
 [22 <./Figures/AWS/aws_athena_config.png>]
-<Figures/blockchain/metamask_balance.png, id=671, 1009.7725pt x 588.1975pt>
+<Figures/blockchain/metamask_balance.png, id=731, 1009.7725pt x 588.1975pt>
 File: Figures/blockchain/metamask_balance.png Graphic file (type png)
 <use Figures/blockchain/metamask_balance.png>
 Package pdftex.def Info: Figures/blockchain/metamask_balance.png  used on input
@@ -1262,7 +1267,7 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 166.
 See the caption package documentation for explanation.
 
-<Figures/blockchain/sepolia_funding2.png, id=672, 1281.78876pt x 940.51375pt>
+<Figures/blockchain/sepolia_funding2.png, id=732, 1281.78876pt x 940.51375pt>
 File: Figures/blockchain/sepolia_funding2.png Graphic file (type png)
 <use Figures/blockchain/sepolia_funding2.png>
 Package pdftex.def Info: Figures/blockchain/sepolia_funding2.png  used on input
@@ -1277,7 +1282,7 @@ LaTeX Info: Redefining \. on input line 175.
 LaTeX Info: Redefining \% on input line 175.
 [23 <./Figures/blockchain/google_faucets2.png> <./Figures/blockchain/metamask_b
 alance.png>]
-<Figures/blockchain/truffle_redes.png, id=680, 822.07124pt x 508.90125pt>
+<Figures/blockchain/truffle_redes.png, id=740, 822.07124pt x 508.90125pt>
 File: Figures/blockchain/truffle_redes.png Graphic file (type png)
 <use Figures/blockchain/truffle_redes.png>
 Package pdftex.def Info: Figures/blockchain/truffle_redes.png  used on input li
@@ -1289,64 +1294,94 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 184.
 See the caption package documentation for explanation.
 
-LaTeX Info: Redefining \. on input line 190.
-LaTeX Info: Redefining \% on input line 190.
+LaTeX Info: Redefining \. on input line 195.
+LaTeX Info: Redefining \% on input line 195.
 [24 <./Figures/blockchain/sepolia_funding2.png> <./Figures/blockchain/truffle_r
 edes.png>]
-<Figures/blockchain/sm_deployment.png, id=688, 1073.00874pt x 790.955pt>
+<Figures/blockchain/sm_deployment.png, id=748, 1073.00874pt x 790.955pt>
 File: Figures/blockchain/sm_deployment.png Graphic file (type png)
 <use Figures/blockchain/sm_deployment.png>
 Package pdftex.def Info: Figures/blockchain/sm_deployment.png  used on input li
-ne 205.
+ne 204.
 (pdftex.def)             Requested size: 375.55869pt x 276.8384pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 206.
+(caption)                particular \caption on input line 205.
 See the caption package documentation for explanation.
 
-<Figures/blockchain/sm_deployment_etherscan1.png, id=691, 1191.45125pt x 936.49
+<Figures/blockchain/sm_deployment_etherscan1.png, id=751, 1191.45125pt x 936.49
 875pt>
 File: Figures/blockchain/sm_deployment_etherscan1.png Graphic file (type png)
 <use Figures/blockchain/sm_deployment_etherscan1.png>
 Package pdftex.def Info: Figures/blockchain/sm_deployment_etherscan1.png  used 
-on input line 213.
+on input line 212.
 (pdftex.def)             Requested size: 417.01419pt x 327.77946pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 214.
+(caption)                particular \caption on input line 213.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (27.2115pt too wide) in paragraph at lines 213--214
+Overfull \hbox (27.2115pt too wide) in paragraph at lines 212--213
  [] 
  []
 
-LaTeX Info: Redefining \. on input line 214.
-LaTeX Info: Redefining \% on input line 214.
+LaTeX Info: Redefining \. on input line 213.
+LaTeX Info: Redefining \% on input line 213.
 [25 <./Figures/blockchain/sm_deployment.png>]
-<Figures/blockchain/sm_deployment_etherscan2.png, id=697, 1009.7725pt x 983.675
+<Figures/blockchain/sm_deployment_etherscan2.png, id=757, 1009.7725pt x 983.675
 pt>
 File: Figures/blockchain/sm_deployment_etherscan2.png Graphic file (type png)
 <use Figures/blockchain/sm_deployment_etherscan2.png>
 Package pdftex.def Info: Figures/blockchain/sm_deployment_etherscan2.png  used 
-on input line 219.
+on input line 218.
 (pdftex.def)             Requested size: 353.42567pt x 344.29141pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 220.
+(caption)                particular \caption on input line 219.
 See the caption package documentation for explanation.
 
-LaTeX Info: Redefining \. on input line 220.
-LaTeX Info: Redefining \% on input line 220.
-[26 <./Figures/blockchain/sm_deployment_etherscan1.png>])
+LaTeX Info: Redefining \. on input line 219.
+LaTeX Info: Redefining \% on input line 219.
+[26 <./Figures/blockchain/sm_deployment_etherscan1.png>]
+<Figures/blockchain/dapp_endpoints.png, id=765, 926.46124pt x 918.43124pt>
+File: Figures/blockchain/dapp_endpoints.png Graphic file (type png)
+<use Figures/blockchain/dapp_endpoints.png>
+Package pdftex.def Info: Figures/blockchain/dapp_endpoints.png  used on input l
+ine 228.
+(pdftex.def)             Requested size: 370.57793pt x 367.36598pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 229.
+See the caption package documentation for explanation.
+
+LaTeX Info: Redefining \. on input line 229.
+LaTeX Info: Redefining \% on input line 229.
+[27 <./Figures/blockchain/sm_deployment_etherscan2.png>]
+<Figures/blockchain/alchemy1.png, id=774, 1219.55624pt x 927.465pt>
+File: Figures/blockchain/alchemy1.png Graphic file (type png)
+<use Figures/blockchain/alchemy1.png>
+Package pdftex.def Info: Figures/blockchain/alchemy1.png  used on input line 23
+6.
+(pdftex.def)             Requested size: 365.86969pt x 278.24164pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 237.
+See the caption package documentation for explanation.
+
+LaTeX Info: Redefining \. on input line 237.
+LaTeX Info: Redefining \% on input line 237.
+[28 <./Figures/blockchain/dapp_endpoints.png>])
 LaTeX Info: Redefining \. on input line 121.
 LaTeX Info: Redefining \% on input line 121.
- [27 <./Figures/blockchain/sm_deployment_etherscan2.png>]
+ [29 <./Figures/blockchain/alchemy1.png>]
 \openout2 = `Chapters/Chapter4.aux'.
 
- (./Chapters/Chapter4.tex [28
+ (./Chapters/Chapter4.tex [30
 
 
 
@@ -1355,10 +1390,10 @@ LaTeX Info: Redefining \% on input line 121.
 Cap\'{\i }tulo 4.
 )
 1: section
-[29]
+[31]
 \openout2 = `Chapters/Chapter5.aux'.
 
- (./Chapters/Chapter5.tex [30
+ (./Chapters/Chapter5.tex [32
 
 
 
@@ -1367,7 +1402,7 @@ Cap\'{\i }tulo 4.
 Cap\'{\i }tulo 5.
 )
 1: section
-[31] [32
+[33] [34
 
 
 
@@ -1393,7 +1428,7 @@ ierno ar-gen-tino quie-re im-ple-men-tar-los\T1/ppl/m/n/10.95 . \T1/ppl/m/sc/10
  []
 
 1: section
-[33]
+[35]
 Overfull \hbox (21.05476pt too wide) in paragraph at lines 141--141
 []\T1/ppl/m/n/10.95 OASIS. \T1/ppl/m/it/10.95 MQTT Pro-to-col Spe-ci-fi-ca-tion
 \T1/ppl/m/n/10.95 . \T1/ppl/m/sc/10.95 url\T1/ppl/m/n/10.95 : [][]$https : / / 
@@ -1422,10 +1457,10 @@ ps : / / archive . tru^^_esuite .
 
 LaTeX Info: Redefining \. on input line 141.
 LaTeX Info: Redefining \% on input line 141.
-[34]
+[36]
 LaTeX Info: Redefining \. on input line 143.
 LaTeX Info: Redefining \% on input line 143.
- [35] (./memorianueva.aux (./portada.aux)
+ [37] (./memorianueva.aux (./portada.aux)
 LaTeX Info: Redefining \sptext on input line 16.
 LaTeX Info: Redefining \. on input line 16.
 LaTeX Info: Redefining \% on input line 16.
@@ -1441,7 +1476,7 @@ L3 programming layer <2020/03/25>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `memorianueva.out' has not changed.
-(rerunfilecheck)             Checksum: B99736A72DECF5653AB00035087D836B;9347.
+(rerunfilecheck)             Checksum: A5C81FF134C1E29DBA794E5A033CF22E;11132.
 
 Package biblatex Warning: Please (re)run BibTeX on the file(s):
 (biblatex)                memorianueva
@@ -1452,11 +1487,11 @@ Package logreq Info: Writing requests to 'memorianueva.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 31788 strings out of 474222
- 687279 string characters out of 5748733
+ 31848 strings out of 474222
+ 688810 string characters out of 5748733
  1953975 words of memory out of 5000000
- 53443 multiletter control sequences out of 15000+600000
- 611639 words of font info for 95 fonts, out of 8000000 for 9000
+ 53485 multiletter control sequences out of 15000+600000
+ 613235 words of font info for 97 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
  96i,21n,95p,1969b,2813s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
@@ -1466,13 +1501,14 @@ ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/font
 s/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/
 helvetic/uhvro8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/up
-lb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></u
-sr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on memorianueva.pdf (45 pages, 1743966 bytes).
+lb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplbi8a.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on memorianueva.pdf (47 pages, 1967488 bytes).
 PDF statistics:
- 948 PDF objects out of 1000 (max. 8388607)
- 840 compressed objects within 9 object streams
- 230 named destinations out of 1000 (max. 500000)
- 503 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1032 PDF objects out of 1200 (max. 8388607)
+ 915 compressed objects within 10 object streams
+ 246 named destinations out of 1000 (max. 500000)
+ 601 words of extra memory for PDF output out of 10000 (max. 10000000)
 

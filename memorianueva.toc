@@ -20,23 +20,33 @@
 \contentsline {subsection}{\numberline {2.2.3}AWS Glue}{10}{subsection.2.2.3}%
 \contentsline {subsection}{\numberline {2.2.4}AWS S3}{10}{subsection.2.2.4}%
 \contentsline {subsection}{\numberline {2.2.5}AWS Athena}{11}{subsection.2.2.5}%
-\contentsline {subsection}{\numberline {2.2.6}MQTT}{11}{subsection.2.2.6}%
-\contentsline {subsection}{\numberline {2.2.7}AWS IoT Core}{11}{subsection.2.2.7}%
-\contentsline {subsection}{\numberline {2.2.8}Node.js}{11}{subsection.2.2.8}%
-\contentsline {section}{\numberline {2.3}Tecnologías blockchain utilizadas}{11}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Ecosistema Ethereum}{11}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.2.6}AWS SNS}{11}{subsection.2.2.6}%
+\contentsline {subsection}{\numberline {2.2.7}AWS SQS}{11}{subsection.2.2.7}%
+\contentsline {subsection}{\numberline {2.2.8}AWS SNS}{11}{subsection.2.2.8}%
+\contentsline {subsection}{\numberline {2.2.9}AWS Secrets Manager}{11}{subsection.2.2.9}%
+\contentsline {subsection}{\numberline {2.2.10}AWS Lambda}{11}{subsection.2.2.10}%
+\contentsline {subsection}{\numberline {2.2.11}AWS Dynamo}{11}{subsection.2.2.11}%
+\contentsline {subsection}{\numberline {2.2.12}MQTT}{11}{subsection.2.2.12}%
+\contentsline {subsection}{\numberline {2.2.13}AWS IoT Core}{11}{subsection.2.2.13}%
+\contentsline {subsection}{\numberline {2.2.14}Node.js}{12}{subsection.2.2.14}%
+\contentsline {section}{\numberline {2.3}Tecnologías blockchain utilizadas}{12}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Ecosistema Ethereum}{12}{subsection.2.3.1}%
 \contentsline {subsection}{\numberline {2.3.2}Solidity}{13}{subsection.2.3.2}%
 \contentsline {subsection}{\numberline {2.3.3}Biblioteca Web3.js}{13}{subsection.2.3.3}%
 \contentsline {subsection}{\numberline {2.3.4}Ganache}{13}{subsection.2.3.4}%
 \contentsline {subsection}{\numberline {2.3.5}Truffle}{13}{subsection.2.3.5}%
-\contentsline {subsection}{\numberline {2.3.6}Alchemy}{13}{subsection.2.3.6}%
-\contentsline {subsection}{\numberline {2.3.7}Etherscan}{13}{subsection.2.3.7}%
+\contentsline {subsection}{\numberline {2.3.6}Alchemy}{14}{subsection.2.3.6}%
+\contentsline {subsection}{\numberline {2.3.7}Etherscan}{14}{subsection.2.3.7}%
 \contentsline {subsection}{\numberline {2.3.8}Metamask}{14}{subsection.2.3.8}%
-\contentsline {section}{\numberline {2.4}Tecnologías de desarrollo utilizadas}{14}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}Plataforma Docker}{14}{subsection.2.4.1}%
-\contentsline {subsection}{\numberline {2.4.2}Plataforma de CI/CD}{14}{subsection.2.4.2}%
-\contentsline {subsection}{\numberline {2.4.3}Visual Studio Code}{14}{subsection.2.4.3}%
-\contentsline {subsection}{\numberline {2.4.4}Sistema operativo Ubuntu}{15}{subsection.2.4.4}%
+\contentsline {section}{\numberline {2.4}Tecnologías de ingeniería de datos utilizadas}{14}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Microsoft Fabric}{14}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Azure Data Factory}{15}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.4.3}PowerBI}{15}{subsection.2.4.3}%
+\contentsline {section}{\numberline {2.5}Tecnologías de desarrollo utilizadas}{15}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}Plataforma Docker}{15}{subsection.2.5.1}%
+\contentsline {subsection}{\numberline {2.5.2}Plataforma de CI/CD}{15}{subsection.2.5.2}%
+\contentsline {subsection}{\numberline {2.5.3}Visual Studio Code}{15}{subsection.2.5.3}%
+\contentsline {subsection}{\numberline {2.5.4}Sistema operativo Ubuntu}{16}{subsection.2.5.4}%
 \contentsline {chapter}{\numberline {3}Diseño e implementación}{17}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Arquitectura de software del sistema}{17}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Hardware e infraestructura del sistema}{17}{section.3.2}%
@@ -45,11 +55,12 @@
 \contentsline {subsection}{\numberline {3.3.2}Capa de red}{18}{subsection.3.3.2}%
 \contentsline {subsection}{\numberline {3.3.3}Capas de procesamiento y almacenamiento - cloud}{21}{subsection.3.3.3}%
 \contentsline {subsection}{\numberline {3.3.4}Capas de procesamiento y almacenamiento - blockchain}{22}{subsection.3.3.4}%
-\contentsline {section}{\numberline {3.4}Plataforma de desarrollo y despliegue}{27}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Tabla de todos los objetos AWS creados}{27}{section.3.5}%
-\contentsline {chapter}{\numberline {4}Ensayos y resultados}{29}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Pruebas funcionales del hardware}{29}{section.4.1}%
-\contentsline {chapter}{\numberline {5}Conclusiones}{31}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Conclusiones generales }{31}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Próximos pasos}{31}{section.5.2}%
-\contentsline {chapter}{Bibliografía}{33}{appendix*.8}%
+\contentsline {subsection}{\numberline {3.3.5}Capas de procesamiento y almacenamiento - \textit {pipeline} analítico}{29}{subsection.3.3.5}%
+\contentsline {section}{\numberline {3.4}Plataforma de desarrollo y despliegue}{29}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Tabla de todos los objetos AWS creados}{29}{section.3.5}%
+\contentsline {chapter}{\numberline {4}Ensayos y resultados}{31}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Pruebas funcionales del hardware}{31}{section.4.1}%
+\contentsline {chapter}{\numberline {5}Conclusiones}{33}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Conclusiones generales }{33}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Próximos pasos}{33}{section.5.2}%
+\contentsline {chapter}{Bibliografía}{35}{appendix*.8}%

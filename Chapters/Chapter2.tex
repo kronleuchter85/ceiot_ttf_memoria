@@ -69,7 +69,25 @@ AWS S3 (\textit{Simple Storage Service}) \citep{aws_s3} es un servicio de almace
 
 AWS Athena \citep{aws_athena} es un servicio de análisis de datos sin servidor de AWS que permite consultar directamente datos almacenados en Amazon S3 y esquemas definidos en Glue, utilizando SQL estándar. No requiere configuración ni administración de servidores, y es ideal para analizar grandes volúmenes de datos de forma rápida y económica.
 
+\subsection{AWS SNS}
+....
 
+\subsection{AWS SQS}
+....
+
+\subsection{AWS SNS}
+....
+
+\subsection{AWS Secrets Manager}
+....
+
+
+\subsection{AWS Lambda}
+....
+
+
+\subsection{AWS Dynamo}
+....
 
 \subsection{MQTT}
 
@@ -141,14 +159,40 @@ Etherscan \cite{etherscan} es un explorador de bloques y plataforma de análisis
 MetaMask \cite{metamask} es una billetera digital y extensión de navegador (también disponible como aplicación móvil) que permite a los usuarios interactuar con blockchains basadas en Ethereum y otros ecosistemas compatibles con Ethereum, como Binance Smart Chain (BSC) y Polygon. Es una herramienta fundamental para interactuar con aplicaciones descentralizadas (dApps), contratos inteligentes y realizar transacciones de criptomonedas directamente desde el navegador.
 En el presente trabajo se utilizó para almacenar los fondos en ETH obtenidos a través de \textit{faucets} necesarios para pagar el gas de las transacciones.
 
+
+
+
+\section{Tecnologías de ingeniería de datos utilizadas}
+
+
+
+\subsection{Microsoft Fabric}
+Microsoft Fabric es una plataforma unificada de analítica de datos en la nube de Azure que integra múltiples herramientas en un entorno gestionado. Está diseñada simplificar la integración, transformación, análisis y visualización de datos. Entre sus componentes principales se encuentran: 
+
+\begin{itemize}
+	\item Lakehouse \cite{link}: que combina las capacidades de un data lake y un data warehouse, permitiendo almacenar y procesar grandes volúmenes de datos estructurados y no estructurados, compatible con Spark, notebooks y consultas SQL.
+	\item Warehouse, un entorno de base de datos relacional orientado a análisis empresariales y modelado dimensional, que permite ejecutar consultas SQL sobre los datos almacenados en OneLake.
+	\item Data Factory es la herramienta de orquestación de datos que permite construir flujos ETL/ELT mediante pipelines y actividades de copiado,.
+	\item Dataflows Gen2 permite realizar transformaciones complejas sobre los datos mediante una interfaz visual sin necesidad de código, utilizando el motor Spark de forma subyacente.
+	\item Power BI está integrado de forma nativa en Fabric y permite crear visualizaciones, dashboards e informes interactivos directamente sobre datos almacenados en Lakehouse o Warehouse, sin necesidad de mover los datos.
+	\item OneLake, que actúa como repositorio de datos único para todos los servicios de Fabric, asegurando gobierno y seguridad de datos. 
+\end{itemize}
+
+
+
+
+\subsection{Azure Data Factory}
+
+
+\subsection{PowerBI}
+- Semantic Model
+-
+
+
+
+
 \section{Tecnologías de desarrollo utilizadas}
 
-
-%\begin{center}
-%\end{center}
-%\includegraphics[scale=0.25]{espressif}
-
-% \footnotetext{Imagen tomada de \cite{espressif-website-esp-idf}}
 
 \subsection{Plataforma Docker}
 
