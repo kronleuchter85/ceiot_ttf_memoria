@@ -28,29 +28,30 @@
 \contentsline {subsection}{\numberline {2.2.11}AWS DynamoDB}{12}{subsection.2.2.11}%
 \contentsline {subsection}{\numberline {2.2.12}AWS IAM}{12}{subsection.2.2.12}%
 \contentsline {subsection}{\numberline {2.2.13}AWS CloudWatch}{12}{subsection.2.2.13}%
-\contentsline {section}{\numberline {2.3}Tecnologías de propósito general utilizadas}{13}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Node.js}{13}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}MQTT}{13}{subsection.2.3.2}%
-\contentsline {subsection}{\numberline {2.3.3}Swagger}{13}{subsection.2.3.3}%
-\contentsline {section}{\numberline {2.4}Lenguajes de programación utilizados}{13}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}Lenguaje de programación Python}{13}{subsection.2.4.1}%
-\contentsline {subsection}{\numberline {2.4.2}Lenguaje de programación Javascript}{13}{subsection.2.4.2}%
-\contentsline {subsection}{\numberline {2.4.3}Lenguaje de programación C}{13}{subsection.2.4.3}%
-\contentsline {subsection}{\numberline {2.4.4}Solidity}{14}{subsection.2.4.4}%
-\contentsline {section}{\numberline {2.5}Tecnologías blockchain utilizadas}{14}{section.2.5}%
-\contentsline {subsection}{\numberline {2.5.1}Ecosistema Ethereum}{14}{subsection.2.5.1}%
-\contentsline {subsection}{\numberline {2.5.2}Biblioteca Web3.js}{15}{subsection.2.5.2}%
-\contentsline {subsection}{\numberline {2.5.3}Ganache}{15}{subsection.2.5.3}%
-\contentsline {subsection}{\numberline {2.5.4}Truffle}{15}{subsection.2.5.4}%
-\contentsline {subsection}{\numberline {2.5.5}Alchemy}{16}{subsection.2.5.5}%
-\contentsline {subsection}{\numberline {2.5.6}Etherscan}{16}{subsection.2.5.6}%
-\contentsline {subsection}{\numberline {2.5.7}Metamask}{16}{subsection.2.5.7}%
-\contentsline {section}{\numberline {2.6}Tecnologías de ingeniería de datos utilizadas}{16}{section.2.6}%
-\contentsline {subsection}{\numberline {2.6.1}Microsoft Fabric}{16}{subsection.2.6.1}%
+\contentsline {section}{\numberline {2.3}Tecnologías Azure utilizadas}{13}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Azure}{13}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Microsoft Fabric}{13}{subsection.2.3.2}%
+\contentsline {section}{\numberline {2.4}Tecnologías blockchain utilizadas}{13}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Ecosistema Ethereum}{13}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Biblioteca Web3.js}{15}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.4.3}Ganache}{15}{subsection.2.4.3}%
+\contentsline {subsection}{\numberline {2.4.4}Truffle}{15}{subsection.2.4.4}%
+\contentsline {subsection}{\numberline {2.4.5}Alchemy}{15}{subsection.2.4.5}%
+\contentsline {subsection}{\numberline {2.4.6}Etherscan}{15}{subsection.2.4.6}%
+\contentsline {subsection}{\numberline {2.4.7}Metamask}{16}{subsection.2.4.7}%
+\contentsline {section}{\numberline {2.5}Tecnologías de propósito general utilizadas}{16}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}Node.js}{16}{subsection.2.5.1}%
+\contentsline {subsection}{\numberline {2.5.2}MQTT}{16}{subsection.2.5.2}%
+\contentsline {subsection}{\numberline {2.5.3}Swagger}{16}{subsection.2.5.3}%
+\contentsline {section}{\numberline {2.6}Lenguajes de programación utilizados}{16}{section.2.6}%
+\contentsline {subsection}{\numberline {2.6.1}Lenguaje de programación Python}{16}{subsection.2.6.1}%
+\contentsline {subsection}{\numberline {2.6.2}Lenguaje de programación Javascript}{16}{subsection.2.6.2}%
+\contentsline {subsection}{\numberline {2.6.3}Lenguaje de programación C}{17}{subsection.2.6.3}%
+\contentsline {subsection}{\numberline {2.6.4}Solidity}{17}{subsection.2.6.4}%
 \contentsline {section}{\numberline {2.7}Tecnologías de desarrollo utilizadas}{17}{section.2.7}%
 \contentsline {subsection}{\numberline {2.7.1}Plataforma Docker}{17}{subsection.2.7.1}%
 \contentsline {subsection}{\numberline {2.7.2}Plataforma de CI/CD}{17}{subsection.2.7.2}%
-\contentsline {subsection}{\numberline {2.7.3}Visual Studio Code}{17}{subsection.2.7.3}%
+\contentsline {subsection}{\numberline {2.7.3}Visual Studio Code}{18}{subsection.2.7.3}%
 \contentsline {subsection}{\numberline {2.7.4}Sistema operativo Ubuntu}{18}{subsection.2.7.4}%
 \contentsline {chapter}{\numberline {3}Diseño e implementación}{19}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Arquitectura de software del sistema}{19}{section.3.1}%
@@ -58,14 +59,27 @@
 \contentsline {section}{\numberline {3.3}Integración de los módulos y subsistemas}{20}{section.3.3}%
 \contentsline {subsection}{\numberline {3.3.1}Capa de percepción}{20}{subsection.3.3.1}%
 \contentsline {subsection}{\numberline {3.3.2}Capa de red}{21}{subsection.3.3.2}%
-\contentsline {subsection}{\numberline {3.3.3}Capas de procesamiento y almacenamiento - cloud}{24}{subsection.3.3.3}%
-\contentsline {subsection}{\numberline {3.3.4}Capas de procesamiento y almacenamiento - blockchain}{25}{subsection.3.3.4}%
-\contentsline {subsection}{\numberline {3.3.5}Capas de procesamiento y almacenamiento - \textit {pipeline} analítico}{32}{subsection.3.3.5}%
-\contentsline {section}{\numberline {3.4}Plataforma de desarrollo y despliegue}{32}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Tabla de todos los objetos AWS creados}{32}{section.3.5}%
-\contentsline {chapter}{\numberline {4}Ensayos y resultados}{33}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Pruebas funcionales del hardware}{33}{section.4.1}%
-\contentsline {chapter}{\numberline {5}Conclusiones}{35}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Conclusiones generales }{35}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Próximos pasos}{35}{section.5.2}%
-\contentsline {chapter}{Bibliografía}{37}{appendix*.8}%
+\contentsline {subsection}{\numberline {3.3.3}Capas de procesamiento y almacenamiento - dApp (AWS) y Smart Contracts}{21}{subsection.3.3.3}%
+\contentsline {subsection}{\numberline {3.3.4}Capas de distribución de eventos}{23}{subsection.3.3.4}%
+\contentsline {subsection}{\numberline {3.3.5}Capas de procesamiento y almacenamiento de datos}{24}{subsection.3.3.5}%
+\contentsline {section}{\numberline {3.4}Plataforma de desarrollo y despliegue}{28}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Tabla de todos los objetos cloud creados}{28}{section.3.5}%
+\contentsline {chapter}{\numberline {4}Ensayos y resultados}{29}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Verificaciones funcionales del hardware}{29}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Verificación del proceso de ingesta en tiempo real MQTT}{29}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Verificación del proceso de distribución de eventos en AWS}{30}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3}Verificación de fondos necesarios para realizar despliegues en redes Holesky y Sepolia}{30}{subsection.4.1.3}%
+\contentsline {subsection}{\numberline {4.1.4}Verificación del proceso de despliegue de los Smart Contracts}{33}{subsection.4.1.4}%
+\contentsline {subsection}{\numberline {4.1.5}Verificación del proceso de despliegue de la dApp}{34}{subsection.4.1.5}%
+\contentsline {subsection}{\numberline {4.1.6}Verificación del proceso de invocación de la dApp}{35}{subsection.4.1.6}%
+\contentsline {subsection}{\numberline {4.1.7}Verificación del proceso de invocación de los Smart Contracts}{35}{subsection.4.1.7}%
+\contentsline {subsection}{\numberline {4.1.8}Validación de los datos almacenados en Ethereum}{35}{subsection.4.1.8}%
+\contentsline {subsection}{\numberline {4.1.9}Verificación del proceso de almacenamiento de readings, transacciones y contracts en AWS S3}{35}{subsection.4.1.9}%
+\contentsline {subsection}{\numberline {4.1.10}Verificación del proceso de ingesta y transformación de datos batch en Fabric}{37}{subsection.4.1.10}%
+\contentsline {subsection}{\numberline {4.1.11}Validación del modelo de datos en el Semantic Model}{38}{subsection.4.1.11}%
+\contentsline {subsection}{\numberline {4.1.12}Validación del reporte final generado en PowerBI}{38}{subsection.4.1.12}%
+\contentsline {section}{\numberline {4.2}Pruebas funcionales del hardware}{38}{section.4.2}%
+\contentsline {chapter}{\numberline {5}Conclusiones}{39}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Conclusiones generales }{39}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Próximos pasos}{39}{section.5.2}%
+\contentsline {chapter}{Bibliografía}{41}{appendix*.8}%

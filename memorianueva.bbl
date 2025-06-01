@@ -923,57 +923,152 @@
     \endverb
   \endentry
 
-  \entry{nodejs}{online}{}
+  \entry{azure}{online}{}
     \name{author}{1}{}{%
-      {{hash=N}{%
-         family={Node.js},
-         familyi={N\bibinitperiod},
+      {{hash=M}{%
+         family={Microsoft},
+         familyi={M\bibinitperiod},
       }}%
     }
     \keyw{latex,knuth}
-    \strng{namehash}{N1}
-    \strng{fullhash}{N1}
+    \strng{namehash}{M2}
+    \strng{fullhash}{M2}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{title}{Node.js}
+    \field{title}{Microsoft Azure}
     \verb{url}
-    \verb https://nodejs.org/en
+    \verb https://azure.microsoft.com/
     \endverb
   \endentry
 
-  \entry{open_api}{online}{}
+  \entry{azure_fabric}{online}{}
     \name{author}{1}{}{%
-      {{hash=s}{%
-         family={swagger.io},
-         familyi={s\bibinitperiod},
+      {{hash=M}{%
+         family={Microsoft},
+         familyi={M\bibinitperiod},
       }}%
     }
     \keyw{latex,knuth}
-    \strng{namehash}{s1}
-    \strng{fullhash}{s1}
+    \strng{namehash}{M2}
+    \strng{fullhash}{M2}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{title}{Open API Specification}
+    \field{title}{Microsoft Fabric | Fundamentals}
     \verb{url}
-    \verb https://swagger.io/specification/
+    \verb https://learn.microsoft.com/en-us/fabric/
     \endverb
   \endentry
 
-  \entry{solidity}{online}{}
+  \entry{fabric_lakehouse}{online}{}
     \name{author}{1}{}{%
-      {{hash=s}{%
-         family={soliditylang.org},
-         familyi={s\bibinitperiod},
+      {{hash=M}{%
+         family={Microsoft},
+         familyi={M\bibinitperiod},
       }}%
     }
     \keyw{latex,knuth}
-    \strng{namehash}{s1}
-    \strng{fullhash}{s1}
+    \strng{namehash}{M2}
+    \strng{fullhash}{M2}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{title}{Solidity programming language}
+    \field{title}{Fabric | Data Lakehouse}
     \verb{url}
-    \verb https://soliditylang.org/
+    \verb https://learn.microsoft.com/en-us/fabric/data-engineering/lakehouse-o
+    \verb verview
+    \endverb
+  \endentry
+
+  \entry{fabric_warehouse}{online}{}
+    \name{author}{1}{}{%
+      {{hash=M}{%
+         family={Microsoft},
+         familyi={M\bibinitperiod},
+      }}%
+    }
+    \keyw{latex,knuth}
+    \strng{namehash}{M2}
+    \strng{fullhash}{M2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Fabric | Data Warehouse}
+    \verb{url}
+    \verb https://learn.microsoft.com/en-us/fabric/data-warehouse/data-warehous
+    \verb ing
+    \endverb
+  \endentry
+
+  \entry{fabric_datafactory}{online}{}
+    \name{author}{1}{}{%
+      {{hash=M}{%
+         family={Microsoft},
+         familyi={M\bibinitperiod},
+      }}%
+    }
+    \keyw{latex,knuth}
+    \strng{namehash}{M2}
+    \strng{fullhash}{M2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Fabric | Azure Data Factory}
+    \verb{url}
+    \verb https://learn.microsoft.com/en-us/fabric/data-factory/data-factory-ov
+    \verb erview
+    \endverb
+  \endentry
+
+  \entry{fabric_dataflows}{online}{}
+    \name{author}{1}{}{%
+      {{hash=M}{%
+         family={Microsoft},
+         familyi={M\bibinitperiod},
+      }}%
+    }
+    \keyw{latex,knuth}
+    \strng{namehash}{M2}
+    \strng{fullhash}{M2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Fabric | Dataflows (Gen2)}
+    \verb{url}
+    \verb https://learn.microsoft.com/en-us/fabric/data-factory/dataflows-gen2-
+    \verb overview
+    \endverb
+  \endentry
+
+  \entry{fabric_powerbi}{online}{}
+    \name{author}{1}{}{%
+      {{hash=M}{%
+         family={Microsoft},
+         familyi={M\bibinitperiod},
+      }}%
+    }
+    \keyw{latex,knuth}
+    \strng{namehash}{M2}
+    \strng{fullhash}{M2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Fabric | Power BI}
+    \verb{url}
+    \verb https://learn.microsoft.com/en-us/power-bi/fundamentals/fabric-power-
+    \verb bi
+    \endverb
+  \endentry
+
+  \entry{fabric_onelake}{online}{}
+    \name{author}{1}{}{%
+      {{hash=M}{%
+         family={Microsoft},
+         familyi={M\bibinitperiod},
+      }}%
+    }
+    \keyw{latex,knuth}
+    \strng{namehash}{M2}
+    \strng{fullhash}{M2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Fabric | OneLake}
+    \verb{url}
+    \verb https://learn.microsoft.com/en-us/fabric/onelake/onelake-overview
     \endverb
   \endentry
 
@@ -1221,6 +1316,60 @@
     \endverb
   \endentry
 
+  \entry{nodejs}{online}{}
+    \name{author}{1}{}{%
+      {{hash=N}{%
+         family={Node.js},
+         familyi={N\bibinitperiod},
+      }}%
+    }
+    \keyw{latex,knuth}
+    \strng{namehash}{N1}
+    \strng{fullhash}{N1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Node.js}
+    \verb{url}
+    \verb https://nodejs.org/en
+    \endverb
+  \endentry
+
+  \entry{open_api}{online}{}
+    \name{author}{1}{}{%
+      {{hash=s}{%
+         family={swagger.io},
+         familyi={s\bibinitperiod},
+      }}%
+    }
+    \keyw{latex,knuth}
+    \strng{namehash}{s2}
+    \strng{fullhash}{s2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Open API Specification}
+    \verb{url}
+    \verb https://swagger.io/specification/
+    \endverb
+  \endentry
+
+  \entry{solidity}{online}{}
+    \name{author}{1}{}{%
+      {{hash=s}{%
+         family={soliditylang.org},
+         familyi={s\bibinitperiod},
+      }}%
+    }
+    \keyw{latex,knuth}
+    \strng{namehash}{s1}
+    \strng{fullhash}{s1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Solidity programming language}
+    \verb{url}
+    \verb https://soliditylang.org/
+    \endverb
+  \endentry
+
   \entry{SoftwareTool_Github}{online}{}
     \name{author}{1}{}{%
       {{hash=G}{%
@@ -1312,42 +1461,6 @@
     \field{title}{Ubuntu}
     \verb{url}
     \verb https://ubuntu.com/
-    \endverb
-  \endentry
-
-  \entry{azure}{online}{}
-    \name{author}{1}{}{%
-      {{hash=M}{%
-         family={Microsoft},
-         familyi={M\bibinitperiod},
-      }}%
-    }
-    \keyw{latex,knuth}
-    \strng{namehash}{M2}
-    \strng{fullhash}{M2}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{title}{Microsoft Azure}
-    \verb{url}
-    \verb https://azure.microsoft.com/
-    \endverb
-  \endentry
-
-  \entry{azure_fabric}{online}{}
-    \name{author}{1}{}{%
-      {{hash=M}{%
-         family={Microsoft},
-         familyi={M\bibinitperiod},
-      }}%
-    }
-    \keyw{latex,knuth}
-    \strng{namehash}{M2}
-    \strng{fullhash}{M2}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{title}{Microsoft Fabric | Fundamentals}
-    \verb{url}
-    \verb https://learn.microsoft.com/en-us/fabric/
     \endverb
   \endentry
 

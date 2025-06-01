@@ -106,40 +106,26 @@ AWS IAM (\textit{AWS Identity and Access Management}) \citep{aws_iam} es un serv
 Amazon CloudWatch \citep{aws_cloudwatch}  es un servicio de monitoreo y observabilidad totalmente gestionado que permite recopilar, visualizar y analizar métricas, logs y eventos de recursos y aplicaciones en AWS. Facilita la supervisión del rendimiento, la detección de anomalías y la generación de alertas en tiempo real a partir de datos generados por servicios como EC2, Lambda, DynamoDB, RDS, entre otros, así como por aplicaciones personalizadas mediante agentes o APIs. 
 
 
-\section{Tecnologías de propósito general utilizadas}
-
-\subsection{Node.js}
-
-Node.js \citep{nodejs} es un entorno de ejecución de código abierto basado en el motor V8 de Chrome, utilizado principalmente como servidor web. Emplea un modelo \textit{single-thread} de \textit{event loop} con I/O no bloqueante para gestionar múltiples solicitudes y paralelismo de tareas mediante callbacks asíncronos.
 
 
-\subsection{MQTT}
+\section{Tecnologías Azure utilizadas}
 
-MQTT (\textit{Message Queuing Telemetry Transport}) \citep{mqtt_spec} es un protocolo de comunicación asíncrono, ligero y orientado a mensajes, diseñado para dispositivos con recursos limitados y redes de baja ancho de banda. Ampliamente utilizado en IoT, permite la transmisión de datos en tiempo real entre dispositivos, sensores y aplicaciones mediante un modelo publish/subscribe y topics, donde los clientes se conectan a un broker para publicar o recibir notificaciones.
-
-
-\subsection{Swagger}
-Swagger \citep{open_api} es un conjunto de herramientas para diseñar, documentar y consumir APIs RESTful. Utiliza el formato OpenAPI Specification (OAS) para describir de forma estandarizada la estructura de una API, permitiendo la generación automática de documentación interactiva, clientes SDK y pruebas.
+\subsection{Azure}
+Azure \citep{azure} es la plataforma de computación en la nube pública de Microsoft que ofrece una amplia gama de servicios para el desarrollo, implementación y gestión de aplicaciones y soluciones a través de una red global de centros de datos. Permite a las organizaciones ejecutar cargas de trabajo en modelos IaaS, PaaS y SaaS, con soporte para máquinas virtuales, bases de datos, inteligencia artificial, almacenamiento, redes, análisis de datos, IoT y seguridad, entre otros aspectos.
 
 
+\subsection{Microsoft Fabric}
+Microsoft Fabric \citep{azure_fabric} es una plataforma unificada de analítica de datos en la nube de Azure que integra múltiples herramientas en un entorno gestionado. Está diseñada simplificar la integración, transformación, análisis y visualización de datos. Entre sus componentes principales se encuentran: 
 
+\begin{itemize}
+	\item Lakehouse \cite{fabric_lakehouse}: combina las capacidades de un data lake y un data warehouse, permitiendo almacenar y procesar grandes volúmenes de datos estructurados y no estructurados, compatible con Spark, notebooks y consultas SQL.
+	\item Warehouse \cite{fabric_warehouse}: un entorno de base de datos relacional orientado a análisis empresariales y modelado dimensional, que permite ejecutar consultas SQL sobre los datos almacenados en OneLake.
+	\item Data Factory \cite{fabric_datafactory}: herramienta de orquestación de flujos datos que permite construir ETL/ELT mediante pipelines y actividades de copiado,.
+	\item Dataflows Gen2 \cite{fabric_dataflows}: herramienta de transformaciones de datos complejas que brinda uuna interfaz visual sin necesidad de escribir código y utiliza el motor Spark de forma subyacente.
+	\item Power BI \cite{fabric_powerbi}: la herramienta de BI (Business Intelligence o inteligencia de negocios) en la nube de Azure, integrada de forma nativa en Fabric, permite crear visualizaciones, dashboards e informes interactivos directamente sobre datos almacenados en Lakehouse o Warehouse, mediante la abstracción de un Semantic Model que define métricas, jerarquías y relaciones, sin necesidad de mover ni duplicar los datos.
+	\item OneLake \cite{fabric_onelake}: actúa como repositorio de datos único para todos los servicios de Fabric, asegurando gobierno y seguridad de datos. 
+\end{itemize}
 
-\section{Lenguajes de programación utilizados}
-
-\subsection{Lenguaje de programación Python}
-Python es un lenguaje de programación de alto nivel, interpretado y de propósito general, conocido por su sintaxis clara y legible que favorece el desarrollo rápido y eficiente. Es ampliamente utilizado en áreas como desarrollo web, automatización, análisis de datos, inteligencia artificial y ciencia de datos, gracias a su gran ecosistema de bibliotecas, amplia documentación y comunidad activa. Fue utilizado en el trabajo en las funciones AWS Lambda.
-
-
-\subsection{Lenguaje de programación Javascript}
-JavaScript es un lenguaje de programación interpretado, de alto nivel y orientado a objetos, diseñado originalmente para el desarrollo web del lado del cliente. Se utiliza tanto en el frontend como en el backend gracias a entornos como Node.js. Fue utilizado en el trabajo para el desarrollo de la dApp como backend Node.js.
-
-
-\subsection{Lenguaje de programación C}
-C es un lenguaje de programación de propósito general, compilado y de bajo nivel, conocido por su eficiencia, velocidad y control directo sobre el hardware. Es ampliamente utilizado en sistemas operativos, software embebido y desarrollo de sistemas donde el rendimiento y el acceso a memoria son críticos. Fue utilizado en el trabajo para el desarrollo del firmware del sistema embebido.
-
-\subsection{Solidity}
-
-Solidity \cite{solidity} es un lenguaje de programación de alto nivel, orientado a contratos inteligentes, específicamente diseñado para funcionar en la EVM (\textit{Ethereum Virtual Machine}). Fue creado en 2014 por Gavin Wood, Christian Reitwiessner y otros desarrolladores de Ethereum. Su sintaxis es similar a JavaScript, Python y C++, lo que facilita el aprendizaje para desarrolladores familiarizados con esos lenguajes. Fue utilizado en el trabajo para el desarrollo de los \textit{smart contracts}.
 
 
 \section{Tecnologías blockchain utilizadas}
@@ -201,22 +187,40 @@ En el presente trabajo se utilizó para almacenar los fondos en ETH obtenidos a 
 
 
 
-\section{Tecnologías de ingeniería de datos utilizadas}
+\section{Tecnologías de propósito general utilizadas}
+
+\subsection{Node.js}
+
+Node.js \citep{nodejs} es un entorno de ejecución de código abierto basado en el motor V8 de Chrome, utilizado principalmente como servidor web. Emplea un modelo \textit{single-thread} de \textit{event loop} con I/O no bloqueante para gestionar múltiples solicitudes y paralelismo de tareas mediante callbacks asíncronos.
+
+
+\subsection{MQTT}
+
+MQTT (\textit{Message Queuing Telemetry Transport}) \citep{mqtt_spec} es un protocolo de comunicación asíncrono, ligero y orientado a mensajes, diseñado para dispositivos con recursos limitados y redes de baja ancho de banda. Ampliamente utilizado en IoT, permite la transmisión de datos en tiempo real entre dispositivos, sensores y aplicaciones mediante un modelo publish/subscribe y topics, donde los clientes se conectan a un broker para publicar o recibir notificaciones.
+
+
+\subsection{Swagger}
+Swagger \citep{open_api} es un conjunto de herramientas para diseñar, documentar y consumir APIs RESTful. Utiliza el formato OpenAPI Specification (OAS) para describir de forma estandarizada la estructura de una API, permitiendo la generación automática de documentación interactiva, clientes SDK y pruebas.
 
 
 
-\subsection{Microsoft Fabric}
-Microsoft Fabric es una plataforma unificada de analítica de datos en la nube de Azure que integra múltiples herramientas en un entorno gestionado. Está diseñada simplificar la integración, transformación, análisis y visualización de datos. Entre sus componentes principales se encuentran: 
 
-\begin{itemize}
-	\item Lakehouse \cite{link}: combina las capacidades de un data lake y un data warehouse, permitiendo almacenar y procesar grandes volúmenes de datos estructurados y no estructurados, compatible con Spark, notebooks y consultas SQL.
-	\item Warehouse \cite{link}: un entorno de base de datos relacional orientado a análisis empresariales y modelado dimensional, que permite ejecutar consultas SQL sobre los datos almacenados en OneLake.
-	\item Data Factory \cite{link}: herramienta de orquestación de flujos datos que permite construir ETL/ELT mediante pipelines y actividades de copiado,.
-	\item Dataflows Gen2 \cite{link}: herramienta de transformaciones de datos complejas que brinda uuna interfaz visual sin necesidad de escribir código y utiliza el motor Spark de forma subyacente.
-	\item Power BI \cite{link}: la herramienta de BI (Business Intelligence o inteligencia de negocios) en la nube de Azure, integrada de forma nativa en Fabric, permite crear visualizaciones, dashboards e informes interactivos directamente sobre datos almacenados en Lakehouse o Warehouse, mediante la abstracción de un Semantic Model que define métricas, jerarquías y relaciones, sin necesidad de mover ni duplicar los datos.
-	\item OneLake \cite{link}: actúa como repositorio de datos único para todos los servicios de Fabric, asegurando gobierno y seguridad de datos. 
-\end{itemize}
+\section{Lenguajes de programación utilizados}
 
+\subsection{Lenguaje de programación Python}
+Python es un lenguaje de programación de alto nivel, interpretado y de propósito general, conocido por su sintaxis clara y legible que favorece el desarrollo rápido y eficiente. Es ampliamente utilizado en áreas como desarrollo web, automatización, análisis de datos, inteligencia artificial y ciencia de datos, gracias a su gran ecosistema de bibliotecas, amplia documentación y comunidad activa. Fue utilizado en el trabajo en las funciones AWS Lambda.
+
+
+\subsection{Lenguaje de programación Javascript}
+JavaScript es un lenguaje de programación interpretado, de alto nivel y orientado a objetos, diseñado originalmente para el desarrollo web del lado del cliente. Se utiliza tanto en el frontend como en el backend gracias a entornos como Node.js. Fue utilizado en el trabajo para el desarrollo de la dApp como backend Node.js.
+
+
+\subsection{Lenguaje de programación C}
+C es un lenguaje de programación de propósito general, compilado y de bajo nivel, conocido por su eficiencia, velocidad y control directo sobre el hardware. Es ampliamente utilizado en sistemas operativos, software embebido y desarrollo de sistemas donde el rendimiento y el acceso a memoria son críticos. Fue utilizado en el trabajo para el desarrollo del firmware del sistema embebido.
+
+\subsection{Solidity}
+
+Solidity \cite{solidity} es un lenguaje de programación de alto nivel, orientado a contratos inteligentes, específicamente diseñado para funcionar en la EVM (\textit{Ethereum Virtual Machine}). Fue creado en 2014 por Gavin Wood, Christian Reitwiessner y otros desarrolladores de Ethereum. Su sintaxis es similar a JavaScript, Python y C++, lo que facilita el aprendizaje para desarrolladores familiarizados con esos lenguajes. Fue utilizado en el trabajo para el desarrollo de los \textit{smart contracts}.
 
 
 \section{Tecnologías de desarrollo utilizadas}
