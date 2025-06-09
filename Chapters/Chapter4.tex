@@ -2,36 +2,21 @@
 
 \chapter{Ensayos y resultados} % Main chapter title
 
-\label{Chapter4} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{ChapterX}
-Todos los capítulos deben comenzar con un breve párrafo introductorio que indique cuál es el contenido que se encontrará al leerlo.  La redacción sobre el contenido de la memoria debe hacerse en presente y todo lo referido al proyecto en pasado, siempre de modo impersonal.
+\label{Chapter4} 
+
+En este capítulo se describe el proceso de verificaciones y validaciones que se realizó a fin de comprobar el correcto funcionamiento del sistema y el alcance de los objetivos del trabajo.
 
 %----------------------------------------------------------------------------------------
 %	SECTION 1
 %----------------------------------------------------------------------------------------
 
-\section{Verificaciones funcionales del hardware}
-
-\subsection{Verificación del proceso de ingesta en tiempo real MQTT}
+\section{Verificaciones técnicas}
 
 
-\begin{center}
-   \includegraphics[scale=0.35]{AWS/aws_iot_core_mqtt_test_2}
-   \captionof{figure}{Prueba de recepción de mensajes MQTT.}
-   \label{fig:aws_iot_core_mqtt_test_2}
-\end{center}
 
-\subsection{Verificación del proceso de distribución de eventos en AWS}
+\subsection{Verificación del set-up de dependencias Ethereum}
 
-
-\begin{center}
-   \includegraphics[scale=0.4]{AWS/aws_iot_core_message_routing}
-   \captionof{figure}{Configuración de redirección de mensajes MQTT.}
-   \label{fig:aws_iot_core_message_routing}
-\end{center}
-
-
-\subsection{Verificación de fondos necesarios para realizar despliegues en redes Holesky y Sepolia}
-
+Como se mencionó anteriormente para poder interactuar con la red Ethereum se necesita disponer de saldo en ETH en un wallet y para esto se utilizaron Faucets de Google. En la siguiente figura \ref{fig:google_faucets2} se puede apreciar la verificación de la obtención de tokens.
 
 \begin{center}
    \includegraphics[scale=0.35]{blockchain/google_faucets2}
@@ -39,12 +24,15 @@ Todos los capítulos deben comenzar con un breve párrafo introductorio que indi
    \label{fig:google_faucets2}
 \end{center}
 
+En la figura \ref{fig:metamask_balance} se puede verificar la acreditación de los fondos obtenidos en la billetera Sepolia utilizada para las pruebas. 
+
 \begin{center}
    \includegraphics[scale=0.35]{blockchain/metamask_balance}
    \captionof{figure}{Saldo en Metamask.}
    \label{fig:metamask_balance}
 \end{center}
 
+Posteriormente se pudo verificar desde Etherscan las transacciones realizadas en la transferencia de los fondos via faucets \ref{fig:sepolia_funding2}.
 
 \begin{center}
    \includegraphics[scale=0.3]{blockchain/sepolia_funding2}
@@ -52,7 +40,30 @@ Todos los capítulos deben comenzar con un breve párrafo introductorio que indi
    \label{fig:sepolia_funding2}
 \end{center}
 
+Como se mencionó anteriormente, el acceso a la red Ethereum se realizó a través del servicio Alchemy. En la siguiente figura \ref{fig:alchemy1} se puede apreciar la verificación de su set-up para poder ser invocado por la dApp. 
 
+
+\begin{center}
+   \includegraphics[scale=0.3]{blockchain/alchemy1}
+   \captionof{figure}{Frontend the Alchemy.}
+   \label{fig:alchemy1}
+\end{center}
+
+
+
+
+\subsection{Verificación del despliegue de los Smart Contracts}
+
+Tras ejecutar el proceso de despliegue se pudo verificar la salida por consola con la confirmación del resultado exitoso. Como se puede apreciar en la figura \ref{fig:sm_deployment} se observa la dirección de los Smart Contracts, la cuenta, balance y gas utilizado.
+
+
+\begin{center}
+   \includegraphics[scale=0.35]{blockchain/sm_deployment}
+   \captionof{figure}{Salida por pantalla durante el proceso de despliegue de los componentes blockchain.}
+   \label{fig:sm_deployment}
+\end{center}
+
+Posteriormente, desde Etherscan se pueden apreciar las transacciones de cada despliegue en la red, por ejemplo en este caso Sepolia, con los detalles de cada una de las operaciones.
 
 \begin{center}
    \includegraphics[scale=0.35]{blockchain/sm_deployment_etherscan1}
@@ -68,16 +79,25 @@ Todos los capítulos deben comenzar con un breve párrafo introductorio que indi
 
 
 
-\subsection{Verificación del proceso de despliegue de los Smart Contracts}
+\subsection{Verificación del despliegue de la dApp}
+
+Al realizar el despliegue por la consola web de AWS se puede apreciar el resultado exitoso del proceso. Como se observa en la figura \ref{fig:deployment_dapp}, tras el despliegue se puede obtener la URL desde la que se puede acceder a la dapp.
 
 \begin{center}
-   \includegraphics[scale=0.35]{blockchain/sm_deployment}
-   \captionof{figure}{Salida por pantalla durante el proceso de despliegue de los componentes blockchain.}
-   \label{fig:sm_deployment}
+   \includegraphics[scale=0.4]{AWS/deployment_dapp}
+   \captionof{figure}{Despliegue de la dApp en App Runner.}
+   \label{fig:deployment_dapp}
 \end{center}
 
+Como se puede apreciar en la siguiente figura \ref{fig:deployment_dapp_log} los logs del despliegue indican que el proceso se realizó exitosamente y se puede apreciar el historial de últimos despliegues.
 
-\subsection{Verificación del proceso de despliegue de la dApp}
+\begin{center}
+   \includegraphics[scale=0.4]{AWS/deployment_dapp_log}
+   \captionof{figure}{Despliegue de la dApp en App Runner.}
+   \label{fig:deployment_dapp_log}
+\end{center}
+
+Una vez verificado el despliegue en la consola de AWS se puede apreciar en la figura \ref{fig:dapp_endpoints} la verificación del funcionamiento de la dApp accediendo a su API Restful publicada por Swagger.
 
 
 \begin{center}
@@ -87,27 +107,116 @@ Todos los capítulos deben comenzar con un breve párrafo introductorio que indi
 \end{center}
 
 
+\subsection{Verificación de ingesta de datos en tiempo real MQTT}
+
+Desde la herramienta AWS IoT Core se pudo verificar la recepción de mensajes MQTT desde el dispositivo ESP32 como se puede apreciar en la siguiente figura \ref{fig:aws_iot_core_mqtt_test_2}.
+
 \begin{center}
-   \includegraphics[scale=0.3]{blockchain/alchemy1}
-   \captionof{figure}{Frontend the Alchemy.}
-   \label{fig:alchemy1}
+   \includegraphics[scale=0.35]{AWS/aws_iot_core_mqtt_test_2}
+   \captionof{figure}{Prueba de recepción de mensajes MQTT.}
+   \label{fig:aws_iot_core_mqtt_test_2}
 \end{center}
 
 
-\subsection{Verificación del proceso de invocación de la dApp}
+\subsection{Verificación del procesamiento de mensajes }
 
-\subsection{Verificación del proceso de invocación de los Smart Contracts}
+Una vez redireccionados desde AWS IoT Core por medio de AWS SNS, se pudo verificar el encolamiento de los mensajes en AWS SQS donde como se puede apreciar en la figura \ref{fig:events_sqs_2}, los mensajes se acumulan para ser procesados en la cola \textit{readings}.
 
-\subsection{Validación de los datos almacenados en Ethereum}
+\begin{center}
+   \includegraphics[scale=0.4]{AWS/events_sqs_2}
+   \captionof{figure}{Configuración de redirección de mensajes MQTT.}
+   \label{fig:events_sqs_2}
+\end{center}
 
-\subsection{Verificación del proceso de almacenamiento de readings, transacciones y contracts en AWS S3}
+Como se aprecia en la siguiente figura \ref{fig:events_sqs_1}, también se pudo verificar la tasa de invocaciones de AWS SQS desde su herramienta de monitoreo.
 
+\begin{center}
+   \includegraphics[scale=0.4]{AWS/events_sqs_1}
+   \captionof{figure}{Configuración de redirección de mensajes MQTT.}
+   \label{fig:events_sqs_1}
+\end{center}
+
+
+Como se mencionó anteriormente, desde la cola readings se dispara la ejecución de la función AWS Lambda que procesa los mensajes, invocando la dApp. Como se puede apreciar en la siguientes figuras \ref{fig:events_lambda1} y \ref{fig:events_lambda3}, se verificó el correcto funcionamiento del procesamiento de eventos.
+
+
+\begin{center}
+   \includegraphics[scale=0.4]{AWS/events_lambda1}
+   \captionof{figure}{Monitoreo de la función AWS Lambda de procesamiento de eventos.}
+   \label{fig:events_lambda1}
+\end{center}
+
+\begin{center}
+   \includegraphics[scale=0.4]{AWS/events_lambda3}
+   \captionof{figure}{Monitoreo de la función AWS Lambda de procesamiento de eventos.}
+   \label{fig:events_lambda3}
+\end{center}
 
 \begin{center}
    \includegraphics[scale=0.4]{AWS/aws_s3_bucket_data2}
    \captionof{figure}{Almacenamiento de mensajes JSON en AWS S3.}
    \label{fig:aws_s3_bucket_data2}
 \end{center}
+
+
+
+\subsection{Verificación de la invocación de la dApp y los Smart Contracts}
+
+En la dApp, se pudo verificar el correcto funcionamiento del sistema en sus herramientas de monitoreo como se puede apreciar en las siguientes figuras \ref{fig:events_dapp} y \ref{fig:events_cloudwatch_dapp} las métricas de request HTTP y los logs de las transacciones Ethereum.
+
+
+\begin{center}
+   \includegraphics[scale=0.4]{AWS/events_dapp}
+   \captionof{figure}{Almacenamiento de mensajes JSON en AWS S3.}
+   \label{fig:events_dapp}
+\end{center}
+
+\begin{center}
+   \includegraphics[scale=0.4]{AWS/events_cloudwatch_dapp}
+   \captionof{figure}{Logs en Cloudwatch de las transacciones.}
+   \label{fig:events_cloudwatch_dapp}
+\end{center}
+
+
+\subsection{Validación de los datos almacenados en Ethereum}
+
+
+Por cada ejecución tambien se pudo verificar en Etherscan la creación de nuevas transacciones tras la ejecución de la dApp, como se puede apreciar en la figura \ref{fig:events_etherscan}.
+
+\begin{center}
+   \includegraphics[scale=0.4]{AWS/events_etherscan}
+   \captionof{figure}{Creación de nuevas transacciones en Etherscan.}
+   \label{fig:events_etherscan}
+\end{center}
+
+
+\subsection{Verificación del proceso de almacenamiento de lecturas, transacciones y contratos en AWS S3}
+
+Como se puede apreciar en las figuras se pudo verificar en AWS S3 el correcto almacenamiento de los objetos datos de lecturas, transacciones y contratos en el bucket configurado.
+
+\begin{center}
+   \includegraphics[scale=0.4]{AWS/events_s3_tx}
+   \captionof{figure}{Almacenamiento de mensajes JSON en AWS S3.}
+   \label{fig:events_s3_tx}
+\end{center}
+
+
+\begin{center}
+   \includegraphics[scale=0.4]{AWS/events_s3_readings}
+   \captionof{figure}{Almacenamiento de mensajes JSON en AWS S3.}
+   \label{fig:events_s3_readings}
+\end{center}
+
+
+\begin{center}
+   \includegraphics[scale=0.4]{AWS/events_s3_contracts}
+   \captionof{figure}{Almacenamiento de mensajes JSON en AWS S3.}
+   \label{fig:events_s3_contracts}
+\end{center}
+
+
+\subsection{Verificación del acceso a datos desde AWS Athena}
+
 
 
 \begin{center}
@@ -118,8 +227,9 @@ Todos los capítulos deben comenzar con un breve párrafo introductorio que indi
 
 
 
-\subsection{Verificación del proceso de ingesta y transformación de datos batch en Fabric}
 
+
+\subsection{Verificación del proceso de ingesta y transformación de datos batch en Fabric}
 
 
 \begin{center}
@@ -140,4 +250,4 @@ Todos los capítulos deben comenzar con un breve párrafo introductorio que indi
 \end{center}
  
 
-\section{Pruebas funcionales del hardware}
+\section{Pruebas funcionales del sistema}

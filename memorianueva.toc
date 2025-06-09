@@ -62,24 +62,24 @@
 \contentsline {subsection}{\numberline {3.3.3}Capas de procesamiento y almacenamiento - dApp (AWS) y Smart Contracts}{21}{subsection.3.3.3}%
 \contentsline {subsection}{\numberline {3.3.4}Capas de distribución de eventos}{23}{subsection.3.3.4}%
 \contentsline {subsection}{\numberline {3.3.5}Capas de procesamiento y almacenamiento de datos}{24}{subsection.3.3.5}%
-\contentsline {section}{\numberline {3.4}Plataforma de desarrollo y despliegue}{28}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Tabla de todos los objetos cloud creados}{28}{section.3.5}%
+\contentsline {section}{\numberline {3.4}Plataforma de desarrollo y despliegue}{27}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Tabla de todos los objetos cloud creados}{27}{section.3.5}%
 \contentsline {chapter}{\numberline {4}Ensayos y resultados}{29}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Verificaciones funcionales del hardware}{29}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Verificación del proceso de ingesta en tiempo real MQTT}{29}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}Verificación del proceso de distribución de eventos en AWS}{30}{subsection.4.1.2}%
-\contentsline {subsection}{\numberline {4.1.3}Verificación de fondos necesarios para realizar despliegues en redes Holesky y Sepolia}{30}{subsection.4.1.3}%
-\contentsline {subsection}{\numberline {4.1.4}Verificación del proceso de despliegue de los Smart Contracts}{33}{subsection.4.1.4}%
-\contentsline {subsection}{\numberline {4.1.5}Verificación del proceso de despliegue de la dApp}{34}{subsection.4.1.5}%
-\contentsline {subsection}{\numberline {4.1.6}Verificación del proceso de invocación de la dApp}{35}{subsection.4.1.6}%
-\contentsline {subsection}{\numberline {4.1.7}Verificación del proceso de invocación de los Smart Contracts}{35}{subsection.4.1.7}%
-\contentsline {subsection}{\numberline {4.1.8}Validación de los datos almacenados en Ethereum}{35}{subsection.4.1.8}%
-\contentsline {subsection}{\numberline {4.1.9}Verificación del proceso de almacenamiento de readings, transacciones y contracts en AWS S3}{35}{subsection.4.1.9}%
-\contentsline {subsection}{\numberline {4.1.10}Verificación del proceso de ingesta y transformación de datos batch en Fabric}{37}{subsection.4.1.10}%
-\contentsline {subsection}{\numberline {4.1.11}Validación del modelo de datos en el Semantic Model}{38}{subsection.4.1.11}%
-\contentsline {subsection}{\numberline {4.1.12}Validación del reporte final generado en PowerBI}{38}{subsection.4.1.12}%
-\contentsline {section}{\numberline {4.2}Pruebas funcionales del hardware}{38}{section.4.2}%
-\contentsline {chapter}{\numberline {5}Conclusiones}{39}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Conclusiones generales }{39}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Próximos pasos}{39}{section.5.2}%
-\contentsline {chapter}{Bibliografía}{41}{appendix*.8}%
+\contentsline {section}{\numberline {4.1}Verificaciones técnicas}{29}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Verificación del set-up de dependencias Ethereum}{29}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Verificación del despliegue de los Smart Contracts}{31}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3}Verificación del despliegue de la dApp}{33}{subsection.4.1.3}%
+\contentsline {subsection}{\numberline {4.1.4}Verificación de ingesta de datos en tiempo real MQTT}{35}{subsection.4.1.4}%
+\contentsline {subsection}{\numberline {4.1.5}Verificación del procesamiento de mensajes }{36}{subsection.4.1.5}%
+\contentsline {subsection}{\numberline {4.1.6}Verificación de la invocación de la dApp y los Smart Contracts}{39}{subsection.4.1.6}%
+\contentsline {subsection}{\numberline {4.1.7}Validación de los datos almacenados en Ethereum}{40}{subsection.4.1.7}%
+\contentsline {subsection}{\numberline {4.1.8}Verificación del proceso de almacenamiento de lecturas, transacciones y contratos en AWS S3}{41}{subsection.4.1.8}%
+\contentsline {subsection}{\numberline {4.1.9}Verificación del acceso a datos desde AWS Athena}{43}{subsection.4.1.9}%
+\contentsline {subsection}{\numberline {4.1.10}Verificación del proceso de ingesta y transformación de datos batch en Fabric}{44}{subsection.4.1.10}%
+\contentsline {subsection}{\numberline {4.1.11}Validación del modelo de datos en el Semantic Model}{45}{subsection.4.1.11}%
+\contentsline {subsection}{\numberline {4.1.12}Validación del reporte final generado en PowerBI}{45}{subsection.4.1.12}%
+\contentsline {section}{\numberline {4.2}Pruebas funcionales del sistema}{45}{section.4.2}%
+\contentsline {chapter}{\numberline {5}Conclusiones}{47}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Conclusiones generales }{47}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Próximos pasos}{47}{section.5.2}%
+\contentsline {chapter}{Bibliografía}{49}{appendix*.8}%

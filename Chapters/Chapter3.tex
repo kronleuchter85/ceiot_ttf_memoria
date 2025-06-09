@@ -187,11 +187,11 @@ Desde el punto de vista de infraestructura, como AWS Lambda hace uso de los serv
 Una vez realizadas las configuraciones de ingesta de datos en \textit{streaming} se realizaron las configuraciones para poder accederlos, administrarlos y procesarlos de forma batch.
 Para ello se crearon una base de datos y una tabla en AWS Glue para representar el esquema de datos almacenados en AWS S3 en formato JSON, como se puede apreciar en la figura \ref{fig:aws_glue_table_review}.
 
-\begin{center}
-   \includegraphics[scale=0.4]{AWS/aws_glue_table_review}
-   \captionof{figure}{Creación de base datos, tabla y esquema AWS Glue.}
-   \label{fig:aws_glue_table_review}
-\end{center}
+%\begin{center}
+%   \includegraphics[scale=0.4]{AWS/aws_glue_table_review}
+%   \captionof{figure}{Creación de base datos, tabla y esquema AWS Glue.}
+%   \label{fig:aws_glue_table_review}
+%\end{center}
 
 Con el esquema de datos definido en el catálogo de AWS Glue, fue posible realizar consultas SQL sobre los datos almacenados en AWS S3 desde AWS Athena, como se puede apreciar en la figura 
 
@@ -266,14 +266,30 @@ Finalmente desde PowerBI se construyeron los reportes compuestos por tablas din�
 	\caption[caption corto]{Tabla de objetos AWS}
 	\begin{tabular}{l c c}    
 		\toprule
-		\textbf{Servicio} & \textbf{Propósito} & \textbf{Nombre de objeto}  \\
+		\textbf{Servicio} & \textbf{Tipo} & \textbf{Nombre de objeto}  \\
 		\midrule
 		AWS IoT Core & \textit{Thing} & ESP32 \\		
 		AWS IoT Core & \textit{MQTT topic} & readings \\		
 		AWS IoT Core & \textit{Routing Rule} & StoreToS3 \\		
 		AWS S3 & Bucket & ceiot-exploratory-robot \\	
 		AWS Glue & \textit Base de datos & ceit \\		
-		AWS Glue & Tabla & \textit{Readings} \\		
+		AWS Glue & Tabla & \textit{readings} \\		
+		AWS SNS & \textit Topic & \textit{readings} \\		
+		AWS SQS & Queue & \textit{readings} \\	
+		AWS SQS & Queue & \textit{toBeStored} \\	
+		AWS Lambda & Function & \textit{dAppPublisher} \\	
+		AWS Lambda & Function & \textit{StoreS3TxResultsAndReadings } \\	
+		AWS App Runner & Service & \textit{dapp } \\	
+		AWS Dynamo & Table & \textit{contracts} \\	
+		AWS Secrets Manager & Secret & \textit{WALLETACCOUNT} \\	
+		AWS Secrets Manager & Secret & \textit{BLOCKCHAINURL} \\	
+		AWS Secrets Manager & Secret & \textit{WALLETPRIVATEKEY} \\	
+		AWS Secrets Manager & Secret & \textit{WALLETMNEMONIC} \\	
+		AWS VPC & VPC & \textit{vpc-b7b022df} \\	
+		AWS VPC & Gateway Endpoint & \textit{vpce-075e3abbc2d45ad79} \\	
+		AWS VPC & Interface Endpoint & \textit{vpce-0a114cf645105d814} \\	
+		AWS VPC & Interface Endpoint & \textit{vpce-0ecc21ebfb9805b08} \\	
+
 
 		\bottomrule
 		\hline
