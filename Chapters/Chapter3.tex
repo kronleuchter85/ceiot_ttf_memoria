@@ -32,7 +32,17 @@ En la siguiente figura \ref{fig:software_architecture} podemos apreciar la arqui
 \subsection{Capa de percepción}
 
 
-El desarrollo e integración de los componentes de esta capa consistió en la adaptación del firmware desplegado en el robot explorador para extender sus funcionalidades y enviar las lecturas de parámetros ambientales al \textit{topic} MQTT. Dentro de las funcionalidades que se le agregaron al robot explorador se encontraron:
+El desarrollo e integración de los componentes de esta capa consistió en la adaptación del firmware desplegado en el robot explorador para extender sus funcionalidades y enviar las lecturas de parámetros ambientales al \textit{topic} MQTT. En la siguiente figura \ref{fig:capa_percepcion} puede apreciarse el conexionado de estos componentes.
+
+
+\begin{center}
+   \includegraphics[scale=0.2]{AWS/capa_percepcion}
+   \captionof{figure}{Capa de percepción de la solución.}
+   \label{fig:capa_percepcion}
+\end{center}
+
+
+Dentro de las funcionalidades que se le agregaron al robot explorador se encontraron:
 
 \begin{itemize}
 	\item Capturar fecha y hora local del sistema.
@@ -96,8 +106,14 @@ A continuación podemos apreciar un valor de ejemplo del objeto JSON enviado por
 
 \subsection{Capa de red}
 
-El desarrollo de los componentes de esta capa consistió en la publicación de un \textit{topic} MQTT desde el servicio AWS IoT Core y la configuración de la lógica de redirección y almacenamiento de los mensajes recibidos en AWS S3.
+El desarrollo de los componentes de esta capa consistió en la publicación de un \textit{topic} MQTT desde el servicio AWS IoT Core y la configuración de la lógica de redirección y almacenamiento de los mensajes recibidos en AWS S3. En la siguiente figura \ref{fig:capa_red} puede apreciarse el conexionado de los componentes de esta capa.
 
+
+\begin{center}
+   \includegraphics[scale=0.2]{AWS/capa_red}
+   \captionof{figure}{Capa de red de la solución.}
+   \label{fig:capa_red}
+\end{center}
 
 Para la conexión segura con el tópico MQTT se configuró el servicio AWS IoT Core, donde se creó una nueva instancia de un dispositivo remoto con el nombre ESP32. Una vez creado este dispositivo se descargaron e instalaron en el código del robot los certificados listados a continuación:
 
@@ -122,12 +138,20 @@ Como resultado de la configuración realizada, los mensajes recibidos en MQTT fu
 
 \subsection{Capas de procesamiento y almacenamiento - dApp (AWS) y Smart Contracts}
 
+
+El desarrollo de los componentes de esta capa de la solución consta de los elementos de procesamiento que realizan el almacenamiento inmutable de mediciones ambientales en la red Ethereum. En la siguiente figura \ref{fig:capa_blockchain} pueden apreciarse el conexionado de los componentes involucrados.
+
+\begin{center}
+   \includegraphics[scale=0.2]{AWS/capa_blockchain}
+   \captionof{figure}{Capa blockchain de la solución.}
+   \label{fig:capa_blockchain}
+\end{center}
+
+
 Uno de los primeros pasos para poder comenzar a desarrollar los componentes blockchain fue la obtención de tokens para poder realizar despliegues y ejecutar la aplicación en las redes de prueba de Ethereum sin utilizar fondos reales. Para Para poder realizar esto, primero fue necesario crear un \textit{wallet} o billetera digital, para lo que se utilizó el servicio Metamask. Luego, para la obtención de créditos se utilizaron los \textit{faucets} de Google \citep{google_faucets}. Como se puede apreciar en las figura \ref{fig:google_faucets2} y tras seleccionar la dirección del \textit{wallet} y \ref{fig:metamask_balance}, tras realizar las transacciones en el \textit{faucet} se reciben los fondos en la billeta digital. 
 
 
 Posteriormente como podemos apreciar en la figura, en el servicio Etherscan las transacciones realizadas para generar fondos en la dirección de la billetera quedan publicadas en la red.
-
-
 
 Una vez obtenidos los fondos de prueba en la billetera se procedió con el desarrollo de los componentes blockchain. Para el desarrollo de los \textit{smart contracts} se utilizó Solidity como lenguaje de programanción y Truffle como herramienta de gestión de configuración, compilación, empaquetado y despliegue. Truffle utiliza una configuración basada en archivos Javascript para la descripción de las tareas, y para realizar el despliegue a diferentes redes, como por ejemplo de forma local a Ganache o de forma remota a redes como Sepolia, Holesky y Mainnet. En la los archivos de configuración de Truffle se agregaron entradas para poder desplegar a Ganache y a Sepolia como se puede apreciar en la figura \ref{fig:truffle_redes}.
 
@@ -169,6 +193,15 @@ Además de la URL y el key del proyecto en Alchemy, la dApp necesita ciertos dat
 
 \subsection{Capas de distribución de eventos}
 
+El desarrollo de los componentes de esta capa consta de los elementos de distribución de eventos en tiempo real para permitir el posterior procesamiento y almacenamiento de lecturas ambientales. En la siguiente figura \ref{fig:capa_eventos} puede apreciarse el conexionado de estos componentes.
+
+
+\begin{center}
+   \includegraphics[scale=0.2]{AWS/capa_eventos}
+   \captionof{figure}{Capa de eventos de la solución.}
+   \label{fig:capa_eventos}
+\end{center}
+
 
 Una vez configurados servicios AWS IoT Core y AWS AppRunner se procedió al despliegue de los componentes que permiten la distribución asíncrona de eventos desde el flujo de ingesta en tiempo real MQTT al posterior almacenamiento en blockchain de las lecturas y en S3 de los resultados de dichas transacciones. Para esto se configuraron los servicios AWS SNS y SQS para brindar, por medio de SNS, una interfaz pub/sub que permita la distribución en paralelo de los eventos recibidos a los topicos suscriptos, y por medio de SQS, un encolamiento de eventos para cada suscriptor de forma que se pueda paralelizar el procesamiento de los eventos.
 
@@ -183,6 +216,16 @@ Desde el punto de vista de infraestructura, como AWS Lambda hace uso de los serv
 
 
 \subsection{Capas de procesamiento y almacenamiento de datos}
+
+
+El desarrollo de los componentes de esta capa consta de los elementos de procesamiento y almacenamiento de los datos para la generación de reportes de negocio. En la siguiente figura \ref{fig:capa_datos} puede apreciarse el conexionado de estos componentes.
+
+
+\begin{center}
+   \includegraphics[scale=0.2]{AWS/capa_datos}
+   \captionof{figure}{Capa de procesamiento y almacenamiento datos de la solución.}
+   \label{fig:capa_datos}
+\end{center}
 
 Una vez realizadas las configuraciones de ingesta de datos en \textit{streaming} se realizaron las configuraciones para poder accederlos, administrarlos y procesarlos de forma batch.
 Para ello se crearon una base de datos y una tabla en AWS Glue para representar el esquema de datos almacenados en AWS S3 en formato JSON, como se puede apreciar en la figura \ref{fig:aws_glue_table_review}.
@@ -256,7 +299,29 @@ Finalmente desde PowerBI se construyeron los reportes compuestos por tablas din�
 
 
 
-\section{Tabla de todos los objetos cloud creados}
+\section{Resumen de todos los objetos cloud creados}
+
+
+\begin{table}[h]
+	\centering
+	\caption[caption corto]{Tabla de objetos Azure}
+	\begin{tabular}{l c c}    
+		\toprule
+		\textbf{Servicio} & \textbf{Tipo} & \textbf{Nombre de objeto}  \\
+		\midrule
+		   ADF & orquestación de actividades & dp-import-and-process \\		
+		 Warehouse & almacenamiento estructurado & iot-warehouse \\		
+		 Lakehouse & almacenamiento semi-estructurado & iot-lakehouse \\		
+		 PowerBI & Reporte & r1 \\	
+		 Dataflow & limpieza de datos & df-data-curation \\		
+		 Semantic Model & Modelo de datos del reporte & semantic-model \\		
+		
+
+		\bottomrule
+		\hline
+	\end{tabular}
+	\label{tab:peces}
+\end{table}
 
 
 
